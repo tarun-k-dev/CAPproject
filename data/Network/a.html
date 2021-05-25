@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+
+<head>
+<title>ELearning Platform</title>
+<link rel="icon" href="../../favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="../../css/styles.css">
+<link rel="stylesheet" href="../../css/custom.css">
+<link rel="stylesheet" href="../../css/font-awesome.min.css">
+<script src="../../js/font.js"></script>
+<!-- end cmp -->
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="../../images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="../../vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="../../vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../css/util.css">
+	<link rel="stylesheet" type="text/css" href="../../css/main.css">
+</head>
+
+
+<body style="position:relative;min-height:100%;">
+
+<header>
+
+    <div class='w3-container top' style="padding-top:20px;">
+        <a class='w3schools-logo notranslate' style="position:absolute;" href='../../index.html'>Elearning<span class='dotcom'>.org</span></a>
+      
+        <!-- <div id="loginactioncontainer" class='w3-right' style='width:80px;height:50px;'>
+          <div id="mypagediv"></div> 
+            <a id="w3loginbtn" style="border: medium none; display: inline; cursor: pointer; background-color: #2090db;" class="login w3-right w3-hover-greener" href="../../login.html" target="_self">LOG IN</a>
+        </div> -->
+      
+        <div id="theworldsgreatest" class='w3-right w3-hide-medium w3-hide-small w3-wide toptext' style="line-height: 50px;margin-right:20px;font-family:'Segoe UI',Arial,sans-serif">
+          THE WORLD'S LARGEST ONLINE LEARNING PLATFORM
+        </div>
+      
+      </div>
+      
+      
+      <div class="w3-bar w3-theme w3-card-2 w3-wide notranslate">
+       <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 hidesm" href="javascript:void(0)" onclick="w3_open()"><i class='fa'>&#xf0c9;</i></a>
+       <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_open_nav('tutorials')" id="navbtn_tutorials">WEB TECHNOLOGIES <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a>
+       <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_open_nav('references')" id="navbtn_references">CORE SUBJECTS <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a>
+       <!-- <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_open_nav('examples')" id="navbtn_examples">QUIZ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a> -->
+       <!-- <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16 w3-hide-medium w3-hide-small" href="javascript:void(0)" onclick="w3_open_nav('exercises')" id="navbtn_exercises">ONLINE COURSES <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a> -->
+       <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-left topnav-some w3-hide"  href="../../quiz.html" title='quiz'>QUIZ</a>
+       <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-left topnav-some w3-hide"  href="#" title='oc'>ONLINE COURSES</a>
+ 
+       <div class="w3-right">
+        
+        <!-- <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-right topnav-some w3-hide"  href="../../signup.html" title='signup'>Sign Up</a> -->
+        <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-right topnav-some w3-hide"  href="../../about.html" title='About'>About</a>
+        
+       </div>
+      </div>
+      
+      
+       <div id='myAccordion' class="w3-card-2 w3-light-grey w3-center w3-hide-large" style="display:none;cursor:default"> 
+       <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-xlarge w3-right">&times;</a><br>
+       <div class="w3-container w3-padding-32">
+        <a class="w3-button w3-block w3-large w3-wide" onclick="open_xs_menu('tutorials');" href="javascript:void(0);">WEB TECHNOLOGIES <i class='fa fa-caret-down'></i></a>
+        <div id="sectionxs_tutorials" class="w3-white w3-show"></div>
+        <a class="w3-button w3-block w3-large w3-wide" onclick="open_xs_menu('references')" href="javascript:void(0);">CORE SUBJECTS <i class='fa fa-caret-down'></i></a>
+        <div id="sectionxs_references" class="w3-white w3-show"></div>
+        <a class="w3-button w3-block w3-large w3-wide" href="../../quiz.html">QUIZ</i></a>
+        <div id="sectionxs_examples" class="w3-white w3-show"></div>
+        <a class="w3-button w3-block w3-large w3-wide" href="#">ONLINE COURSES</i></a>
+        <div id="sectionxs_exercises" class="w3-white w3-show"></div>
+        
+       </div>
+      </div> 
+      
+      <nav id="nav_tutorials" class="w3-light-grey w3-card-2 w3-hide-small navex">
+       <span onclick="w3_close_nav('tutorials')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+       <div class="w3-row-padding w3-bar-block">
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">HTML5 and CSS3</h3>
+          <a class="w3-bar-item w3-button" href="../HTML/a.html">HTML - Attributes</a>
+          <a class="w3-bar-item w3-button" href="../HTML/b.html">HTML - Frames</a>
+          <a class="w3-bar-item w3-button" href="../HTML/c.html">HTML - Forms</a>
+          <a class="w3-bar-item w3-button" href="../HTML/d.html">HTML - Embed Media</a>
+          <a class="w3-bar-item w3-button" href="../HTML/e.html">HTML - Layouts</a>
+          <a class="w3-bar-item w3-button" href="../CSS/a.html">CSS - Visibility</a>
+          <a class="w3-bar-item w3-button" href="../CSS/b.html">CSS - Positioning</a>
+          <a class="w3-bar-item w3-button" href="../CSS/c.html">CSS - Padding</a>
+          <a class="w3-bar-item w3-button" href="../CSS/d.html">CSS - Layers</a>
+          <a class="w3-bar-item w3-button" href="../CSS/e.html">CSS - Animation</a> 
+      
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">JavaScript</h3>
+         <a class="w3-bar-item w3-button" href="../JavaScript/a.html">JavaScript - Objects</a>
+         <a class="w3-bar-item w3-button" href="../JavaScript/b.html">JavaScript - Strings</a>
+         <a class="w3-bar-item w3-button" href='../JavaScript/c.html'>JavaScript - Math</a>
+         <a class="w3-bar-item w3-button" href='../JavaScript/d.html'>JavaScript - Arrays</a>
+         <a class="w3-bar-item w3-button" href='../JavaScript/e.html'>JavaScript - Error Handling</a>
+         
+        </div> 
+       <div class="w3-col l3 m6">
+          <h3 class="w3-margin-top">Python</h3>
+          <a class="w3-bar-item w3-button" href="../Python/a.html">Python - Variables</a>
+          <a class="w3-bar-item w3-button" href="../Python/b.html">Python - Strings</a>
+          <a class="w3-bar-item w3-button" href="../Python/c.html">Python - Lists</a>
+          <a class="w3-bar-item w3-button" href="../Python/d.html">Python - Tuples</a>
+          <a class="w3-bar-item w3-button" href="../Python/e.html">Python - Dictionary</a>
+          <a class="w3-bar-item w3-button" href="../Python/f.html">Python - Exceptions</a>
+          
+         
+        </div>
+        <div class="w3-col l3 m6 w3-hide-medium">
+           
+         <h3 class="w3-margin-top">Artificial Intelligence</h3>
+          <a class="w3-bar-item w3-button" href="../AI/a.html"> AI Overview</a>
+          <a class="w3-bar-item w3-button" href="../AI/b.html"> NLP</a>
+          <a class="w3-bar-item w3-button" href="../AI/c.html"> Robotics</a> 
+          <a class="w3-bar-item w3-button" href="../AI/d.html"> Neural Networks</a> 
+          <a class="w3-bar-item w3-button" href="../AI/e.html"> Expert Systems</a> 
+           
+        </div>
+       </div>
+       <br class="hidesm">
+      </nav>
+      
+      <nav id="nav_references" class="w3-light-grey w3-card-2 w3-hide-small navex">
+       <span onclick="w3_close_nav('references')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+       <div class="w3-row-padding w3-bar-block">
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Data Structure & Algorithms</h3>
+          <a class="w3-bar-item w3-button" href="../DSA/a.html">Greedy Algorithms</a>
+          <a class="w3-bar-item w3-button" href="../DSA/b.html">Divide and Conquer</a>
+          <a class="w3-bar-item w3-button" href="../DSA/c.html">Dynamic Programming</a>
+          <a class="w3-bar-item w3-button" href='../DSA/d.html'>Linked List</a>
+          <a class="w3-bar-item w3-button" href="../DSA/e.html">Stack</a>
+          <a class="w3-bar-item w3-button" href="../DSA/f.html">Queue</a>
+         
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Database</h3>
+          <a class="w3-bar-item w3-button" href="../Database/a.html"> Architecture</a>
+          <a class="w3-bar-item w3-button" href='../Database/b.html'> ER Model</a>
+          <a class="w3-bar-item w3-button" href="../Database/c.html"> Indexing</a>
+          <a class="w3-bar-item w3-button" href='../Database/d.html'> Hashing</a>
+          <a class="w3-bar-item w3-button" href='../Database/e.html'> Deadlock</a>
+        
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Computer Networks</h3>
+          <a class="w3-bar-item w3-button" href='../Network/a.html'> Network Types</a>
+          <a class="w3-bar-item w3-button" href='../Network/b.html'> Topologies</a>
+          <a class="w3-bar-item w3-button" href='../Network/c.html'> Physical Layer</a>
+          <a class="w3-bar-item w3-button" href='../Network/d.html'> Data Link Layer</a>
+          <a class="w3-bar-item w3-button" href='../Network/e.html'> Network Layer</a>
+      
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Operating System</h3>
+          <a class="w3-bar-item w3-button" href='../OS/a.html'> OS Types</a>
+          <a class="w3-bar-item w3-button" href='../OS/b.html'> Processes</a>
+          <a class="w3-bar-item w3-button" href='../OS/c.html'> Memory Management</a>
+          <a class="w3-bar-item w3-button" href='../OS/d.html'> Virtual Memory</a>
+          <a class="w3-bar-item w3-button" href='../OS/e.html'> File System</a>
+        
+        </div>
+       </div>
+       <br class="hidesm">
+      </nav>
+      
+      <nav id="nav_examples" class="w3-light-grey w3-card-2 w3-hide-small navex">
+       <span onclick="w3_close_nav('examples')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+       <div class="w3-row-padding w3-bar-block">
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">HTML and CSS</h3>
+         <a class="w3-bar-item w3-button" href='#'>HTML Quiz</a>
+         <a class="w3-bar-item w3-button" href='#'>CSS Quiz</a>
+         
+        </div>
+        <div class="w3-col l3 m6">
+        
+         <h3 class="w3-margin-top">Programming</h3>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Python Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">JavaScript Quiz</a>
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Core Subjects</h3>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Data Structure Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Algorithms Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Database Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Operating System Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Computer Network Quiz</a>
+       
+        
+        </div>
+        <div class="w3-col l3 m6 w3-hide-medium">
+         <h3 class="w3-margin-top">Advanced Technology</h3>
+         <a class="w3-bar-item w3-button" href="#" target="_top">AI Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">NLP Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Robotics Quiz</a>
+        </div>
+      </div>
+       <br class="hidesm">
+      </nav>
+      
+      <nav id="nav_exercises" class="w3-light-grey w3-card-2 w3-hide-small w3-hide-medium navex">
+       <span onclick="w3_close_nav('exercises')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+       <div class="w3-row-padding w3-bar-block">
+        <div class="w3-col l4 m12">
+         <h3 class="w3-margin-top">Web Development</h3>
+         <a class="w3-bar-item w3-button" href="#">HTML Course</a>
+         <a class="w3-bar-item w3-button" href="#">CSS Course</a>
+         <a class="w3-bar-item w3-button" href="#">JavaScript Course</a>
+         <a class="w3-bar-item w3-button" href="#">SQL Course</a>
+         <a class="w3-bar-item w3-button" href="#">Python Course</a>
+        </div>
+        <div class="w3-col l4 m12">
+         <h3 class="w3-margin-top">Mobile Development</h3>
+         <a class="w3-bar-item w3-button" href="#">React Native Course</a>
+         <a class="w3-bar-item w3-button" href="#">Flutter Course</a>
+        </div>
+        <div class="w3-col l4 m12">
+         <h3 class="w3-margin-top">Game Development</h3>
+         <a class="w3-bar-item w3-button" href="#">C# Course</a>
+         <a class="w3-bar-item w3-button" href="#">C++ Course</a>
+         <a class="w3-bar-item w3-button" href="#">Unity 3D Course</a>
+        
+        </div>
+       </div>
+       <br class="hidesm">
+      </nav>
+
+
+
+</header>
+
+
+<!-- MAIN -->
+
+<main class="container">
+    <h1 class="jumbotron">Computer Network - Network Types</h1>
+    <br>
+    <hr>
+
+    <p>Generally, networks are distinguished based on their geographical span.  A network can be as small as distance between your mobile phone and its Bluetooth headphone and as large as the internet itself, covering the whole geographical world,</p>
+    <br>
+    <h2>Personal Area Network</h2>
+    <br>
+    <p>A Personal Area Network (PAN) is smallest network which is very personal to a user.  This may include Bluetooth enabled devices or infra-red enabled devices.  PAN has connectivity range up to 10 meters.  PAN may include wireless computer keyboard and mouse, Bluetooth enabled headphones, wireless printers and TV remotes.</p>
+    <!-- <img src="/data_communication_computer_network/images/Bluetooth.jpg" alt="Personal Area Network"/> -->
+    <p>For example, Piconet is Bluetooth-enabled Personal Area Network which may contain up to 8 devices connected together in a master-slave fashion.</p>
+    <br>
+    <h2>Local Area Network</h2>
+    <br>
+    <p>A computer network spanned inside a building and operated under single administrative system is generally termed as Local Area Network (LAN). Usually,LAN covers an organization’ offices, schools, colleges or universities. Number of systems  connected in LAN may vary from as least as two to as much as 16 million.</p>
+    <p>LAN provides a useful way of sharing the resources between end users.The resources such as printers, file servers, scanners, and internet are easily sharable among computers.</p>
+    <!-- <img src="/data_communication_computer_network/images/LAN.jpg" alt="Local Area Network"/> -->
+    <p>LANs are composed of inexpensive networking and routing equipment.  It may contains local servers serving file storage and other locally shared applications.  It mostly operates on private IP addresses and does not involve heavy routing.  LAN works under its own local domain and controlled centrally.</p>
+    <p>LAN uses either Ethernet or Token-ring technology.  Ethernet is most widely employed LAN technology and uses Star topology, while Token-ring is rarely seen.</p>
+    <p>LAN can be wired,wireless, or in both forms at once.</p>
+    <br>
+    <h2>Metropolitan Area Network</h2>
+    <br>
+    <p>The Metropolitan Area Network (MAN) generally expands throughout a city such as cable TV network.  It can be in the form of Ethernet,Token-ring, ATM, or Fiber Distributed Data Interface (FDDI).</p>
+    <p>Metro Ethernet is a service which is provided by ISPs.  This service enables its users to expand their Local Area Networks.  For example, MAN can help an organization to connect all of its offices in a city. </p>
+    <!-- <img src="/data_communication_computer_network/images/MAN.jpg" alt="Metropolitan Area Network"/> -->
+    <p>Backbone of MAN is high-capacity and high-speed fiber optics.  MAN works in between Local Area Network and Wide Area Network.  MAN provides uplink for LANs to WANs or internet.</p>
+    <br>
+    <h2>Wide Area Network </h2>
+    <br>
+    <p>As the name suggests,the Wide Area Network (WAN) covers a wide area which may span across provinces and even a whole country.  Generally, telecommunication networks are Wide Area Network.  These networks provide connectivity to MANs and LANs. Since they are equipped with very high speed backbone, WANs use very expensive network equipment.</p>
+    <!-- <img src="/data_communication_computer_network/images/WAN.jpg" alt="Wide Area Network"/> -->
+    <p>WAN may use advanced technologies such as Asynchronous Transfer Mode (ATM), Frame Relay, and Synchronous Optical Network (SONET).  WAN may be managed by multiple administration.</p>
+    <br>
+    <h2>Internetwork</h2>
+    <br>
+    <p>A network of networks is called an internetwork, or simply the internet.  It is the largest network in existence on this planet.The internet hugely connects all WANs and it can have connection to LANs and Home networks.  Internet uses TCP/IP protocol suite and uses IP as its addressing protocol.  Present day, Internet is widely implemented using IPv4.  Because of shortage of address spaces, it is gradually migrating from IPv4 to IPv6.</p>
+    <p>Internet enables its users to share and access enormous amount of information worldwide.  It uses WWW, FTP, email services, audio and video streaming etc.  At huge level, internet works on Client-Server model.</p>
+    <p>Internet uses very high speed backbone of fiber optics.  To inter-connect various continents, fibers are laid under sea known to us as submarine communication cable.</p>
+    <p>Internet is widely deployed on World Wide Web services using HTML linked pages and is accessible by client software known as Web Browsers.  When a user requests a page using some web browser located on some Web Server anywhere in the world, the Web Server responds with the proper HTML page.  The communication delay is very low.</p>
+    <p>Internet is serving many proposes and is involved in many aspects of life.  Some of them are:</p>
+    <ul class="list">
+    <li>Web sites</li>
+    <li>E-mail</li>
+    <li>Instant Messaging</li>
+    <li>Blogging</li>
+    <li>Social Media</li>
+    <li>Marketing</li>
+    <li>Networking</li>
+    <li>Resource Sharing</li>
+    <li>Audio and Video Streaming</li>
+    </ul>
+
+
+ 
+</main>
+
+<footer style="background-color: #2090DB; color: white;text-align: center;" class=" py-6">
+  <div class="row">
+    <div class="col-12 col-md">
+      <small class="d-block mb-3">&copy; 2017–2021 Licensed Product</small>
+    </div>
+  </div>
+</footer>
+
+
+<section>
+
+<!-- ===============================================================================================-->
+    <script src="../../vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+    <script src="../../vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="../../vendor/bootstrap/js/popper.js"></script>
+	<script src="../../vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="../../vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="../../vendor/daterangepicker/moment.min.js"></script>
+	<script src="../../vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="../../vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+    <script src="../../js/main.js"></script>
+  
+    <script src="../../js/custom.js"></script>
+
+    <script src="../../js/adconsent.js"></script>
+    <script src="../../js/my-learning.js"></script>
+    <script src="../../js/snhb-loader.min.js"></script>
+    <script src="../../js/w3codecolor.js"></script>
+
+</section>
+
+</body>
+</html>

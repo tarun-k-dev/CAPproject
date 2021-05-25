@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>ELearning Platform</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/custom.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<script src="js/font.js"></script>
+<!-- end cmp -->
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<!-- <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css"> -->
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+
+<body style="position:relative;min-height:100%;">
+
+<div class='w3-container top' style="padding-top:20px;">
+  <a class='w3schools-logo notranslate' style="position:absolute;" href='./index.html'>Elearning<span class='dotcom'>.org</span></a>
+
+  <!-- <div id="loginactioncontainer" class='w3-right' style='width:80px;height:50px;'>
+    <div id="mypagediv"></div> 
+      <a id="w3loginbtn" style="border: medium none; display: inline; cursor: pointer; background-color: #2090db;" class="login w3-right w3-hover-greener" href="./login.html" target="_self">LOG IN</a>
+  </div> -->
+
+  <div id="theworldsgreatest" class='w3-right w3-hide-medium w3-hide-small w3-wide toptext' style="line-height: 50px;margin-right:20px;font-family:'Segoe UI',Arial,sans-serif">
+    THE WORLD'S LARGEST ONLINE LEARNING PLATFORM
+  </div>
+
+</div>
+
+
+<div class="w3-bar w3-theme w3-card-2 w3-wide notranslate">
+ <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 hidesm" href="javascript:void(0)" onclick="w3_open()"><i class='fa'>&#xf0c9;</i></a>
+ <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_open_nav('tutorials')" id="navbtn_tutorials">WEB TECHNOLOGIES <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a>
+ <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_open_nav('references')" id="navbtn_references">CORE SUBJECTS <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a>
+ <!-- <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_open_nav('examples')" id="navbtn_examples">QUIZ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a> -->
+ <!-- <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16 w3-hide-medium w3-hide-small" href="javascript:void(0)" onclick="w3_open_nav('exercises')" id="navbtn_exercises">ONLINE COURSES <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a> -->
+  <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-left topnav-some w3-hide"  href="./quiz.html" title='quiz'>QUIZ</a>
+  <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-left topnav-some w3-hide"  href="localhost:5000" title='oc'>ONLINE COURSES</a>
+
+ <div class="w3-right">
+  
+  <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-right topnav-some w3-hide"  href="./about.html" title='About'>About</a>
+  
+ </div>
+</div>
+
+<nav style="background-color: cyan;" class="w3-sidebar w3-collapse w3-white w3-card-2" id="mySidenav">
+<div class="w3-bar-block">
+ <div class="w3-container">
+  <h4 class="w3-margin-top">HTML5</h4>
+ </div>
+ <a class="w3-bar-item w3-button" href="./data/HTML/a.html">Learn Attributes</a>
+ <a class="w3-bar-item w3-button" href="./data/HTML/b.html">Learn Frames</a>
+ <a class="w3-bar-item w3-button" href="./data/HTML/c.html">Learn Forms</a>
+ <a class="w3-bar-item w3-button" href="./data/HTML/d.html">Learn Embed Media</a>
+ <a class="w3-bar-item w3-button" href="./data/HTML/e.html">Learn Layouts</a>
+ <div class="w3-container">
+  <h4 class="w3-margin-top">CSS3</h4>
+ </div>
+ <a class="w3-bar-item w3-button" href="./data/CSS/a.html">Learn Visibility</a>
+ <a class="w3-bar-item w3-button" href="./data/CSS/b.html">Learn Positioning</a>
+ <a class="w3-bar-item w3-button" href="./data/CSS/c.html">Learn Padding</a>
+ <a class="w3-bar-item w3-button" href="./data/CSS/d.html">Learn Layers</a>
+ <a class="w3-bar-item w3-button" href="./data/CSS/e.html">Learn Animation</a>
+ <div class="w3-container">
+ <h4 class="w3-margin-top">JavaScript</h4>
+ </div>
+ <a class="w3-bar-item w3-button" href="./data/JavaScript/a.html">Learn Objects</a>
+ <a class="w3-bar-item w3-button" href="./data/JavaScript/b.html">Learn Strings</a>
+ <a class="w3-bar-item w3-button" href='./data/JavaScript/c.html'>Learn Math</a>
+ <a class="w3-bar-item w3-button" href='./data/JavaScript/d.html'>Learn Arrays</a>
+ <a class="w3-bar-item w3-button" href='./data/JavaScript/e.html'>Learn Error Handling</a>
+ <div class="w3-container">
+ <h4 class="w3-margin-top">Python</h4>
+ </div>
+ <a class="w3-bar-item w3-button" href="./data/Python/a.html">Learn Variables</a>
+ <a class="w3-bar-item w3-button" href="./data/Python/b.html">Learn Strings</a>
+ <a class="w3-bar-item w3-button" href="./data/Python/c.html">Learn Lists</a>
+ <a class="w3-bar-item w3-button" href="./data/Python/d.html">Learn Tuples</a>
+ <a class="w3-bar-item w3-button" href="./data/Python/e.html">Learn Dictionary</a>
+ <a class="w3-bar-item w3-button" href="./data/Python/f.html">Learn Exceptions</a>
+
+ <div class="w3-container">
+ <h4 class="w3-margin-top">Artificial Intelligence</h4>
+ </div>
+ <a class="w3-bar-item w3-button" href="./data/AI/a.html">Learn AI Overview</a>
+ <a class="w3-bar-item w3-button" href="./data/AI/b.html">Learn NLP</a>
+ <a class="w3-bar-item w3-button" href="./data/AI/c.html">Learn Robotics</a> 
+ <a class="w3-bar-item w3-button" href="./data/AI/d.html">Learn Neural Networks</a> 
+ <a class="w3-bar-item w3-button" href="./data/AI/e.html">Learn Expert Systems</a> 
+ <div class="w3-container">
+ <h4 class="w3-margin-top">Data Structure & Algorithms</h4>
+ </div>
+ <a class="w3-bar-item w3-button" href="./data/DSA/a.html">Greedy Algorithms</a>
+ <a class="w3-bar-item w3-button" href="./data/DSA/b.html">Divide and Conquer</a>
+ <a class="w3-bar-item w3-button" href="./data/DSA/c.html">Dynamic Programming</a>
+ <a class="w3-bar-item w3-button" href='./data/DSA/d.html'>Linked List</a>
+ <a class="w3-bar-item w3-button" href="./data/DSA/e.html">Stack</a>
+ <a class="w3-bar-item w3-button" href="./data/DSA/f.html">Queue</a>
+<div class="w3-container">
+ <h4 class="w3-margin-top">Database</h4>
+ </div>
+ <a class="w3-bar-item w3-button" href="./data/Database/a.html">Learn Architecture</a>
+ <a class="w3-bar-item w3-button" href='./data/Database/b.html'>Learn ER Model</a>
+ <a class="w3-bar-item w3-button" href="./data/Database/c.html">Learn Indexing</a>
+ <a class="w3-bar-item w3-button" href='./data/Database/d.html'>Learn Hashing</a>
+ <a class="w3-bar-item w3-button" href='./data/Database/e.html'>Learn Deadlock</a>
+ <div class="w3-container">
+  <h4 class="w3-margin-top">Computer Network</h4>
+ </div>
+ <a class="w3-bar-item w3-button" href='./data/Network/a.html'>Learn Network Types</a>
+ <a class="w3-bar-item w3-button" href='./data/Network/b.html'>Learn Topologies</a>
+ <a class="w3-bar-item w3-button" href='./data/Network/c.html'>Learn Physical Layer</a>
+ <a class="w3-bar-item w3-button" href='./data/Network/d.html'>Learn Data Link Layer</a>
+ <a class="w3-bar-item w3-button" href='./data/Network/e.html'>Learn Network Layer</a>
+ 
+ <div class="w3-container">
+  <h4 class="w3-margin-top">Operating System</h4>
+ </div>
+ <a class="w3-bar-item w3-button" href='./data/OS/a.html'>Learn OS Types</a>
+ <a class="w3-bar-item w3-button" href='./data/OS/b.html'>Learn Processes</a>
+ <a class="w3-bar-item w3-button" href='./data/OS/c.html'>Memory Management</a>
+ <a class="w3-bar-item w3-button" href='./data/OS/d.html'>Learn Virtual Memory</a>
+ <a class="w3-bar-item w3-button" href='./data/OS/e.html'>Learn File System</a>
+ 
+</div>
+</nav>
+
+ <div id='myAccordion' class="w3-card-2 w3-light-grey w3-center w3-hide-large" style="display:none;cursor:default"> 
+ <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-xlarge w3-right">&times;</a><br>
+ <div class="w3-container w3-padding-32">
+  <a class="w3-button w3-block w3-large w3-wide" onclick="open_xs_menu('tutorials');" href="javascript:void(0);">WEB TECHNOLOGIES <i class='fa fa-caret-down'></i></a>
+  <div id="sectionxs_tutorials" class="w3-white w3-show"></div>
+  <a class="w3-button w3-block w3-large w3-wide" onclick="open_xs_menu('references')" href="javascript:void(0);">CORE SUBJECTS <i class='fa fa-caret-down'></i></a>
+  <div id="sectionxs_references" class="w3-white w3-show"></div>
+  <a class="w3-button w3-block w3-large w3-wide" href="./quiz.html">QUIZ</i></a>
+  <div id="sectionxs_examples" class="w3-white w3-show"></div>
+  <a class="w3-button w3-block w3-large w3-wide" href="#">ONLINE COURSES</i></a>
+  <div id="sectionxs_exercises" class="w3-white w3-show"></div>
+        
+  
+ </div>
+</div> 
+
+<nav id="nav_tutorials" class="w3-light-grey w3-card-2 w3-hide-small navex">
+ <span onclick="w3_close_nav('tutorials')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+ <div class="w3-row-padding w3-bar-block">
+  <div class="w3-col l3 m6">
+   <h3 class="w3-margin-top">HTML5 and CSS3</h3>
+    <a class="w3-bar-item w3-button" href="./data/HTML/a.html">HTML - Attributes</a>
+    <a class="w3-bar-item w3-button" href="./data/HTML/b.html">HTML - Frames</a>
+    <a class="w3-bar-item w3-button" href="./data/HTML/c.html">HTML - Forms</a>
+    <a class="w3-bar-item w3-button" href="./data/HTML/d.html">HTML - Embed Media</a>
+    <a class="w3-bar-item w3-button" href="./data/HTML/e.html">HTML - Layouts</a>
+    <a class="w3-bar-item w3-button" href="./data/CSS/a.html">CSS - Visibility</a>
+    <a class="w3-bar-item w3-button" href="./data/CSS/b.html">CSS - Positioning</a>
+    <a class="w3-bar-item w3-button" href="./data/CSS/c.html">CSS - Padding</a>
+    <a class="w3-bar-item w3-button" href="./data/CSS/d.html">CSS - Layers</a>
+    <a class="w3-bar-item w3-button" href="./data/CSS/e.html">CSS - Animation</a> 
+
+  </div>
+  <div class="w3-col l3 m6">
+   <h3 class="w3-margin-top">JavaScript</h3>
+   <a class="w3-bar-item w3-button" href="./data/JavaScript/a.html">JavaScript - Objects</a>
+   <a class="w3-bar-item w3-button" href="./data/JavaScript/b.html">JavaScript - Strings</a>
+   <a class="w3-bar-item w3-button" href='./data/JavaScript/c.html'>JavaScript - Math</a>
+   <a class="w3-bar-item w3-button" href='./data/JavaScript/d.html'>JavaScript - Arrays</a>
+   <a class="w3-bar-item w3-button" href='./data/JavaScript/e.html'>JavaScript - Error Handling</a>
+   
+  </div> 
+ <div class="w3-col l3 m6">
+    <h3 class="w3-margin-top">Python</h3>
+    <a class="w3-bar-item w3-button" href="./data/Python/a.html">Python - Variables</a>
+    <a class="w3-bar-item w3-button" href="./data/Python/b.html">Python - Strings</a>
+    <a class="w3-bar-item w3-button" href="./data/Python/c.html">Python - Lists</a>
+    <a class="w3-bar-item w3-button" href="./data/Python/d.html">Python - Tuples</a>
+    <a class="w3-bar-item w3-button" href="./data/Python/e.html">Python - Dictionary</a>
+    <a class="w3-bar-item w3-button" href="./data/Python/f.html">Python - Exceptions</a>
+    
+   
+  </div>
+  <div class="w3-col l3 m6 w3-hide-medium">
+     
+   <h3 class="w3-margin-top">Artificial Intelligence</h3>
+    <a class="w3-bar-item w3-button" href="./data/AI/a.html"> AI Overview</a>
+    <a class="w3-bar-item w3-button" href="./data/AI/b.html"> NLP</a>
+    <a class="w3-bar-item w3-button" href="./data/AI/c.html"> Robotics</a> 
+    <a class="w3-bar-item w3-button" href="./data/AI/d.html"> Neural Networks</a> 
+    <a class="w3-bar-item w3-button" href="./data/AI/e.html"> Expert Systems</a> 
+     
+  </div>
+ </div>
+ <br class="hidesm">
+</nav>
+
+<nav id="nav_references" class="w3-light-grey w3-card-2 w3-hide-small navex">
+ <span onclick="w3_close_nav('references')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+ <div class="w3-row-padding w3-bar-block">
+  <div class="w3-col l3 m6">
+   <h3 class="w3-margin-top">Data Structure & Algorithms</h3>
+    <a class="w3-bar-item w3-button" href="./data/DSA/a.html">Greedy Algorithms</a>
+    <a class="w3-bar-item w3-button" href="./data/DSA/b.html">Divide and Conquer</a>
+    <a class="w3-bar-item w3-button" href="./data/DSA/c.html">Dynamic Programming</a>
+    <a class="w3-bar-item w3-button" href='./data/DSA/d.html'>Linked List</a>
+    <a class="w3-bar-item w3-button" href="./data/DSA/e.html">Stack</a>
+    <a class="w3-bar-item w3-button" href="./data/DSA/f.html">Queue</a>
+   
+  </div>
+  <div class="w3-col l3 m6">
+   <h3 class="w3-margin-top">Database</h3>
+    <a class="w3-bar-item w3-button" href="./data/Database/a.html"> Architecture</a>
+    <a class="w3-bar-item w3-button" href='./data/Database/b.html'> ER Model</a>
+    <a class="w3-bar-item w3-button" href="./data/Database/c.html"> Indexing</a>
+    <a class="w3-bar-item w3-button" href='./data/Database/d.html'> Hashing</a>
+    <a class="w3-bar-item w3-button" href='./data/Database/e.html'> Deadlock</a>
+  
+  </div>
+  <div class="w3-col l3 m6">
+   <h3 class="w3-margin-top">Computer Networks</h3>
+    <a class="w3-bar-item w3-button" href='./data/Network/a.html'> Network Types</a>
+    <a class="w3-bar-item w3-button" href='./data/Network/b.html'> Topologies</a>
+    <a class="w3-bar-item w3-button" href='./data/Network/c.html'> Physical Layer</a>
+    <a class="w3-bar-item w3-button" href='./data/Network/d.html'> Data Link Layer</a>
+    <a class="w3-bar-item w3-button" href='./data/Network/e.html'> Network Layer</a>
+
+  </div>
+  <div class="w3-col l3 m6">
+   <h3 class="w3-margin-top">Operating System</h3>
+    <a class="w3-bar-item w3-button" href='./data/OS/a.html'> OS Types</a>
+    <a class="w3-bar-item w3-button" href='./data/OS/b.html'> Processes</a>
+    <a class="w3-bar-item w3-button" href='./data/OS/c.html'> Memory Management</a>
+    <a class="w3-bar-item w3-button" href='./data/OS/d.html'> Virtual Memory</a>
+    <a class="w3-bar-item w3-button" href='./data/OS/e.html'> File System</a>
+  
+  </div>
+ </div>
+ <br class="hidesm">
+</nav>
+
+<nav id="nav_examples" class="w3-light-grey w3-card-2 w3-hide-small navex">
+ <span onclick="w3_close_nav('examples')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+ <div class="w3-row-padding w3-bar-block">
+  <div class="w3-col l3 m6">
+   <h3 class="w3-margin-top">HTML and CSS</h3>
+   <a class="w3-bar-item w3-button" href='#'>HTML Quiz</a>
+   <a class="w3-bar-item w3-button" href='#'>CSS Quiz</a>
+   
+  </div>
+  <div class="w3-col l3 m6">
+  
+   <h3 class="w3-margin-top">Programming</h3>
+   <a class="w3-bar-item w3-button" href="#" target="_top">Python Quiz</a>
+   <a class="w3-bar-item w3-button" href="#" target="_top">JavaScript Quiz</a>
+  </div>
+  <div class="w3-col l3 m6">
+   <h3 class="w3-margin-top">Core Subjects</h3>
+   <a class="w3-bar-item w3-button" href="#" target="_top">Data Structure Quiz</a>
+   <a class="w3-bar-item w3-button" href="#" target="_top">Algorithms Quiz</a>
+   <a class="w3-bar-item w3-button" href="#" target="_top">Database Quiz</a>
+   <a class="w3-bar-item w3-button" href="#" target="_top">Operating System Quiz</a>
+   <a class="w3-bar-item w3-button" href="#" target="_top">Computer Network Quiz</a>
+ 
+  
+  </div>
+  <div class="w3-col l3 m6 w3-hide-medium">
+   <h3 class="w3-margin-top">Advanced Technology</h3>
+   <a class="w3-bar-item w3-button" href="#" target="_top">AI Quiz</a>
+   <a class="w3-bar-item w3-button" href="#" target="_top">NLP Quiz</a>
+   <a class="w3-bar-item w3-button" href="#" target="_top">Robotics Quiz</a>
+  </div>
+</div>
+ <br class="hidesm">
+</nav>
+
+<nav id="nav_exercises" class="w3-light-grey w3-card-2 w3-hide-small w3-hide-medium navex">
+ <span onclick="w3_close_nav('exercises')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+ <div class="w3-row-padding w3-bar-block">
+  <div class="w3-col l4 m12">
+   <h3 class="w3-margin-top">Web Development</h3>
+   <a class="w3-bar-item w3-button" href="#">HTML Course</a>
+   <a class="w3-bar-item w3-button" href="#">CSS Course</a>
+   <a class="w3-bar-item w3-button" href="#">JavaScript Course</a>
+   <a class="w3-bar-item w3-button" href="#">SQL Course</a>
+   <a class="w3-bar-item w3-button" href="#">Python Course</a>
+  </div>
+  <div class="w3-col l4 m12">
+   <h3 class="w3-margin-top">Mobile Development</h3>
+   <a class="w3-bar-item w3-button" href="#" target="_top">React Native Course</a>
+   <a class="w3-bar-item w3-button" href="#" target="_top">Flutter Course</a>
+  </div>
+  <div class="w3-col l4 m12">
+   <h3 class="w3-margin-top">Game Development</h3>
+   <a class="w3-bar-item w3-button" href="#" target="_blank">C# Course</a>
+   <a class="w3-bar-item w3-button" href="#" target="_blank">C++ Course</a>
+   <a class="w3-bar-item w3-button" href="#" target="_blank">Unity 3D Course</a>
+  
+  </div>
+ </div>
+ <br class="hidesm">
+</nav>
+
+
+<!-- MAIN -->
+<div class="w3-main" id="main">
+
+<div class="w3-row w3-margin-bottom">
+ <div class="w3-col l6 w3-center" style="padding:3%">
+  <h1>HTML</h1>
+  <p class="w3-xlarge w3-text-dark-grey">The language for building web pages</p>
+  <a href="./data/HTML/a.html" class="w3-button w3-dark-grey">LEARN HTML</a>
+ </div>
+ <div class="w3-col l6" style="padding:3%">
+  <div class="w3-hide-small w3-light-grey w3-card-2" style="padding:16px;">
+   <h3>HTML Example:</h3>
+   <div class="w3-code htmlHigh notranslate w3-border-green">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&lt;title&gt;HTML Tutorial&lt;/title&gt;<br>
+&lt;body&gt;<br><br>
+&lt;h1&gt;This is a heading&lt;/h1&gt;<br>
+&lt;p&gt;This is a paragraph.&lt;/p&gt;<br><br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+   </div>
+   
+  </div>
+ </div>
+</div>
+
+<div class="w3-row w3-light-grey w3-hide-medium w3-hide-small">
+ <div class="w3-col l6" style="padding-top:40px;padding:3%;">
+  <h3>CSS Example:</h3>
+  <div class="w3-code cssHigh notranslate w3-card-2 w3-border-green">
+body {<br>
+&nbsp; background-color: lightblue;<br>}<br><br>
+h1 {<br>
+&nbsp; color: white;<br>
+&nbsp; text-align: center;<br>}<br><br>
+p {<br>
+&nbsp; font-family: verdana;<br>
+&nbsp; font-size: 20px;<br>}
+  </div>
+  
+ </div>
+ <div class="w3-col l6 w3-center" style="padding:3%">
+  <h1>CSS</h1>
+  <p class="w3-xlarge">The language for styling web pages</p>
+  <a href="./data/CSS/a.html" class="w3-button w3-dark-grey">LEARN CSS</a>
+ 
+ </div>
+</div>
+
+<div class="w3-row w3-light-grey w3-hide-large" style="padding-bottom:30px">
+ <div class="w3-col l6 w3-center" style="padding:3%">
+  <h1>CSS</h1>
+  <p class="w3-xlarge">The language for styling web pages</p>
+  <a href="./data/CSS/a.html" class="w3-button w3-dark-grey">LEARN CSS</a>
+  
+ </div>
+ <div class="w3-col l6 w3-hide-small" style="padding-top:40px;padding:3%;">
+  <h3>CSS Example:</h3>
+  <div class="w3-code cssHigh notranslate w3-card-2 w3-border-green">
+body {<br>
+&nbsp; background-color: lightblue;<br>}<br><br>
+h1 {<br>
+&nbsp; color: white;<br>
+&nbsp; text-align: center;<br>}<br><br>
+p {<br>
+&nbsp; font-family: verdana;<br>
+&nbsp; font-size: 20px;<br>}
+  </div>
+  
+ </div>
+</div>
+
+<div class="w3-row">
+ <div class="w3-col l6 w3-center" style="padding:3%">
+  <h1 class="w3-jumbo">JavaScript</h1>
+  <p class="w3-xlarge w3-text-dark-grey">The language for programming web pages</p>
+  <a href="./data/JavaScript/a.html" class="w3-button w3-dark-grey">LEARN JAVASCRIPT</a>
+  
+ </div>
+ <div class="w3-col l6" style="padding:3%">
+  <div class="w3-hide-small w3-card-2 w3-light-grey" style="padding:16px;">
+   <h3>JavaScript Example:</h3>
+   <div class="w3-code notranslate w3-card-2 w3-border-green">
+   <div class="htmlHigh">
+&lt;button onclick=&quot;myFunction()&quot;&gt;Click Me!&lt;/button&gt;<br><br>
+&lt;script&gt;<br>
+function myFunction() {<br>
+&nbsp; var x = document.getElementById(&quot;demo&quot;);<br>
+&nbsp; x.style.fontSize = &quot;25px&quot;; <br>
+&nbsp; x.style.color = &quot;red&quot;; <br>}<br>
+&lt;/script&gt;
+    </div>
+   </div>
+   
+  </div>
+ </div>
+</div>
+
+<div class="w3-row w3-light-grey w3-hide-medium w3-hide-small">
+ <div class="w3-col l6" style="padding-top:40px;padding:3%;padding-bottom:45px">
+  <h3>SQL Example:</h3>
+  <div class="w3-code sqlHigh notranslate w3-card-2 w3-border-green" style="height:180px">
+SELECT * FROM Customers<br>
+WHERE Country='India';
+
+  </div>
+  
+ </div>
+ <div class="w3-col l6 w3-center" style="padding:3%">
+  <h1>SQL</h1>
+  <p class="w3-xlarge">A language for accessing databases</p>
+  <a href="#" class="w3-button w3-dark-grey">LEARN SQL</a>
+  
+ </div>
+</div>
+
+<div class="w3-row w3-light-grey w3-hide-large" style="padding-bottom:30px;margin-top:40px">
+ <div class="w3-col l6 w3-center" style="padding:3%">
+  <h1>SQL</h1>
+  <p class="w3-xlarge">A language for accessing databases</p>
+  <a href="#" class="w3-button w3-dark-grey">LEARN SQL</a>
+  
+ </div>
+ <div class="w3-col l6 w3-hide-small" style="padding-top:40px;padding:3%;">
+  <h3>SQL Example:</h3>
+  <div class="w3-code sqlHigh notranslate w3-card-2 w3-border-green" style="height:100px">
+SELECT * FROM Customers<br>
+WHERE Country='India';
+  </div>
+ 
+ </div>
+</div>
+
+
+<div class="w3-row w3-dark-grey w3-padding-32">
+ <div class="w3-col l6 w3-center" style="padding:2% 3%;">
+  <div class="w3-card-2 w3-white w3-padding" style="padding-bottom:24px!important">
+   <h2 class="w3-xxlarge">Python</h2>
+   <div style="height:70px;">
+     <h4 class="w3-text-dark-grey">A programming language</h4>
+   </div>
+   <a href="./data/Python/a.html" class="w3-button w3-dark-grey">LEARN PYTHON</a>
+  </div>
+ </div>
+ <div class="w3-col l6 w3-center" style="padding:2% 3%;">
+  <div class="w3-card-2 w3-white w3-padding" style="padding-bottom:24px!important">
+   <h2 class="w3-xxlarge">AI</h2>
+   <div style="height:70px;">
+      <h4 class="w3-text-dark-grey">Artificial Intelligence</h4>
+   </div>
+   <a href="./data/AI/a.html" class="w3-button w3-dark-grey">LEARN AI</a>
+  </div>
+
+ </div>
+ <div class="w3-col l6 w3-center" style="padding:2% 3%;">
+  <div class="w3-card-2 w3-white w3-padding" style="padding-bottom:24px!important">
+   <h2 class="w3-xxlarge">Database</h2>
+   <div style="height:70px;">
+     <h4 class="w3-text-dark-grey">Database Management System</h4>
+   </div>
+   <a href="./data/Database/a.html" class="w3-button w3-dark-grey">LEARN DBMS</a>
+  </div>
+ </div>
+ 
+ <div class="w3-col l6 w3-center" style="padding:2% 3%;">
+  <div class="w3-card-2 w3-white w3-padding" style="padding-bottom:24px!important">
+   <h2 class="w3-xxlarge">OS</h2>
+   <div style="height:70px;">
+     <h4 class="w3-text-dark-grey">Operating System</h4>
+   </div>
+   <a href="./data/OS/a.html" class="w3-button w3-dark-grey">LEARN OS</a>
+  </div>
+ </div>
+</div>
+
+<footer style="background-color: #2090DB; color: white;text-align: center;" class=" py-6">
+  <div class="row">
+    <div class="col-12 col-md">
+      <small class="d-block mb-3">&copy; 2017–2021 Licensed Product</small>
+    </div>
+  </div>
+</footer>
+
+<!-- END MAIN -->
+</div>
+
+
+<!-- ===============================================================================================-->
+<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+  <script src="js/main.js"></script>
+  
+  <script src="js/custom.js"></script>
+
+<script src="js/adconsent.js"></script>
+<script src="js/my-learning.js"></script>
+<script src="js/snhb-loader.min.js"></script>
+<script src="js/w3codecolor.js"></script>
+</body>
+</html>

@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+
+<head>
+<title>ELearning Platform</title>
+<link rel="icon" href="../../favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="../../css/styles.css">
+<link rel="stylesheet" href="../../css/custom.css">
+<link rel="stylesheet" href="../../css/font-awesome.min.css">
+<script src="../../js/font.js"></script>
+<!-- end cmp -->
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="../../images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="../../vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="../../vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../css/util.css">
+	<link rel="stylesheet" type="text/css" href="../../css/main.css">
+</head>
+
+
+<body style="position:relative;min-height:100%;">
+
+<header>
+
+    <div class='w3-container top' style="padding-top:20px;">
+        <a class='w3schools-logo notranslate' style="position:absolute;" href='../../index.html'>Elearning<span class='dotcom'>.org</span></a>
+      
+        <!-- <div id="loginactioncontainer" class='w3-right' style='width:80px;height:50px;'>
+          <div id="mypagediv"></div> 
+            <a id="w3loginbtn" style="border: medium none; display: inline; cursor: pointer; background-color: #2090db;" class="login w3-right w3-hover-greener" href="../../login.html" target="_self">LOG IN</a>
+        </div> -->
+      
+        <div id="theworldsgreatest" class='w3-right w3-hide-medium w3-hide-small w3-wide toptext' style="line-height: 50px;margin-right:20px;font-family:'Segoe UI',Arial,sans-serif">
+          THE WORLD'S LARGEST ONLINE LEARNING PLATFORM
+        </div>
+      
+      </div>
+      
+      
+      <div class="w3-bar w3-theme w3-card-2 w3-wide notranslate">
+       <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 hidesm" href="javascript:void(0)" onclick="w3_open()"><i class='fa'>&#xf0c9;</i></a>
+       <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_open_nav('tutorials')" id="navbtn_tutorials">WEB TECHNOLOGIES <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a>
+       <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_open_nav('references')" id="navbtn_references">CORE SUBJECTS <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a>
+       <!-- <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_open_nav('examples')" id="navbtn_examples">QUIZ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a> -->
+       <!-- <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16 w3-hide-medium w3-hide-small" href="javascript:void(0)" onclick="w3_open_nav('exercises')" id="navbtn_exercises">ONLINE COURSES <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a> -->
+       <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-left topnav-some w3-hide"  href="../../quiz.html" title='quiz'>QUIZ</a>
+       <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-left topnav-some w3-hide"  href="#" title='oc'>ONLINE COURSES</a>
+ 
+       <div class="w3-right">
+        
+        <!-- <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-right topnav-some w3-hide"  href="../../signup.html" title='signup'>Sign Up</a> -->
+        <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-right topnav-some w3-hide"  href="../../about.html" title='About'>About</a>
+        
+       </div>
+      </div>
+      
+      
+       <div id='myAccordion' class="w3-card-2 w3-light-grey w3-center w3-hide-large" style="display:none;cursor:default"> 
+       <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-xlarge w3-right">&times;</a><br>
+       <div class="w3-container w3-padding-32">
+        <a class="w3-button w3-block w3-large w3-wide" onclick="open_xs_menu('tutorials');" href="javascript:void(0);">WEB TECHNOLOGIES <i class='fa fa-caret-down'></i></a>
+        <div id="sectionxs_tutorials" class="w3-white w3-show"></div>
+        <a class="w3-button w3-block w3-large w3-wide" onclick="open_xs_menu('references')" href="javascript:void(0);">CORE SUBJECTS <i class='fa fa-caret-down'></i></a>
+        <div id="sectionxs_references" class="w3-white w3-show"></div>
+        <a class="w3-button w3-block w3-large w3-wide" href="../../quiz.html">QUIZ</i></a>
+        <div id="sectionxs_examples" class="w3-white w3-show"></div>
+        <a class="w3-button w3-block w3-large w3-wide" href="#">ONLINE COURSES</i></a>
+        <div id="sectionxs_exercises" class="w3-white w3-show"></div>
+        
+       </div>
+      </div> 
+      
+      <nav id="nav_tutorials" class="w3-light-grey w3-card-2 w3-hide-small navex">
+       <span onclick="w3_close_nav('tutorials')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+       <div class="w3-row-padding w3-bar-block">
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">HTML5 and CSS3</h3>
+          <a class="w3-bar-item w3-button" href="../HTML/a.html">HTML - Attributes</a>
+          <a class="w3-bar-item w3-button" href="../HTML/b.html">HTML - Frames</a>
+          <a class="w3-bar-item w3-button" href="../HTML/c.html">HTML - Forms</a>
+          <a class="w3-bar-item w3-button" href="../HTML/d.html">HTML - Embed Media</a>
+          <a class="w3-bar-item w3-button" href="../HTML/e.html">HTML - Layouts</a>
+          <a class="w3-bar-item w3-button" href="../CSS/a.html">CSS - Visibility</a>
+          <a class="w3-bar-item w3-button" href="../CSS/b.html">CSS - Positioning</a>
+          <a class="w3-bar-item w3-button" href="../CSS/c.html">CSS - Padding</a>
+          <a class="w3-bar-item w3-button" href="../CSS/d.html">CSS - Layers</a>
+          <a class="w3-bar-item w3-button" href="../CSS/e.html">CSS - Animation</a> 
+      
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">JavaScript</h3>
+         <a class="w3-bar-item w3-button" href="../JavaScript/a.html">JavaScript - Objects</a>
+         <a class="w3-bar-item w3-button" href="../JavaScript/b.html">JavaScript - Strings</a>
+         <a class="w3-bar-item w3-button" href='../JavaScript/c.html'>JavaScript - Math</a>
+         <a class="w3-bar-item w3-button" href='../JavaScript/d.html'>JavaScript - Arrays</a>
+         <a class="w3-bar-item w3-button" href='../JavaScript/e.html'>JavaScript - Error Handling</a>
+         
+        </div> 
+       <div class="w3-col l3 m6">
+          <h3 class="w3-margin-top">Python</h3>
+          <a class="w3-bar-item w3-button" href="../Python/a.html">Python - Variables</a>
+          <a class="w3-bar-item w3-button" href="../Python/b.html">Python - Strings</a>
+          <a class="w3-bar-item w3-button" href="../Python/c.html">Python - Lists</a>
+          <a class="w3-bar-item w3-button" href="../Python/d.html">Python - Tuples</a>
+          <a class="w3-bar-item w3-button" href="../Python/e.html">Python - Dictionary</a>
+          <a class="w3-bar-item w3-button" href="../Python/f.html">Python - Exceptions</a>
+          
+         
+        </div>
+        <div class="w3-col l3 m6 w3-hide-medium">
+           
+         <h3 class="w3-margin-top">Artificial Intelligence</h3>
+          <a class="w3-bar-item w3-button" href="../AI/a.html"> AI Overview</a>
+          <a class="w3-bar-item w3-button" href="../AI/b.html"> NLP</a>
+          <a class="w3-bar-item w3-button" href="../AI/c.html"> Robotics</a> 
+          <a class="w3-bar-item w3-button" href="../AI/d.html"> Neural Networks</a> 
+          <a class="w3-bar-item w3-button" href="../AI/e.html"> Expert Systems</a> 
+           
+        </div>
+       </div>
+       <br class="hidesm">
+      </nav>
+      
+      <nav id="nav_references" class="w3-light-grey w3-card-2 w3-hide-small navex">
+       <span onclick="w3_close_nav('references')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+       <div class="w3-row-padding w3-bar-block">
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Data Structure & Algorithms</h3>
+          <a class="w3-bar-item w3-button" href="../DSA/a.html">Greedy Algorithms</a>
+          <a class="w3-bar-item w3-button" href="../DSA/b.html">Divide and Conquer</a>
+          <a class="w3-bar-item w3-button" href="../DSA/c.html">Dynamic Programming</a>
+          <a class="w3-bar-item w3-button" href='../DSA/d.html'>Linked List</a>
+          <a class="w3-bar-item w3-button" href="../DSA/e.html">Stack</a>
+          <a class="w3-bar-item w3-button" href="../DSA/f.html">Queue</a>
+         
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Database</h3>
+          <a class="w3-bar-item w3-button" href="../Database/a.html"> Architecture</a>
+          <a class="w3-bar-item w3-button" href='../Database/b.html'> ER Model</a>
+          <a class="w3-bar-item w3-button" href="../Database/c.html"> Indexing</a>
+          <a class="w3-bar-item w3-button" href='../Database/d.html'> Hashing</a>
+          <a class="w3-bar-item w3-button" href='../Database/e.html'> Deadlock</a>
+        
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Computer Networks</h3>
+          <a class="w3-bar-item w3-button" href='../Network/a.html'> Network Types</a>
+          <a class="w3-bar-item w3-button" href='../Network/b.html'> Topologies</a>
+          <a class="w3-bar-item w3-button" href='../Network/c.html'> Physical Layer</a>
+          <a class="w3-bar-item w3-button" href='../Network/d.html'> Data Link Layer</a>
+          <a class="w3-bar-item w3-button" href='../Network/e.html'> Network Layer</a>
+      
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Operating System</h3>
+          <a class="w3-bar-item w3-button" href='../OS/a.html'> OS Types</a>
+          <a class="w3-bar-item w3-button" href='../OS/b.html'> Processes</a>
+          <a class="w3-bar-item w3-button" href='../OS/c.html'> Memory Management</a>
+          <a class="w3-bar-item w3-button" href='../OS/d.html'> Virtual Memory</a>
+          <a class="w3-bar-item w3-button" href='../OS/e.html'> File System</a>
+        
+        </div>
+       </div>
+       <br class="hidesm">
+      </nav>
+      
+      <nav id="nav_examples" class="w3-light-grey w3-card-2 w3-hide-small navex">
+       <span onclick="w3_close_nav('examples')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+       <div class="w3-row-padding w3-bar-block">
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">HTML and CSS</h3>
+         <a class="w3-bar-item w3-button" href='#'>HTML Quiz</a>
+         <a class="w3-bar-item w3-button" href='#'>CSS Quiz</a>
+         
+        </div>
+        <div class="w3-col l3 m6">
+        
+         <h3 class="w3-margin-top">Programming</h3>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Python Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">JavaScript Quiz</a>
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Core Subjects</h3>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Data Structure Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Algorithms Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Database Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Operating System Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Computer Network Quiz</a>
+       
+        
+        </div>
+        <div class="w3-col l3 m6 w3-hide-medium">
+         <h3 class="w3-margin-top">Advanced Technology</h3>
+         <a class="w3-bar-item w3-button" href="#" target="_top">AI Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">NLP Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Robotics Quiz</a>
+        </div>
+      </div>
+       <br class="hidesm">
+      </nav>
+      
+      <nav id="nav_exercises" class="w3-light-grey w3-card-2 w3-hide-small w3-hide-medium navex">
+       <span onclick="w3_close_nav('exercises')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+       <div class="w3-row-padding w3-bar-block">
+        <div class="w3-col l4 m12">
+         <h3 class="w3-margin-top">Web Development</h3>
+         <a class="w3-bar-item w3-button" href="#">HTML Course</a>
+         <a class="w3-bar-item w3-button" href="#">CSS Course</a>
+         <a class="w3-bar-item w3-button" href="#">JavaScript Course</a>
+         <a class="w3-bar-item w3-button" href="#">SQL Course</a>
+         <a class="w3-bar-item w3-button" href="#">Python Course</a>
+        </div>
+        <div class="w3-col l4 m12">
+         <h3 class="w3-margin-top">Mobile Development</h3>
+         <a class="w3-bar-item w3-button" href="#">React Native Course</a>
+         <a class="w3-bar-item w3-button" href="#">Flutter Course</a>
+        </div>
+        <div class="w3-col l4 m12">
+         <h3 class="w3-margin-top">Game Development</h3>
+         <a class="w3-bar-item w3-button" href="#">C# Course</a>
+         <a class="w3-bar-item w3-button" href="#">C++ Course</a>
+         <a class="w3-bar-item w3-button" href="#">Unity 3D Course</a>
+        
+        </div>
+       </div>
+       <br class="hidesm">
+      </nav>
+
+
+
+</header>
+
+
+<!-- MAIN -->
+
+<main class="container">
+    <h1 class="jumbotron">AI - Expert Systems</h1>
+    <br>
+    <hr>
+
+    <p>Expert systems (ES) are one of the prominent research domains of AI. It is introduced by the researchers at Stanford University, Computer Science Department.</p>
+    <br>
+    <h2>What are Expert Systems?</h2>
+    <br>
+    <p>The expert systems are the computer applications developed to solve complex problems in a particular domain, at the level of extra-ordinary human intelligence and expertise.</p>
+    <br>
+    <h3>Characteristics of Expert Systems</h3>
+    <br>
+    <ul class="list">
+    <li>High performance</li>
+    <li>Understandable</li>
+    <li>Reliable</li>
+    <li>Highly responsive</li>
+    </ul>
+    <br>
+    <h2>Capabilities of Expert Systems</h2>
+    <br>
+    <p>The expert systems are capable of &minus;</p>
+    <ul class="list">
+    <li>Advising</li>
+    <li>Instructing and assisting human in decision making</li>
+    <li>Demonstrating</li>
+    <li>Deriving a solution</li>
+    <li>Diagnosing</li>
+    <li>Explaining </li>
+    <li>Interpreting input</li>
+    <li>Predicting results</li>
+    <li>Justifying the conclusion</li>
+    <li>Suggesting alternative options to a problem</li>
+    </ul>
+    <p>They are incapable of &minus;</p>
+    <ul class="list">
+    <li>Substituting human decision makers</li>
+    <li>Possessing human capabilities</li>
+    <li>Producing accurate output for inadequate knowledge base</li>
+    <li>Refining their own knowledge</li>
+    </ul>
+    <br>
+    <h2>Components of Expert Systems</h2>
+    <br>
+    <p>The components of ES include &minus;</p>
+    <ul class="list">
+    <li>Knowledge Base</li> 
+    <li>Inference Engine</li> 
+    <li>User Interface</li> 
+    </ul>
+    <p>Let us see them one by one briefly &minus;</p>
+    <!-- <img src="/artificial_intelligence/images/expert_system.jpg" alt="Expert System" /> -->
+    <br>
+    <h2>Knowledge Base</h2>
+    <br>
+    <p>It contains domain-specific and high-quality knowledge.</p>
+    <p>Knowledge is required to exhibit intelligence. The success of any ES majorly depends upon the collection of highly accurate and precise knowledge.</p>
+    <br>
+    <h3>What is Knowledge?</h3>
+    <br>
+    <p>The data is collection of facts. The information is organized as data and facts about the task domain. <b>Data, information,</b> and <b>past experience</b> combined together are termed as knowledge. </p>
+    <br>
+    <h3>Components of Knowledge Base</h3>
+    <br>
+    <p>The knowledge base of an ES is a store of both, factual and heuristic knowledge.</p>
+    <ul class="list">
+    <li><p><b>Factual Knowledge</b> &minus; It is the information widely accepted by the Knowledge Engineers and scholars in the task domain.</p></li>
+    <li><p><b>Heuristic Knowledge</b> &minus; It is about practice, accurate judgement, one’s ability of evaluation, and guessing.</p></li>
+    </ul>
+    <br>
+    <h3>Knowledge representation</h3>
+    <br>
+    <p>It is the method used to organize and formalize the knowledge in the knowledge base. It is in the form of IF-THEN-ELSE rules.</p>
+    <br>
+    <h3>Knowledge Acquisition</h3>
+    <br>
+    <p>The success of any expert system majorly depends on the quality, completeness, and accuracy of the information stored in the knowledge base.</p> 
+    <p>The knowledge base is formed by readings from various experts, scholars, and the <b>Knowledge Engineers</b>. The knowledge engineer is a person with the qualities of empathy, quick learning, and case analyzing skills.</p>
+    <p>He acquires information from subject expert by recording, interviewing, and observing him at work, etc. He then categorizes and organizes the information in a meaningful way, in the form of IF-THEN-ELSE rules, to be used by interference machine. The knowledge engineer also monitors the development of the ES.</p>
+    <br>
+    <h2>Inference Engine</h2>
+    <br>
+    <p>Use of efficient procedures and rules by the Inference Engine is essential in deducting a correct, flawless solution.</p>
+    <p>In case of knowledge-based ES, the Inference Engine acquires and manipulates the knowledge from the knowledge base to arrive at a particular solution.</p>
+    <p>In case of rule based ES, it &minus;</p>
+    <ul class="list">
+    <li><p>Applies rules repeatedly to the facts, which are obtained from earlier rule application.</p></li>
+    <li><p>Adds new knowledge into the knowledge base if required.</p></li>
+    <li><p>Resolves rules conflict when multiple rules are applicable to a particular case.</p></li>
+    </ul>
+    <p>To recommend a solution, the Inference Engine uses the following strategies &minus;</p>
+    <ul class="list">
+    <li>Forward Chaining</li>
+    <li>Backward Chaining</li>
+    </ul>
+    <br>
+    <h3>Forward Chaining</h3>
+    <br>
+    <p>It is a strategy of an expert system to answer the question, <b>“What can happen next?”</b></p>
+    <p>Here, the Inference Engine follows the chain of conditions and derivations and finally deduces the outcome. It considers all the facts and rules, and sorts them before concluding to a solution.</p>
+    <p>This strategy is followed for working on conclusion, result, or effect. For example, prediction of share market status as an effect of changes in interest rates.</p>
+    <!-- <img src="/artificial_intelligence/images/forward_chaining.jpg" alt="Forward Chaining" /> -->
+    <br>
+    <h3>Backward Chaining</h3>
+    <br>
+    <p>With this strategy, an expert system finds out the answer to the question, <b>“Why this happened?”</b></p>
+    <p>On the basis of what has already happened, the Inference Engine tries to find out which conditions could have happened in the past for this result. This strategy is followed for finding out cause or reason. For example, diagnosis of blood cancer in humans.</p>
+    <!-- <img src="/artificial_intelligence/images/backward_chaining.jpg" alt="Backward Chaining" /> -->
+    <br>
+    <h2>User Interface</h2>
+    <br>
+    <p>User interface provides interaction between user of the ES and the ES itself. It is generally Natural Language Processing so as to be used by the user who is well-versed in the task domain. The user of the ES need not be necessarily an expert in Artificial Intelligence.</p>
+    <p>It explains how the ES has arrived at a particular recommendation. The explanation may appear in the following forms &minus;</p>
+    <ul class="list">
+    <li>Natural language displayed on screen.</li>
+    <li>Verbal narrations in natural language.</li>
+    <li>Listing of rule numbers displayed on the screen.</li> 
+    </ul>
+    <p>The user interface makes it easy to trace the credibility of the deductions.</p>
+    <br>
+    <h3>Requirements of Efficient ES User Interface</h3>
+    <br>
+    <ul class="list">
+    <li><p>It should help users to accomplish their goals in shortest possible way.</p></li>
+    <li><p>It should be designed to work for user’s existing or desired work practices.</p></li>
+    <li><p>Its technology should be adaptable to user’s requirements; not the other way round.</p></li>
+    <li><p>It should make efficient use of user input.</p></li>
+    </ul>
+    <br>
+    <h2>Expert Systems Limitations</h2>
+    <br>
+    <p>No technology can offer easy and complete solution. Large systems are costly, require significant development time, and computer resources. ESs have their limitations which include &minus;</p>
+    <ul class="list">
+    <li>Limitations of the technology</li>
+    <li>Difficult knowledge acquisition</li>
+    <li>ES are difficult to maintain</li>
+    <li>High development costs</li>
+    </ul>
+    <br>
+    <h2>Applications of Expert System</h2>
+    <br>
+    <p>The following table shows where ES can be applied.</p>
+    <table class="table table-bordered">
+    <tr>
+    <th style="text-align:center;width:30%;">Application</th>
+    <th style="text-align:center;">Description</th>
+    </tr>
+    <tr>
+    <td style="text-align:center;vertical-align:middle;">Design Domain</td>
+    <td>Camera lens design, automobile design.</td>
+    </tr>
+    <tr>
+    <td style="text-align:center;vertical-align:middle;">Medical Domain</td>
+    <td>Diagnosis Systems to deduce cause of disease from observed data, conduction medical operations on humans.</td>
+    </tr>
+    <tr>
+    <td style="text-align:center;vertical-align:middle;">Monitoring Systems</td>
+    <td>Comparing data continuously with observed system or with prescribed behavior such as leakage monitoring in long petroleum pipeline.</td>
+    </tr>
+    <tr>
+    <td style="text-align:center;vertical-align:middle;">Process Control Systems</td>
+    <td style="vertical-align:middle;">Controlling a physical process based on monitoring.</td>
+    </tr>
+    <tr>
+    <td style="text-align:center;vertical-align:middle;">Knowledge Domain</td>
+    <td>Finding out faults in vehicles, computers.</td>
+    </tr>
+    <tr>
+    <td style="text-align:center;vertical-align:middle;">Finance/Commerce</td>
+    <td>Detection of possible fraud, suspicious transactions, stock market trading, Airline scheduling, cargo scheduling.</td>
+    </tr>
+    </table>
+    <br>
+    <h2>Expert System Technology</h2>
+    <br>
+    <p>There are several levels of ES technologies available. Expert systems technologies include &minus;</p>
+    <ul class="list">
+    <li><p><b>Expert System Development Environment</b> &minus; The ES development environment includes hardware and tools. They are &minus;</p>
+    <ul class="list">
+    <li><p>Workstations, minicomputers, mainframes.</p></li>
+    <li><p>High level Symbolic Programming Languages such as <b>LIS</b>t <b>P</b>rogramming (LISP) and <b>PRO</b>grammation en <b>LOG</b>ique (PROLOG).</p></li>
+    <li><p>Large databases.</p></li>
+    </ul>
+    </li>
+    <li><p><b>Tools</b> &minus; They reduce the effort and cost involved in developing an expert system to large extent.</p>
+    <ul class="list">
+    <li><p>Powerful editors and debugging tools with multi-windows.</p></li>
+    <li><p>They provide rapid prototyping</p></li>
+    <li><p>Have Inbuilt definitions of model, knowledge representation, and inference design.</p></li>
+    </ul>
+    </li>
+    <li><p><b>Shells</b> &minus; A shell is nothing but an expert system without knowledge base. A shell provides the developers with knowledge acquisition, inference engine, user interface, and explanation facility. For example, few shells are given below &minus;</p>
+    <ul class="list">
+    <li><p>Java Expert System Shell (JESS) that provides fully developed Java API for creating an expert system.</p></li>
+    <li><p><i>Vidwan</i>, a shell developed at the National Centre for Software Technology, Mumbai in 1993. It enables knowledge encoding in the form of IF-THEN rules.</p></li>
+    </ul>
+    </li>
+    </ul>
+    <br>
+    <h2>Development of Expert Systems: General Steps</h2>
+    <br>
+    <p>The process of ES development is iterative. Steps in developing the ES include &minus;</p>
+    <br>
+    <h3>Identify Problem Domain</h3>
+    <br>
+    <ul class="list">
+    <li>The problem must be suitable for an expert system to solve it.</li>
+    <li>Find the experts in task domain for the ES project.</li>
+    <li>Establish cost-effectiveness of the system.</li>
+    </ul>
+    <br>
+    <h3>Design the System</h3>
+    <br>
+    <ul class="list">
+    <li><p>Identify the ES Technology</p></li>
+    <li><p>Know and establish the degree of integration with the other systems and databases.</p></li>
+    <li><p>Realize how the concepts can represent the domain knowledge best.</p></li>
+    </ul>
+    <br>
+    <h3>Develop the Prototype</h3>
+    <br>
+    <p>From Knowledge Base: The knowledge engineer works to &minus;</p>
+    <ul class="list">
+    <li>Acquire domain knowledge from the expert.</li>
+    <li>Represent it in the form of If-THEN-ELSE rules.</li>
+    </ul>
+    <br>
+    <h3>Test and Refine the Prototype</h3>
+    <br>
+    <ul class="list">
+    <li><p>The knowledge engineer uses sample cases to test the prototype for any deficiencies in performance.</p></li>
+    <li><p>End users test the prototypes of the ES.</p></li>
+    </ul>
+    <br>
+    <h3>Develop and Complete the ES</h3>
+    <br>
+    <ul class="list">
+    <li><p>Test and ensure the interaction of the ES with all elements of its environment, including end users, databases, and other information systems.</p></li>
+    <li><p>Document the ES project well.</p></li>
+    <li><p>Train the user to use ES.</p></li>
+    </ul>
+    <br>
+    <h3>Maintain the System</h3>
+    <br>
+    <ul class="list">
+    <li><p>Keep the knowledge base up-to-date by regular review and update.</p></li>
+    <li><p>Cater for new interfaces with other information systems, as those systems evolve.</p></li>
+    </ul>
+    <br>
+    <h2>Benefits of Expert Systems</h2>
+    <br>
+    <ul class="list">
+    <li><p><b>Availability</b> &minus; They are easily available due to mass production of software.</p></li>
+    <li><p><b>Less Production Cost</b> &minus; Production cost is reasonable. This makes them affordable.</p></li>
+    <li><p><b>Speed</b> &minus; They offer great speed. They reduce the amount of work an individual puts in.</p></li>
+    <li><p><b>Less Error Rate</b> &minus; Error rate is low as compared to human errors.</p></li>
+    <li><p><b>Reducing Risk</b> &minus; They can work in the environment dangerous to humans.</p></li>
+    <li><p><b>Steady response</b> &minus; They work steadily without getting motional, tensed or fatigued.</p></li>
+    </ul>
+
+
+</main>
+
+
+
+<footer style="background-color: #2090DB; color: white;text-align: center;" class=" py-6">
+  <div class="row">
+    <div class="col-12 col-md">
+      <small class="d-block mb-3">&copy; 2017–2021 Licensed Product</small>
+    </div>
+  </div>
+</footer>
+
+
+<section>
+
+<!-- ===============================================================================================-->
+    <script src="../../vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+    <script src="../../vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="../../vendor/bootstrap/js/popper.js"></script>
+	<script src="../../vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="../../vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="../../vendor/daterangepicker/moment.min.js"></script>
+	<script src="../../vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="../../vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+    <script src="../../js/main.js"></script>
+  
+    <script src="../../js/custom.js"></script>
+
+    <script src="../../js/adconsent.js"></script>
+    <script src="../../js/my-learning.js"></script>
+    <script src="../../js/snhb-loader.min.js"></script>
+    <script src="../../js/w3codecolor.js"></script>
+
+</section>
+
+</body>
+</html>

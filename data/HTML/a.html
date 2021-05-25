@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+
+<head>
+<title>ELearning Platform</title>
+<link rel="icon" href="../../favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="../../css/styles.css">
+<link rel="stylesheet" href="../../css/custom.css">
+<link rel="stylesheet" href="../../css/font-awesome.min.css">
+<script src="../../js/font.js"></script>
+<!-- end cmp -->
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="../../images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="../../vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="../../vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../css/util.css">
+	<link rel="stylesheet" type="text/css" href="../../css/main.css">
+</head>
+
+
+<body style="position:relative;min-height:100%;">
+
+<header>
+
+    <div class='w3-container top' style="padding-top:20px;">
+        <a class='w3schools-logo notranslate' style="position:absolute;" href='../../index.html'>Elearning<span class='dotcom'>.org</span></a>
+      
+        <!-- <div id="loginactioncontainer" class='w3-right' style='width:80px;height:50px;'>
+          <div id="mypagediv"></div> 
+            <a id="w3loginbtn" style="border: medium none; display: inline; cursor: pointer; background-color: #2090db;" class="login w3-right w3-hover-greener" href="../../login.html" target="_self">LOG IN</a>
+        </div> -->
+      
+        <div id="theworldsgreatest" class='w3-right w3-hide-medium w3-hide-small w3-wide toptext' style="line-height: 50px;margin-right:20px;font-family:'Segoe UI',Arial,sans-serif">
+          THE WORLD'S LARGEST ONLINE LEARNING PLATFORM
+        </div>
+      
+      </div>
+      
+      
+      <div class="w3-bar w3-theme w3-card-2 w3-wide notranslate">
+       <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 hidesm" href="javascript:void(0)" onclick="w3_open()"><i class='fa'>&#xf0c9;</i></a>
+       <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_open_nav('tutorials')" id="navbtn_tutorials">WEB TECHNOLOGIES <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a>
+       <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_open_nav('references')" id="navbtn_references">CORE SUBJECTS <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a>
+       <!-- <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_open_nav('examples')" id="navbtn_examples">QUIZ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a> -->
+       <!-- <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16 w3-hide-medium w3-hide-small" href="javascript:void(0)" onclick="w3_open_nav('exercises')" id="navbtn_exercises">ONLINE COURSES <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a> -->
+       <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-left topnav-some w3-hide"  href="../../quiz.html" title='quiz'>QUIZ</a>
+       <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-left topnav-some w3-hide"  href="#" title='oc'>ONLINE COURSES</a>
+ 
+       <div class="w3-right">
+        
+        <!-- <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-right topnav-some w3-hide"  href="../../signup.html" title='signup'>Sign Up</a> -->
+        <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-right topnav-some w3-hide"  href="../../about.html" title='About'>About</a>
+        
+       </div>
+      </div>
+      
+      
+       <div id='myAccordion' class="w3-card-2 w3-light-grey w3-center w3-hide-large" style="display:none;cursor:default"> 
+       <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-xlarge w3-right">&times;</a><br>
+       <div class="w3-container w3-padding-32">
+        <a class="w3-button w3-block w3-large w3-wide" onclick="open_xs_menu('tutorials');" href="javascript:void(0);">WEB TECHNOLOGIES <i class='fa fa-caret-down'></i></a>
+        <div id="sectionxs_tutorials" class="w3-white w3-show"></div>
+        <a class="w3-button w3-block w3-large w3-wide" onclick="open_xs_menu('references')" href="javascript:void(0);">CORE SUBJECTS <i class='fa fa-caret-down'></i></a>
+        <div id="sectionxs_references" class="w3-white w3-show"></div>
+        <a class="w3-button w3-block w3-large w3-wide" href="../../quiz.html">QUIZ</i></a>
+        <div id="sectionxs_examples" class="w3-white w3-show"></div>
+        <a class="w3-button w3-block w3-large w3-wide" href="#">ONLINE COURSES</i></a>
+        <div id="sectionxs_exercises" class="w3-white w3-show"></div>
+        
+       </div>
+      </div> 
+      
+      <nav id="nav_tutorials" class="w3-light-grey w3-card-2 w3-hide-small navex">
+       <span onclick="w3_close_nav('tutorials')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+       <div class="w3-row-padding w3-bar-block">
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">HTML5 and CSS3</h3>
+          <a class="w3-bar-item w3-button" href="../HTML/a.html">HTML - Attributes</a>
+          <a class="w3-bar-item w3-button" href="../HTML/b.html">HTML - Frames</a>
+          <a class="w3-bar-item w3-button" href="../HTML/c.html">HTML - Forms</a>
+          <a class="w3-bar-item w3-button" href="../HTML/d.html">HTML - Embed Media</a>
+          <a class="w3-bar-item w3-button" href="../HTML/e.html">HTML - Layouts</a>
+          <a class="w3-bar-item w3-button" href="../CSS/a.html">CSS - Visibility</a>
+          <a class="w3-bar-item w3-button" href="../CSS/b.html">CSS - Positioning</a>
+          <a class="w3-bar-item w3-button" href="../CSS/c.html">CSS - Padding</a>
+          <a class="w3-bar-item w3-button" href="../CSS/d.html">CSS - Layers</a>
+          <a class="w3-bar-item w3-button" href="../CSS/e.html">CSS - Animation</a> 
+      
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">JavaScript</h3>
+         <a class="w3-bar-item w3-button" href="../JavaScript/a.html">JavaScript - Objects</a>
+         <a class="w3-bar-item w3-button" href="../JavaScript/b.html">JavaScript - Strings</a>
+         <a class="w3-bar-item w3-button" href='../JavaScript/c.html'>JavaScript - Math</a>
+         <a class="w3-bar-item w3-button" href='../JavaScript/d.html'>JavaScript - Arrays</a>
+         <a class="w3-bar-item w3-button" href='../JavaScript/e.html'>JavaScript - Error Handling</a>
+         
+        </div> 
+       <div class="w3-col l3 m6">
+          <h3 class="w3-margin-top">Python</h3>
+          <a class="w3-bar-item w3-button" href="../Python/a.html">Python - Variables</a>
+          <a class="w3-bar-item w3-button" href="../Python/b.html">Python - Strings</a>
+          <a class="w3-bar-item w3-button" href="../Python/c.html">Python - Lists</a>
+          <a class="w3-bar-item w3-button" href="../Python/d.html">Python - Tuples</a>
+          <a class="w3-bar-item w3-button" href="../Python/e.html">Python - Dictionary</a>
+          <a class="w3-bar-item w3-button" href="../Python/f.html">Python - Exceptions</a>
+          
+         
+        </div>
+        <div class="w3-col l3 m6 w3-hide-medium">
+           
+         <h3 class="w3-margin-top">Artificial Intelligence</h3>
+          <a class="w3-bar-item w3-button" href="../AI/a.html"> AI Overview</a>
+          <a class="w3-bar-item w3-button" href="../AI/b.html"> NLP</a>
+          <a class="w3-bar-item w3-button" href="../AI/c.html"> Robotics</a> 
+          <a class="w3-bar-item w3-button" href="../AI/d.html"> Neural Networks</a> 
+          <a class="w3-bar-item w3-button" href="../AI/e.html"> Expert Systems</a> 
+           
+        </div>
+       </div>
+       <br class="hidesm">
+      </nav>
+      
+      <nav id="nav_references" class="w3-light-grey w3-card-2 w3-hide-small navex">
+       <span onclick="w3_close_nav('references')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+       <div class="w3-row-padding w3-bar-block">
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Data Structure & Algorithms</h3>
+          <a class="w3-bar-item w3-button" href="../DSA/a.html">Greedy Algorithms</a>
+          <a class="w3-bar-item w3-button" href="../DSA/b.html">Divide and Conquer</a>
+          <a class="w3-bar-item w3-button" href="../DSA/c.html">Dynamic Programming</a>
+          <a class="w3-bar-item w3-button" href='../DSA/d.html'>Linked List</a>
+          <a class="w3-bar-item w3-button" href="../DSA/e.html">Stack</a>
+          <a class="w3-bar-item w3-button" href="../DSA/f.html">Queue</a>
+         
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Database</h3>
+          <a class="w3-bar-item w3-button" href="../Database/a.html"> Architecture</a>
+          <a class="w3-bar-item w3-button" href='../Database/b.html'> ER Model</a>
+          <a class="w3-bar-item w3-button" href="../Database/c.html"> Indexing</a>
+          <a class="w3-bar-item w3-button" href='../Database/d.html'> Hashing</a>
+          <a class="w3-bar-item w3-button" href='../Database/e.html'> Deadlock</a>
+        
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Computer Networks</h3>
+          <a class="w3-bar-item w3-button" href='../Network/a.html'> Network Types</a>
+          <a class="w3-bar-item w3-button" href='../Network/b.html'> Topologies</a>
+          <a class="w3-bar-item w3-button" href='../Network/c.html'> Physical Layer</a>
+          <a class="w3-bar-item w3-button" href='../Network/d.html'> Data Link Layer</a>
+          <a class="w3-bar-item w3-button" href='../Network/e.html'> Network Layer</a>
+      
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Operating System</h3>
+          <a class="w3-bar-item w3-button" href='../OS/a.html'> OS Types</a>
+          <a class="w3-bar-item w3-button" href='../OS/b.html'> Processes</a>
+          <a class="w3-bar-item w3-button" href='../OS/c.html'> Memory Management</a>
+          <a class="w3-bar-item w3-button" href='../OS/d.html'> Virtual Memory</a>
+          <a class="w3-bar-item w3-button" href='../OS/e.html'> File System</a>
+        
+        </div>
+       </div>
+       <br class="hidesm">
+      </nav>
+      
+      <nav id="nav_examples" class="w3-light-grey w3-card-2 w3-hide-small navex">
+       <span onclick="w3_close_nav('examples')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+       <div class="w3-row-padding w3-bar-block">
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">HTML and CSS</h3>
+         <a class="w3-bar-item w3-button" href='#'>HTML Quiz</a>
+         <a class="w3-bar-item w3-button" href='#'>CSS Quiz</a>
+         
+        </div>
+        <div class="w3-col l3 m6">
+        
+         <h3 class="w3-margin-top">Programming</h3>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Python Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">JavaScript Quiz</a>
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Core Subjects</h3>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Data Structure Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Algorithms Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Database Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Operating System Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Computer Network Quiz</a>
+       
+        
+        </div>
+        <div class="w3-col l3 m6 w3-hide-medium">
+         <h3 class="w3-margin-top">Advanced Technology</h3>
+         <a class="w3-bar-item w3-button" href="#" target="_top">AI Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">NLP Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Robotics Quiz</a>
+        </div>
+      </div>
+       <br class="hidesm">
+      </nav>
+      
+      <nav id="nav_exercises" class="w3-light-grey w3-card-2 w3-hide-small w3-hide-medium navex">
+       <span onclick="w3_close_nav('exercises')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+       <div class="w3-row-padding w3-bar-block">
+        <div class="w3-col l4 m12">
+         <h3 class="w3-margin-top">Web Development</h3>
+         <a class="w3-bar-item w3-button" href="#">HTML Course</a>
+         <a class="w3-bar-item w3-button" href="#">CSS Course</a>
+         <a class="w3-bar-item w3-button" href="#">JavaScript Course</a>
+         <a class="w3-bar-item w3-button" href="#">SQL Course</a>
+         <a class="w3-bar-item w3-button" href="#">Python Course</a>
+        </div>
+        <div class="w3-col l4 m12">
+         <h3 class="w3-margin-top">Mobile Development</h3>
+         <a class="w3-bar-item w3-button" href="#">React Native Course</a>
+         <a class="w3-bar-item w3-button" href="#">Flutter Course</a>
+        </div>
+        <div class="w3-col l4 m12">
+         <h3 class="w3-margin-top">Game Development</h3>
+         <a class="w3-bar-item w3-button" href="#">C# Course</a>
+         <a class="w3-bar-item w3-button" href="#">C++ Course</a>
+         <a class="w3-bar-item w3-button" href="#">Unity 3D Course</a>
+        
+        </div>
+       </div>
+       <br class="hidesm">
+      </nav>
+
+
+
+</header>
+
+
+
+<!-- MAIN -->
+
+<main class="container">
+    <h1 class="jumbotron">HTML - Attributes</h1>
+    <br>
+    <hr>
+
+<p>We have seen few HTML tags and their usage like heading tags <b>&lt;h1&gt;, &lt;h2&gt;,</b> paragraph tag <b>&lt;p&gt;</b> and other tags. We used them so far in their simplest form, but most of the HTML tags can also have attributes, which are extra bits of information.</p> 
+<p>An attribute is used to define the characteristics of an HTML element and is placed inside the element's opening tag. All attributes are made up of two parts &minus; a <b>name</b> and a <b>value</b></p>
+<ul class="list">
+<li><p>The <b>name</b> is the property you want to set. For example, the paragraph <b>&lt;p&gt;</b> element in the example carries an attribute whose name is <b>align</b>, which you can use to indicate the alignment of paragraph on the page.</p></li>
+<li><p>The <b>value</b> is what you want the value of the property to be set and always put within quotations. The below example shows three possible values of align attribute: <b> left, center</b> and <b>right</b>.</p></li>
+</ul>
+<p>Attribute names and attribute values are case-insensitive. However, the World Wide Web Consortium (W3C) recommends lowercase attributes/attribute values in their HTML 4 recommendation.</p>
+<br>
+<h3>Example</h3>
+<br>
+<div class="demo-view">
+<!-- <a href="http://tpcg.io/rJQ2Po" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a> -->
+</div>
+<pre class="prettyprint notranslate">
+&lt;!DOCTYPE html&gt; 
+&lt;html&gt;
+ 
+   &lt;head&gt; 
+      &lt;title&gt;Align Attribute  Example&lt;/title&gt; 
+   &lt;/head&gt;
+	
+   &lt;body&gt; 
+      &lt;p align = "left"&gt;This is left aligned&lt;/p&gt; 
+      &lt;p align = "center"&gt;This is center aligned&lt;/p&gt; 
+      &lt;p align = "right"&gt;This is right aligned&lt;/p&gt; 
+   &lt;/body&gt;
+	
+&lt;/html&gt;
+</pre>
+<!-- <p>This will display the following result &minus;</p> -->
+<!-- <iframe onLoad="resizeFrame(this)" class="result" src="/html/src/attributes.htm" height="150px"  width="660px"></iframe> -->
+<br>
+<h2>Core Attributes</h2>
+<br>
+<p>The four core attributes that can be used on the majority of HTML elements (although not all) are &minus;</p>
+<ul class="list">
+<li>Id</li>
+<li>Title</li>
+<li>Class</li>
+<li>Style</li>
+</ul>
+<br>
+<h3>The Id Attribute</h3>
+<br>
+<p>The <b>id</b> attribute of an HTML tag can be used to uniquely identify any element within an HTML page. There are two primary reasons that you might want to use an id attribute on an element &minus;</p>
+<ul class="list">
+<li><p>If an element carries an id attribute as a unique identifier, it is possible to identify just that element and its content.</p></li>
+<li><p>If you have two elements of the same name within a Web page (or style sheet), you can use the id attribute to distinguish between elements that have the same name.</p></li>
+</ul>
+<p>We will discuss style sheet in separate tutorial. For now, let's use the id attribute to distinguish between two paragraph elements as shown below.</p>
+<p><b>Example</b></p>
+<pre class="result notranslate">
+&lt;p id = "html"&gt;This para explains what is HTML&lt;/p&gt;
+&lt;p id = "css"&gt;This para explains what is Cascading Style Sheet&lt;/p&gt;
+</pre>
+<br>
+<h3>The title Attribute</h3>
+<br>
+<p>The <b>title</b> attribute gives a suggested title for the element. They syntax for the <b>title</b> attribute is similar as explained for <b>id</b> attribute &minus;</p>
+<p>The behavior of this attribute will depend upon the element that carries it, although it is often displayed as a tooltip when cursor comes over the element or while the element is loading.</p>
+<p><b>Example</b></p>
+<div class="demo-view">
+<!-- <a href="http://tpcg.io/Xq2ok1" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a> -->
+</div>
+<pre class="prettyprint notranslate">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+   &lt;head&gt;
+      &lt;title&gt;The title Attribute Example&lt;/title&gt;
+   &lt;/head&gt;
+	
+   &lt;body&gt;
+      &lt;h3 title = "Hello HTML!"&gt;Titled Heading Tag Example&lt;/h3&gt;
+   &lt;/body&gt;
+	
+&lt;/html&gt;
+</pre>
+<!-- <p>This will produce the following result &minus;</p> -->
+<!-- <iframe onLoad="resizeFrame(this)" class="result" src="/html/src/title_attribute.htm" height="100px"  width="660px"></iframe> -->
+<p>Now try to bring your cursor over "Titled Heading Tag Example" and you will see that whatever title you used in your code is coming out as a tooltip of the cursor.</p>
+<br>
+<h3>The class Attribute</h3>
+<br>
+<p>The <b>class</b> attribute is used to associate an element with a style sheet, and specifies the class of element. You will learn more about the use of the class attribute when you will learn Cascading Style Sheet (CSS). So for now you can avoid it.</p>
+<p>The value of the attribute may also be a space-separated list of class names. For example &minus;</p>
+<pre class="result notranslate">
+class = "className1 className2 className3"
+</pre>
+<br>
+<h3>The style Attribute</h3>
+<br>
+<p>The style attribute allows you to specify Cascading Style Sheet (CSS) rules within the element.</p>
+<div class="demo-view">
+<!-- <a href="http://tpcg.io/FreFRI" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a> -->
+</div>
+<pre class="prettyprint notranslate">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+   &lt;head&gt;
+      &lt;title&gt;The style Attribute&lt;/title&gt;
+   &lt;/head&gt;
+	
+   &lt;body&gt;
+      &lt;p style = "font-family:arial; color:#FF0000;"&gt;Some text...&lt;/p&gt;
+   &lt;/body&gt;
+	
+&lt;/html&gt;
+</pre>
+<!-- <p>This will produce the following result &minus;</p> -->
+<!-- <iframe onLoad="resizeFrame(this)" class="result" src="/html/src/style_attribute.htm" height="100px"  width="660px"></iframe> -->
+<p>At this point of time, we are not learning CSS, so just let's proceed without bothering much about CSS. Here, you need to understand what are HTML attributes and how they can be used while formatting content.</p>
+<br>
+<h2>Internationalization Attributes</h2>
+<br>
+<p>There are three internationalization attributes, which are available for most (although not all) XHTML elements.</p>
+<ul class="list">
+<li>dir</li>
+<li>lang</li>
+<li>xml:lang </li>
+</ul>
+<br>
+<h3>The dir Attribute</h3>
+<br>
+<p>The <b>dir</b> attribute allows you to indicate to the browser about the direction in which the text should flow. The dir attribute can take one of two values, as you can see in the table that follows &minus;</p>
+<table class="table table-bordered">
+<tr>
+<th style="text-align:center;">Value</th>
+<th style="text-align:center;">Meaning</th>
+</tr>
+<tr>
+<td>ltr</td>
+<td>Left to right (the default value)</td>
+</tr>
+<tr>
+<td>rtl</td>
+<td>Right to left (for languages such as Hebrew or Arabic that are read right to left)</td>
+</tr>
+</table>
+<p><b>Example</b></p>
+<div class="demo-view">
+<!-- <a href="http://tpcg.io/a9JBAz" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a> -->
+</div>
+<pre class="prettyprint notranslate">
+&lt;!DOCTYPE html&gt;
+&lt;html dir = "rtl"&gt;
+
+   &lt;head&gt;
+      &lt;title&gt;Display Directions&lt;/title&gt;
+   &lt;/head&gt;
+	
+   &lt;body&gt;
+      This is how IE 5 renders right-to-left directed text.
+   &lt;/body&gt;
+	
+&lt;/html&gt;
+</pre>
+<!-- <p>This will produce the following result &minus;</p> -->
+<!-- <iframe onLoad="resizeFrame(this)" class="result" src="/html/src/dir_attribute.htm" height="100px"  width="660px"></iframe> -->
+<p>When <i>dir</i> attribute is used within the &lt;html&gt; tag, it determines how text will be presented within the entire document. When used within another tag, it controls the text's direction for just the content of that tag.</p>
+<br>
+<h3>The lang Attribute</h3>
+<br>
+<p>The <b>lang</b> attribute allows you to indicate the main language used in a document, but this attribute was kept in HTML only for backwards compatibility with earlier versions of HTML. This attribute has been replaced by the <b>xml:lang</b> attribute in new XHTML documents.</p>
+<p>The values of the <i>lang</i> attribute are ISO-639 standard two-character language codes. Check <a href="/html/language_iso_codes.htm"><b>HTML Language Codes: ISO 639</b></a> for a complete list of language codes.</p>
+<p><b>Example</b></p>
+<div class="demo-view">
+<!-- <a href="http://tpcg.io/Hf0XPh" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a> -->
+</div>
+<pre class="prettyprint notranslate">
+&lt;!DOCTYPE html&gt;
+&lt;html lang = "en"&gt;
+
+   &lt;head&gt;
+      &lt;title&gt;English Language Page&lt;/title&gt;
+   &lt;/head&gt;
+
+   &lt;body&gt;
+      This page is using English Language
+   &lt;/body&gt;
+
+&lt;/html&gt;
+</pre>
+<!-- <p>This will produce the following result &minus;</p> -->
+<!-- <iframe onLoad="resizeFrame(this)" class="result" src="/html/src/lang_attribute.htm" height="100px"  width="660px"></iframe> -->
+<br>
+<h2>The xml:lang Attribute</h2>
+<br>
+<p>The <i>xml:lang</i> attribute is the XHTML replacement for the <i>lang</i> attribute. The value of the <i>xml:lang</i> attribute should be an ISO-639 country code as mentioned in previous section.</p>
+<br>
+<h3>Generic Attributes</h3>
+<br>
+<p>Here's a table of some other attributes that are readily usable with many of the HTML tags.</p>
+<table class="table table-bordered">
+<tr>
+<th style="text-align:center;">Attribute</th>
+<th style="text-align:center;">Options</th>
+<th style="text-align:center;">Function</th>
+</tr>
+<tr>
+<td>align</td>
+<td>right, left, center</td>
+<td>Horizontally aligns tags</td>
+</tr>
+<tr>
+<td>valign</td>
+<td>top, middle, bottom</td>
+<td>Vertically aligns tags within an HTML element.</td>
+</tr>
+<tr>
+<td>bgcolor</td>
+<td>numeric, hexidecimal, RGB values</td>
+<td>Places a background color behind an element</td>
+</tr>
+<tr>
+<td>background</td>
+<td>URL</td>
+<td>Places a background image behind an element</td>
+</tr>
+<tr>
+<td>id</td>
+<td>User Defined</td>
+<td>Names an element for use with Cascading Style Sheets.</td>
+</tr>
+<tr>
+<td>class</td>
+<td>User Defined</td>
+<td>Classifies an element for use with Cascading Style Sheets.</td>
+</tr>
+<tr>
+<td>width</td>
+<td>Numeric Value</td>
+<td>Specifies the width of tables, images, or table cells.</td>
+</tr>
+<tr>
+<td>height</td>
+<td>Numeric Value</td>
+<td>Specifies the height of tables, images, or table cells.</td>
+</tr>
+<tr>
+<td>title</td>
+<td>User Defined</td>
+<td>"Pop-up" title of the elements.</td>
+</tr>
+</table>
+<p>We will see related examples as we will proceed to study other HTML tags. For a complete list of HTML Tags and related attributes please check reference to <a href="/html/html_tags_reference.htm">HTML Tags List</a>.</p>
+
+
+</main>
+
+
+
+<footer style="background-color: #2090DB; color: white;text-align: center;" class=" py-6">
+   <div class="row">
+     <div class="col-12 col-md">
+       <small class="d-block mb-3">&copy; 2017–2021 Licensed Product</small>
+     </div>
+   </div>
+ </footer>
+ 
+ 
+ <section>
+ 
+ <!-- ===============================================================================================-->
+     <script src="../../vendor/jquery/jquery-3.2.1.min.js"></script>
+ <!--===============================================================================================-->
+     <script src="../../vendor/animsition/js/animsition.min.js"></script>
+ <!--===============================================================================================-->
+    <script src="../../vendor/bootstrap/js/popper.js"></script>
+    <script src="../../vendor/bootstrap/js/bootstrap.min.js"></script>
+ <!--===============================================================================================-->
+    <script src="../../vendor/select2/select2.min.js"></script>
+ <!--===============================================================================================-->
+    <script src="../../vendor/daterangepicker/moment.min.js"></script>
+    <script src="../../vendor/daterangepicker/daterangepicker.js"></script>
+ <!--===============================================================================================-->
+    <script src="../../vendor/countdowntime/countdowntime.js"></script>
+ <!--===============================================================================================-->
+     <script src="../../js/main.js"></script>
+   
+     <script src="../../js/custom.js"></script>
+ 
+     <script src="../../js/adconsent.js"></script>
+     <script src="../../js/my-learning.js"></script>
+     <script src="../../js/snhb-loader.min.js"></script>
+     <script src="../../js/w3codecolor.js"></script>
+ 
+ </section>
+ 
+ </body>
+ </html>

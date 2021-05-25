@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+
+<head>
+<title>ELearning Platform</title>
+<link rel="icon" href="../../favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="../../css/styles.css">
+<link rel="stylesheet" href="../../css/custom.css">
+<link rel="stylesheet" href="../../css/font-awesome.min.css">
+<script src="../../js/font.js"></script>
+<!-- end cmp -->
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="../../images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="../../vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="../../vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../css/util.css">
+	<link rel="stylesheet" type="text/css" href="../../css/main.css">
+</head>
+
+
+<body style="position:relative;min-height:100%;">
+
+<header>
+
+    <div class='w3-container top' style="padding-top:20px;">
+        <a class='w3schools-logo notranslate' style="position:absolute;" href='../../index.html'>Elearning<span class='dotcom'>.org</span></a>
+      
+        <!-- <div id="loginactioncontainer" class='w3-right' style='width:80px;height:50px;'>
+          <div id="mypagediv"></div> 
+            <a id="w3loginbtn" style="border: medium none; display: inline; cursor: pointer; background-color: #2090db;" class="login w3-right w3-hover-greener" href="../../login.html" target="_self">LOG IN</a>
+        </div> -->
+      
+        <div id="theworldsgreatest" class='w3-right w3-hide-medium w3-hide-small w3-wide toptext' style="line-height: 50px;margin-right:20px;font-family:'Segoe UI',Arial,sans-serif">
+          THE WORLD'S LARGEST ONLINE LEARNING PLATFORM
+        </div>
+      
+      </div>
+      
+      
+      <div class="w3-bar w3-theme w3-card-2 w3-wide notranslate">
+       <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 hidesm" href="javascript:void(0)" onclick="w3_open()"><i class='fa'>&#xf0c9;</i></a>
+       <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_open_nav('tutorials')" id="navbtn_tutorials">WEB TECHNOLOGIES <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a>
+       <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_open_nav('references')" id="navbtn_references">CORE SUBJECTS <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a>
+       <!-- <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_open_nav('examples')" id="navbtn_examples">QUIZ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a> -->
+       <!-- <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16 w3-hide-medium w3-hide-small" href="javascript:void(0)" onclick="w3_open_nav('exercises')" id="navbtn_exercises">ONLINE COURSES <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a> -->
+       <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-left topnav-some w3-hide"  href="../../quiz.html" title='quiz'>QUIZ</a>
+       <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-left topnav-some w3-hide"  href="#" title='oc'>ONLINE COURSES</a>
+ 
+       <div class="w3-right">
+        
+        <!-- <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-right topnav-some w3-hide"  href="../../signup.html" title='signup'>Sign Up</a> -->
+        <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-right topnav-some w3-hide"  href="../../about.html" title='About'>About</a>
+        
+       </div>
+      </div>
+      
+      
+       <div id='myAccordion' class="w3-card-2 w3-light-grey w3-center w3-hide-large" style="display:none;cursor:default"> 
+       <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-xlarge w3-right">&times;</a><br>
+       <div class="w3-container w3-padding-32">
+        <a class="w3-button w3-block w3-large w3-wide" onclick="open_xs_menu('tutorials');" href="javascript:void(0);">WEB TECHNOLOGIES <i class='fa fa-caret-down'></i></a>
+        <div id="sectionxs_tutorials" class="w3-white w3-show"></div>
+        <a class="w3-button w3-block w3-large w3-wide" onclick="open_xs_menu('references')" href="javascript:void(0);">CORE SUBJECTS <i class='fa fa-caret-down'></i></a>
+        <div id="sectionxs_references" class="w3-white w3-show"></div>
+        <a class="w3-button w3-block w3-large w3-wide" href="../../quiz.html">QUIZ</i></a>
+        <div id="sectionxs_examples" class="w3-white w3-show"></div>
+        <a class="w3-button w3-block w3-large w3-wide" href="#">ONLINE COURSES</i></a>
+        <div id="sectionxs_exercises" class="w3-white w3-show"></div>
+        
+       </div>
+      </div> 
+      
+      <nav id="nav_tutorials" class="w3-light-grey w3-card-2 w3-hide-small navex">
+       <span onclick="w3_close_nav('tutorials')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+       <div class="w3-row-padding w3-bar-block">
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">HTML5 and CSS3</h3>
+          <a class="w3-bar-item w3-button" href="../HTML/a.html">HTML - Attributes</a>
+          <a class="w3-bar-item w3-button" href="../HTML/b.html">HTML - Frames</a>
+          <a class="w3-bar-item w3-button" href="../HTML/c.html">HTML - Forms</a>
+          <a class="w3-bar-item w3-button" href="../HTML/d.html">HTML - Embed Media</a>
+          <a class="w3-bar-item w3-button" href="../HTML/e.html">HTML - Layouts</a>
+          <a class="w3-bar-item w3-button" href="../CSS/a.html">CSS - Visibility</a>
+          <a class="w3-bar-item w3-button" href="../CSS/b.html">CSS - Positioning</a>
+          <a class="w3-bar-item w3-button" href="../CSS/c.html">CSS - Padding</a>
+          <a class="w3-bar-item w3-button" href="../CSS/d.html">CSS - Layers</a>
+          <a class="w3-bar-item w3-button" href="../CSS/e.html">CSS - Animation</a> 
+      
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">JavaScript</h3>
+         <a class="w3-bar-item w3-button" href="../JavaScript/a.html">JavaScript - Objects</a>
+         <a class="w3-bar-item w3-button" href="../JavaScript/b.html">JavaScript - Strings</a>
+         <a class="w3-bar-item w3-button" href='../JavaScript/c.html'>JavaScript - Math</a>
+         <a class="w3-bar-item w3-button" href='../JavaScript/d.html'>JavaScript - Arrays</a>
+         <a class="w3-bar-item w3-button" href='../JavaScript/e.html'>JavaScript - Error Handling</a>
+         
+        </div> 
+       <div class="w3-col l3 m6">
+          <h3 class="w3-margin-top">Python</h3>
+          <a class="w3-bar-item w3-button" href="../Python/a.html">Python - Variables</a>
+          <a class="w3-bar-item w3-button" href="../Python/b.html">Python - Strings</a>
+          <a class="w3-bar-item w3-button" href="../Python/c.html">Python - Lists</a>
+          <a class="w3-bar-item w3-button" href="../Python/d.html">Python - Tuples</a>
+          <a class="w3-bar-item w3-button" href="../Python/e.html">Python - Dictionary</a>
+          <a class="w3-bar-item w3-button" href="../Python/f.html">Python - Exceptions</a>
+          
+         
+        </div>
+        <div class="w3-col l3 m6 w3-hide-medium">
+           
+         <h3 class="w3-margin-top">Artificial Intelligence</h3>
+          <a class="w3-bar-item w3-button" href="../AI/a.html"> AI Overview</a>
+          <a class="w3-bar-item w3-button" href="../AI/b.html"> NLP</a>
+          <a class="w3-bar-item w3-button" href="../AI/c.html"> Robotics</a> 
+          <a class="w3-bar-item w3-button" href="../AI/d.html"> Neural Networks</a> 
+          <a class="w3-bar-item w3-button" href="../AI/e.html"> Expert Systems</a> 
+           
+        </div>
+       </div>
+       <br class="hidesm">
+      </nav>
+      
+      <nav id="nav_references" class="w3-light-grey w3-card-2 w3-hide-small navex">
+       <span onclick="w3_close_nav('references')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+       <div class="w3-row-padding w3-bar-block">
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Data Structure & Algorithms</h3>
+          <a class="w3-bar-item w3-button" href="../DSA/a.html">Greedy Algorithms</a>
+          <a class="w3-bar-item w3-button" href="../DSA/b.html">Divide and Conquer</a>
+          <a class="w3-bar-item w3-button" href="../DSA/c.html">Dynamic Programming</a>
+          <a class="w3-bar-item w3-button" href='../DSA/d.html'>Linked List</a>
+          <a class="w3-bar-item w3-button" href="../DSA/e.html">Stack</a>
+          <a class="w3-bar-item w3-button" href="../DSA/f.html">Queue</a>
+         
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Database</h3>
+          <a class="w3-bar-item w3-button" href="../Database/a.html"> Architecture</a>
+          <a class="w3-bar-item w3-button" href='../Database/b.html'> ER Model</a>
+          <a class="w3-bar-item w3-button" href="../Database/c.html"> Indexing</a>
+          <a class="w3-bar-item w3-button" href='../Database/d.html'> Hashing</a>
+          <a class="w3-bar-item w3-button" href='../Database/e.html'> Deadlock</a>
+        
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Computer Networks</h3>
+          <a class="w3-bar-item w3-button" href='../Network/a.html'> Network Types</a>
+          <a class="w3-bar-item w3-button" href='../Network/b.html'> Topologies</a>
+          <a class="w3-bar-item w3-button" href='../Network/c.html'> Physical Layer</a>
+          <a class="w3-bar-item w3-button" href='../Network/d.html'> Data Link Layer</a>
+          <a class="w3-bar-item w3-button" href='../Network/e.html'> Network Layer</a>
+      
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Operating System</h3>
+          <a class="w3-bar-item w3-button" href='../OS/a.html'> OS Types</a>
+          <a class="w3-bar-item w3-button" href='../OS/b.html'> Processes</a>
+          <a class="w3-bar-item w3-button" href='../OS/c.html'> Memory Management</a>
+          <a class="w3-bar-item w3-button" href='../OS/d.html'> Virtual Memory</a>
+          <a class="w3-bar-item w3-button" href='../OS/e.html'> File System</a>
+        
+        </div>
+       </div>
+       <br class="hidesm">
+      </nav>
+      
+      <nav id="nav_examples" class="w3-light-grey w3-card-2 w3-hide-small navex">
+       <span onclick="w3_close_nav('examples')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+       <div class="w3-row-padding w3-bar-block">
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">HTML and CSS</h3>
+         <a class="w3-bar-item w3-button" href='#'>HTML Quiz</a>
+         <a class="w3-bar-item w3-button" href='#'>CSS Quiz</a>
+         
+        </div>
+        <div class="w3-col l3 m6">
+        
+         <h3 class="w3-margin-top">Programming</h3>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Python Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">JavaScript Quiz</a>
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Core Subjects</h3>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Data Structure Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Algorithms Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Database Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Operating System Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Computer Network Quiz</a>
+       
+        
+        </div>
+        <div class="w3-col l3 m6 w3-hide-medium">
+         <h3 class="w3-margin-top">Advanced Technology</h3>
+         <a class="w3-bar-item w3-button" href="#" target="_top">AI Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">NLP Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Robotics Quiz</a>
+        </div>
+      </div>
+       <br class="hidesm">
+      </nav>
+      
+      <nav id="nav_exercises" class="w3-light-grey w3-card-2 w3-hide-small w3-hide-medium navex">
+       <span onclick="w3_close_nav('exercises')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+       <div class="w3-row-padding w3-bar-block">
+        <div class="w3-col l4 m12">
+         <h3 class="w3-margin-top">Web Development</h3>
+         <a class="w3-bar-item w3-button" href="#">HTML Course</a>
+         <a class="w3-bar-item w3-button" href="#">CSS Course</a>
+         <a class="w3-bar-item w3-button" href="#">JavaScript Course</a>
+         <a class="w3-bar-item w3-button" href="#">SQL Course</a>
+         <a class="w3-bar-item w3-button" href="#">Python Course</a>
+        </div>
+        <div class="w3-col l4 m12">
+         <h3 class="w3-margin-top">Mobile Development</h3>
+         <a class="w3-bar-item w3-button" href="#">React Native Course</a>
+         <a class="w3-bar-item w3-button" href="#">Flutter Course</a>
+        </div>
+        <div class="w3-col l4 m12">
+         <h3 class="w3-margin-top">Game Development</h3>
+         <a class="w3-bar-item w3-button" href="#">C# Course</a>
+         <a class="w3-bar-item w3-button" href="#">C++ Course</a>
+         <a class="w3-bar-item w3-button" href="#">Unity 3D Course</a>
+        
+        </div>
+       </div>
+       <br class="hidesm">
+      </nav>
+
+
+
+</header>
+
+
+
+<!-- MAIN -->
+
+<main class="container">
+    <h1 class="jumbotron">DSA - Linked List</h1>
+    <br>
+    <hr>
+
+    <p>A linked list is a sequence of data structures, which are connected together via links.</p>
+    <p>Linked List is a sequence of links which contains items. Each link contains a connection to another link. Linked list is the second most-used data structure after array. Following are the important terms to understand the concept of Linked List.</p>
+    <ul class="list">
+    <li><p><b>Link</b> &minus; Each link of a linked list can store a data called an element.</p></li>
+    <li><p><b>Next</b> &minus; Each link of a linked list contains a link to the next link called Next.</p></li>
+    <li><p><b>LinkedList</b> &minus; A Linked List contains the connection link to the first link called First.</p></li>
+    </ul>
+    <br>
+    <h2>Linked List Representation</h2>
+    <br>
+    <p>Linked list can be visualized as a chain of nodes, where every node points to the next node.</p>
+    <!-- <img src="/data_structures_algorithms/images/linked_list.jpg" alt="Linked List" />  -->
+    <p>As per the above illustration, following are the important points to be considered.</p>
+    <ul class="list">
+    <li><p>Linked List contains a link element called first.</p></li>
+    <li><p>Each link carries a data field(s) and a link field called next.</p></li>
+    <li><p>Each link is linked with its next link using its next link.</p></li>
+    <li><p>Last link carries a link as null to mark the end of the list.</p></li>
+    </ul>
+    <br>
+    <h2>Types of Linked List</h2>
+    <br>
+    <p>Following are the various types of linked list.</p>
+    <ul class="list">
+    <li><p><b>Simple Linked List</b> &minus; Item navigation is forward only.</p></li>
+    <li><p><b>Doubly Linked List</b> &minus; Items can be navigated forward and backward.</p></li>
+    <li><p><b>Circular Linked List</b> &minus; Last item contains link of the first element as next and the first element has a link to the last element as previous.</p></li>
+    </ul>
+    <br>
+    <h2>Basic Operations</h2>
+    <br>
+    <p>Following are the basic operations supported by a list.</p>
+    <ul class="list">
+    <li><p><b>Insertion</b> &minus; Adds an element at the beginning of the list.</p></li>
+    <li><p><b>Deletion</b> &minus; Deletes an element at the beginning of the list.</p></li>
+    <li><p><b>Display</b> &minus; Displays the complete list.</p></li>
+    <li><p><b>Search</b> &minus; Searches an element using the given key.</p></li>
+    <li><p><b>Delete</b> &minus; Deletes an element using the given key.</p></li>
+    </ul>
+    <br>
+    <h2>Insertion Operation</h2>
+    <br>
+    <p>Adding a new node in linked list is a more than one step activity. We shall learn this with diagrams here. First, create a node using the same structure and find the location where it has to be inserted.</p>
+    <!-- <img src="/data_structures_algorithms/images/linked_list_insertion_0.jpg" alt="Linked List Insertion" />  -->
+    <p>Imagine that we are inserting a node <b>B</b> (NewNode), between <b>A</b> (LeftNode) and <b>C</b> (RightNode). Then point B.next to C &minus;</p>
+    <pre class="result notranslate">
+    NewNode.next −&gt; RightNode;
+    </pre>
+    <p>It should look like this &minus;</p>
+    <!-- <img src="/data_structures_algorithms/images/linked_list_insertion_1.jpg" alt="Linked List Insertion" />  -->
+    <p>Now, the next node at the left should point to the new node.</p>
+    <pre class="result notranslate">
+    LeftNode.next −&gt; NewNode;
+    </pre>
+    <!-- <img src="/data_structures_algorithms/images/linked_list_insertion_2.jpg" alt="Linked List Insertion" />  -->
+    <p>This will put the new node in the middle of the two. The new list should look like this &minus;</p>
+    <!-- <img src="/data_structures_algorithms/images/linked_list_insertion_3.jpg" alt="Linked List Insertion" />  -->
+    <p>Similar steps should be taken if the node is being inserted at the beginning of the list. While inserting it at the end, the second last node of the list should point to the new node and the new node will point to NULL.</p>
+    <br>
+    <h2>Deletion Operation</h2>
+    <br>
+    <p>Deletion is also a more than one step process. We shall learn with pictorial representation. First, locate the target node to be removed, by using searching algorithms.</p>
+    <!-- <img src="/data_structures_algorithms/images/linked_list_deletion_0.jpg" alt="Linked List Deletion" />  -->
+    <p>The left (previous) node of the target node now should point to the next node of the target node &minus;</p>
+    <pre class="result notranslate">
+    LeftNode.next −&gt; TargetNode.next;
+    </pre>
+    <!-- <img src="/data_structures_algorithms/images/linked_list_deletion_1.jpg" alt="Linked List Deletion" />  -->
+    <p>This will remove the link that was pointing to the target node. Now, using the following code, we will remove what the target node is pointing at.</p>
+    <pre class="result notranslate">
+    TargetNode.next −&gt; NULL;
+    </pre>
+    <!-- <img src="/data_structures_algorithms/images/linked_list_deletion_2.jpg" alt="Linked List Deletion" />  -->
+    <p>We need to use the deleted node. We can keep that in memory otherwise we can simply deallocate memory and wipe off the target node completely.</p>
+    <!-- <img src="/data_structures_algorithms/images/linked_list_deletion_3.jpg" alt="Linked List Deletion" />  -->
+    <br>
+    <h2>Reverse Operation</h2>
+    <br>
+    <p>This operation is a thorough one. We need to make the last node to be pointed by the head node and reverse the whole linked list.</p>
+    <!-- <img src="/data_structures_algorithms/images/linked_list_reverse_0.jpg" alt="Linked List Reverse Operation" />  -->
+    <p>First, we traverse to the end of the list. It should be pointing to NULL. Now, we shall make it point to its previous node &minus;</p>
+    <!-- <img src="/data_structures_algorithms/images/linked_list_reverse_1.jpg" alt="Linked List Reverse Operation" /> -->
+    <p>We have to make sure that the last node is not the last node. So we'll have some temp node, which looks like the head node pointing to the last node. Now, we shall make all left side nodes point to their previous nodes one by one.</p>
+    <!-- <img src="/data_structures_algorithms/images/linked_list_reverse_2.jpg" alt="Linked List Reverse Operation" />  -->
+    <p>Except the node (first node) pointed by the head node, all nodes should point to their predecessor, making them their new successor. The first node will point to NULL.</p>
+    <!-- <img src="/data_structures_algorithms/images/linked_list_reverse_3.jpg" alt="Linked List Reverse Operation" />  -->
+    <p>We'll make the head node point to the new first node by using the temp node.</p>
+    <!-- <img src="/data_structures_algorithms/images/linked_list_reverse_4.jpg" alt="Linked List Reverse Operation" />  -->
+    <p>The linked list is now reversed. To see linked list implementation in C programming language, please <a href="/data_structures_algorithms/linked_list_program_in_c.htm">click here</a>.</p>
+    
+
+</main>
+
+
+
+<footer style="background-color: #2090DB; color: white;text-align: center;" class=" py-6">
+  <div class="row">
+    <div class="col-12 col-md">
+      <small class="d-block mb-3">&copy; 2017–2021 Licensed Product</small>
+    </div>
+  </div>
+</footer>
+
+
+<section>
+
+<!-- ===============================================================================================-->
+    <script src="../../vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+    <script src="../../vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="../../vendor/bootstrap/js/popper.js"></script>
+	<script src="../../vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="../../vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="../../vendor/daterangepicker/moment.min.js"></script>
+	<script src="../../vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="../../vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+    <script src="../../js/main.js"></script>
+  
+    <script src="../../js/custom.js"></script>
+
+    <script src="../../js/adconsent.js"></script>
+    <script src="../../js/my-learning.js"></script>
+    <script src="../../js/snhb-loader.min.js"></script>
+    <script src="../../js/w3codecolor.js"></script>
+
+</section>
+
+</body>
+</html>

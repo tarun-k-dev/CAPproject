@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+
+<head>
+<title>ELearning Platform</title>
+<link rel="icon" href="../../favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="../../css/styles.css">
+<link rel="stylesheet" href="../../css/custom.css">
+<link rel="stylesheet" href="../../css/font-awesome.min.css">
+<script src="../../js/font.js"></script>
+<!-- end cmp -->
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="../../images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="../../vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="../../vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../css/util.css">
+	<link rel="stylesheet" type="text/css" href="../../css/main.css">
+</head>
+
+
+<body style="position:relative;min-height:100%;">
+
+<header>
+
+    <div class='w3-container top' style="padding-top:20px;">
+        <a class='w3schools-logo notranslate' style="position:absolute;" href='../../index.html'>Elearning<span class='dotcom'>.org</span></a>
+      
+        <!-- <div id="loginactioncontainer" class='w3-right' style='width:80px;height:50px;'>
+          <div id="mypagediv"></div> 
+            <a id="w3loginbtn" style="border: medium none; display: inline; cursor: pointer; background-color: #2090db;" class="login w3-right w3-hover-greener" href="../../login.html" target="_self">LOG IN</a>
+        </div> -->
+      
+        <div id="theworldsgreatest" class='w3-right w3-hide-medium w3-hide-small w3-wide toptext' style="line-height: 50px;margin-right:20px;font-family:'Segoe UI',Arial,sans-serif">
+          THE WORLD'S LARGEST ONLINE LEARNING PLATFORM
+        </div>
+      
+      </div>
+      
+      
+      <div class="w3-bar w3-theme w3-card-2 w3-wide notranslate">
+       <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 hidesm" href="javascript:void(0)" onclick="w3_open()"><i class='fa'>&#xf0c9;</i></a>
+       <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_open_nav('tutorials')" id="navbtn_tutorials">WEB TECHNOLOGIES <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a>
+       <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_open_nav('references')" id="navbtn_references">CORE SUBJECTS <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a>
+       <!-- <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_open_nav('examples')" id="navbtn_examples">QUIZ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a> -->
+       <!-- <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16 w3-hide-medium w3-hide-small" href="javascript:void(0)" onclick="w3_open_nav('exercises')" id="navbtn_exercises">ONLINE COURSES <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a> -->
+       <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-left topnav-some w3-hide"  href="../../quiz.html" title='quiz'>QUIZ</a>
+       <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-left topnav-some w3-hide"  href="#" title='oc'>ONLINE COURSES</a>
+ 
+       <div class="w3-right">
+        
+        <!-- <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-right topnav-some w3-hide"  href="../../signup.html" title='signup'>Sign Up</a> -->
+        <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-right topnav-some w3-hide"  href="../../about.html" title='About'>About</a>
+        
+       </div>
+      </div>
+      
+      
+       <div id='myAccordion' class="w3-card-2 w3-light-grey w3-center w3-hide-large" style="display:none;cursor:default"> 
+       <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-xlarge w3-right">&times;</a><br>
+       <div class="w3-container w3-padding-32">
+        <a class="w3-button w3-block w3-large w3-wide" onclick="open_xs_menu('tutorials');" href="javascript:void(0);">WEB TECHNOLOGIES <i class='fa fa-caret-down'></i></a>
+        <div id="sectionxs_tutorials" class="w3-white w3-show"></div>
+        <a class="w3-button w3-block w3-large w3-wide" onclick="open_xs_menu('references')" href="javascript:void(0);">CORE SUBJECTS <i class='fa fa-caret-down'></i></a>
+        <div id="sectionxs_references" class="w3-white w3-show"></div>
+        <a class="w3-button w3-block w3-large w3-wide" href="../../quiz.html">QUIZ</i></a>
+        <div id="sectionxs_examples" class="w3-white w3-show"></div>
+        <a class="w3-button w3-block w3-large w3-wide" href="#">ONLINE COURSES</i></a>
+        <div id="sectionxs_exercises" class="w3-white w3-show"></div>
+        
+       </div>
+      </div> 
+      
+      <nav id="nav_tutorials" class="w3-light-grey w3-card-2 w3-hide-small navex">
+       <span onclick="w3_close_nav('tutorials')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+       <div class="w3-row-padding w3-bar-block">
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">HTML5 and CSS3</h3>
+          <a class="w3-bar-item w3-button" href="../HTML/a.html">HTML - Attributes</a>
+          <a class="w3-bar-item w3-button" href="../HTML/b.html">HTML - Frames</a>
+          <a class="w3-bar-item w3-button" href="../HTML/c.html">HTML - Forms</a>
+          <a class="w3-bar-item w3-button" href="../HTML/d.html">HTML - Embed Media</a>
+          <a class="w3-bar-item w3-button" href="../HTML/e.html">HTML - Layouts</a>
+          <a class="w3-bar-item w3-button" href="../CSS/a.html">CSS - Visibility</a>
+          <a class="w3-bar-item w3-button" href="../CSS/b.html">CSS - Positioning</a>
+          <a class="w3-bar-item w3-button" href="../CSS/c.html">CSS - Padding</a>
+          <a class="w3-bar-item w3-button" href="../CSS/d.html">CSS - Layers</a>
+          <a class="w3-bar-item w3-button" href="../CSS/e.html">CSS - Animation</a> 
+      
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">JavaScript</h3>
+         <a class="w3-bar-item w3-button" href="../JavaScript/a.html">JavaScript - Objects</a>
+         <a class="w3-bar-item w3-button" href="../JavaScript/b.html">JavaScript - Strings</a>
+         <a class="w3-bar-item w3-button" href='../JavaScript/c.html'>JavaScript - Math</a>
+         <a class="w3-bar-item w3-button" href='../JavaScript/d.html'>JavaScript - Arrays</a>
+         <a class="w3-bar-item w3-button" href='../JavaScript/e.html'>JavaScript - Error Handling</a>
+         
+        </div> 
+       <div class="w3-col l3 m6">
+          <h3 class="w3-margin-top">Python</h3>
+          <a class="w3-bar-item w3-button" href="../Python/a.html">Python - Variables</a>
+          <a class="w3-bar-item w3-button" href="../Python/b.html">Python - Strings</a>
+          <a class="w3-bar-item w3-button" href="../Python/c.html">Python - Lists</a>
+          <a class="w3-bar-item w3-button" href="../Python/d.html">Python - Tuples</a>
+          <a class="w3-bar-item w3-button" href="../Python/e.html">Python - Dictionary</a>
+          <a class="w3-bar-item w3-button" href="../Python/f.html">Python - Exceptions</a>
+          
+         
+        </div>
+        <div class="w3-col l3 m6 w3-hide-medium">
+           
+         <h3 class="w3-margin-top">Artificial Intelligence</h3>
+          <a class="w3-bar-item w3-button" href="../AI/a.html"> AI Overview</a>
+          <a class="w3-bar-item w3-button" href="../AI/b.html"> NLP</a>
+          <a class="w3-bar-item w3-button" href="../AI/c.html"> Robotics</a> 
+          <a class="w3-bar-item w3-button" href="../AI/d.html"> Neural Networks</a> 
+          <a class="w3-bar-item w3-button" href="../AI/e.html"> Expert Systems</a> 
+           
+        </div>
+       </div>
+       <br class="hidesm">
+      </nav>
+      
+      <nav id="nav_references" class="w3-light-grey w3-card-2 w3-hide-small navex">
+       <span onclick="w3_close_nav('references')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+       <div class="w3-row-padding w3-bar-block">
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Data Structure & Algorithms</h3>
+          <a class="w3-bar-item w3-button" href="../DSA/a.html">Greedy Algorithms</a>
+          <a class="w3-bar-item w3-button" href="../DSA/b.html">Divide and Conquer</a>
+          <a class="w3-bar-item w3-button" href="../DSA/c.html">Dynamic Programming</a>
+          <a class="w3-bar-item w3-button" href='../DSA/d.html'>Linked List</a>
+          <a class="w3-bar-item w3-button" href="../DSA/e.html">Stack</a>
+          <a class="w3-bar-item w3-button" href="../DSA/f.html">Queue</a>
+         
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Database</h3>
+          <a class="w3-bar-item w3-button" href="../Database/a.html"> Architecture</a>
+          <a class="w3-bar-item w3-button" href='../Database/b.html'> ER Model</a>
+          <a class="w3-bar-item w3-button" href="../Database/c.html"> Indexing</a>
+          <a class="w3-bar-item w3-button" href='../Database/d.html'> Hashing</a>
+          <a class="w3-bar-item w3-button" href='../Database/e.html'> Deadlock</a>
+        
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Computer Networks</h3>
+          <a class="w3-bar-item w3-button" href='../Network/a.html'> Network Types</a>
+          <a class="w3-bar-item w3-button" href='../Network/b.html'> Topologies</a>
+          <a class="w3-bar-item w3-button" href='../Network/c.html'> Physical Layer</a>
+          <a class="w3-bar-item w3-button" href='../Network/d.html'> Data Link Layer</a>
+          <a class="w3-bar-item w3-button" href='../Network/e.html'> Network Layer</a>
+      
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Operating System</h3>
+          <a class="w3-bar-item w3-button" href='../OS/a.html'> OS Types</a>
+          <a class="w3-bar-item w3-button" href='../OS/b.html'> Processes</a>
+          <a class="w3-bar-item w3-button" href='../OS/c.html'> Memory Management</a>
+          <a class="w3-bar-item w3-button" href='../OS/d.html'> Virtual Memory</a>
+          <a class="w3-bar-item w3-button" href='../OS/e.html'> File System</a>
+        
+        </div>
+       </div>
+       <br class="hidesm">
+      </nav>
+      
+      <nav id="nav_examples" class="w3-light-grey w3-card-2 w3-hide-small navex">
+       <span onclick="w3_close_nav('examples')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+       <div class="w3-row-padding w3-bar-block">
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">HTML and CSS</h3>
+         <a class="w3-bar-item w3-button" href='#'>HTML Quiz</a>
+         <a class="w3-bar-item w3-button" href='#'>CSS Quiz</a>
+         
+        </div>
+        <div class="w3-col l3 m6">
+        
+         <h3 class="w3-margin-top">Programming</h3>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Python Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">JavaScript Quiz</a>
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Core Subjects</h3>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Data Structure Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Algorithms Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Database Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Operating System Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Computer Network Quiz</a>
+       
+        
+        </div>
+        <div class="w3-col l3 m6 w3-hide-medium">
+         <h3 class="w3-margin-top">Advanced Technology</h3>
+         <a class="w3-bar-item w3-button" href="#" target="_top">AI Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">NLP Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Robotics Quiz</a>
+        </div>
+      </div>
+       <br class="hidesm">
+      </nav>
+      
+      <nav id="nav_exercises" class="w3-light-grey w3-card-2 w3-hide-small w3-hide-medium navex">
+       <span onclick="w3_close_nav('exercises')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+       <div class="w3-row-padding w3-bar-block">
+        <div class="w3-col l4 m12">
+         <h3 class="w3-margin-top">Web Development</h3>
+         <a class="w3-bar-item w3-button" href="#">HTML Course</a>
+         <a class="w3-bar-item w3-button" href="#">CSS Course</a>
+         <a class="w3-bar-item w3-button" href="#">JavaScript Course</a>
+         <a class="w3-bar-item w3-button" href="#">SQL Course</a>
+         <a class="w3-bar-item w3-button" href="#">Python Course</a>
+        </div>
+        <div class="w3-col l4 m12">
+         <h3 class="w3-margin-top">Mobile Development</h3>
+         <a class="w3-bar-item w3-button" href="#">React Native Course</a>
+         <a class="w3-bar-item w3-button" href="#">Flutter Course</a>
+        </div>
+        <div class="w3-col l4 m12">
+         <h3 class="w3-margin-top">Game Development</h3>
+         <a class="w3-bar-item w3-button" href="#">C# Course</a>
+         <a class="w3-bar-item w3-button" href="#">C++ Course</a>
+         <a class="w3-bar-item w3-button" href="#">Unity 3D Course</a>
+        
+        </div>
+       </div>
+       <br class="hidesm">
+      </nav>
+
+
+
+</header>
+
+
+<!-- MAIN -->
+
+<main class="container">
+    <h1 class="jumbotron">AI - Robotics</h1>
+    <br>
+    <hr>
+
+    <p>Robotics is a domain in artificial intelligence that deals with the study of creating intelligent and efficient robots.</p>
+    <br>
+    <h2>What are Robots?</h2>
+    <br>
+    <p>Robots are the artificial agents acting in real world environment.</p>
+    <br>
+    <h3>Objective</h3>
+    <br>
+    <p>Robots are aimed at manipulating the objects by perceiving, picking, moving, modifying the physical properties of object, destroying it, or to have an effect thereby freeing manpower from doing repetitive functions without getting bored, distracted, or exhausted.</p>
+    <br>
+    <h2>What is Robotics?</h2>
+    <br>
+    <p>Robotics is a branch of AI, which is composed of Electrical Engineering, Mechanical Engineering, and Computer Science for designing, construction, and application of robots.</p>
+    <br>
+    <h3>Aspects of Robotics</h3>
+    <br>
+    <ul class="list">
+    <li><p>The robots have <b>mechanical construction</b>, form, or shape designed to accomplish a particular task.</p></li>
+    <li><p>They have <b>electrical components</b> which power and control the machinery.</p></li>
+    <li><p>They contain some level of <b>computer program</b> that determines what, when and how a robot does something.</p></li>
+    </ul>
+    <br>
+    <h2>Difference in Robot System and Other AI Program</h2>
+    <br>
+    <p>Here is the difference between the two &minus;</p>
+    <table class="table table-bordered">
+    <tr>
+    <th style="text-align:center;">AI Programs</th>
+    <th style="text-align:center;">Robots</th>
+    </tr>
+    <tr>
+    <td>They usually operate in computer-stimulated worlds.</td>
+    <td>They operate in real physical world</td>
+    </tr>
+    <tr>
+    <td>The input to an AI program is in symbols and rules.</td>
+    <td>Inputs to robots is analog signal in the form of speech waveform or images</td>
+    </tr>
+    <tr>
+    <td>They need general purpose computers to operate on.</td>
+    <td>They need special hardware with sensors and effectors.</td>
+    </tr>
+    </table>
+    <br>
+    <h2>Robot Locomotion</h2>
+    <br>
+    <p>Locomotion is the mechanism that makes a robot capable of moving in its environment. There are various types of locomotions &minus;</p>
+    <ul class="list">
+    <li>Legged</li>
+    <li>Wheeled</li>
+    <li>Combination of Legged and Wheeled Locomotion</li>
+    <li>Tracked slip/skid </li>
+    </ul>
+    <br>
+    <h3>Legged Locomotion</h3>
+    <br>
+    <ul class="list">
+    <li><p>This type of locomotion consumes more power while demonstrating walk, jump, trot, hop, climb up or down, etc.</p></li>
+    <li><p>It requires more number of motors to accomplish a movement. It is suited for rough as well as smooth terrain where irregular or too smooth surface makes it consume more power for a wheeled locomotion. It is little difficult to implement because of stability issues.</p></li>
+    <li><p>It comes with the variety of one, two, four, and six legs. If a robot has multiple legs then leg coordination is necessary for locomotion.</p></li>
+    </ul>
+    <p>The total number of possible <b>gaits</b> (a periodic sequence of lift and release events for each of the total legs) a robot can travel depends upon the number of its legs.</p>
+    <p>If a robot has k legs, then the number of possible events N = (2k-1)!.</p>
+    <p>In case of a two-legged robot (k=2), the number of possible events is N = (2k-1)! = (2*2-1)! = 3! = 6.</p>
+    <p>Hence there are six possible different events &minus;</p>
+    <ul class="list">
+    <li>Lifting the Left leg</li>
+    <li>Releasing the Left leg</li>
+    <li>Lifting the Right leg</li>
+    <li>Releasing the Right leg</li>
+    <li>Lifting both the legs together</li>
+    <li>Releasing both the legs together</li>
+    </ul>
+    <p>In case of k=6 legs, there are 39916800 possible events. Hence the complexity of robots is directly proportional to the number of legs.</p>
+    <!-- <img src="/artificial_intelligence/images/bipedal_robot.jpg" alt="Legged Locomotion"/> -->
+    <br>
+    <h3>Wheeled Locomotion</h3>
+    <br>
+    <p>It requires fewer number of motors to accomplish a movement. It is little easy to implement as there are less stability issues in case of more number of wheels. It is power efficient as compared to legged locomotion.</p>
+    <ul class="list">
+    <li><p><b>Standard wheel</b> &minus; Rotates around the wheel axle and around the contact</p></li>
+    <li><p><b>Castor wheel</b> &minus; Rotates around the wheel axle and the offset steering joint.</p></li>
+    <li><p><b>Swedish 45<sup>o</sup> and Swedish 90<sup>o</sup> wheels</b> &minus; Omni-wheel, rotates around the contact point, around the wheel axle, and around the rollers.</p></li>
+    <li><p><b>Ball or spherical wheel</b> &minus; Omnidirectional wheel, technically difficult to implement.</p></li>
+    </ul>
+    <!-- <img src="/artificial_intelligence/images/wheeled_robot.jpg" alt="Wheeled Locomotion"/> -->
+    <br>
+    <h3>Slip/Skid Locomotion</h3>
+    <br>
+    <p>In this type, the vehicles use tracks as in a tank. The robot is steered by moving the tracks with different speeds in the same or opposite direction. It offers stability because of large contact area of track and ground.</p>
+    <!-- <img src="/artificial_intelligence/images/tracked_robot.jpg" alt="Tracked Robot"/> -->
+    <br>
+    <h2>Components of a Robot</h2>
+    <br>
+    <p>Robots are constructed with the following &minus;</p>
+    <ul class="list">
+    <li><p><b>Power Supply</b> &minus; The robots are powered by batteries, solar power, hydraulic, or pneumatic power sources.</p></li>
+    <li><p><b>Actuators</b> &minus; They convert energy into movement.</p></li>
+    <li><p><b>Electric motors (AC/DC)</b> &minus; They are required for rotational movement.</p></li>
+    <li><p><b>Pneumatic Air Muscles</b> &minus; They contract almost 40% when air is sucked in them.</p></li>
+    <li><p><b>Muscle Wires</b> &minus; They contract by 5% when electric current is passed through them.</p></li>
+    <li><p><b>Piezo Motors and Ultrasonic Motors</b> &minus; Best for industrial robots.</p></li>
+    <li><p><b>Sensors</b> &minus; They provide knowledge of real time information on the task environment. Robots are equipped with vision sensors to be to compute the depth in the environment. A tactile sensor imitates the mechanical properties of touch receptors of human fingertips.</p></li>
+    </ul>
+    <br>
+    <h2>Computer Vision</h2>
+    <br>
+    <p>This is a technology of AI with which the robots can see. The computer vision plays vital role in the domains of safety, security, health, access, and entertainment.</p>
+    <p>Computer vision automatically extracts, analyzes, and comprehends useful information from a single image or an array of images. This process involves development of algorithms to accomplish automatic visual comprehension.</p>
+    <br>
+    <h3>Hardware of Computer Vision System</h3>
+    <br>
+    <p>This involves &minus;</p>
+    <ul class="list">
+    <li>Power supply</li>
+    <li>Image acquisition device such as camera</li>
+    <li>A processor </li>
+    <li>A software</li>
+    <li>A display device for monitoring the system</li>
+    <li>Accessories such as camera stands, cables, and connectors</li>
+    </ul>
+    <br>
+    <h2>Tasks of Computer Vision</h2>
+    <br>
+    <ul class="list">
+    <li><p><b>OCR</b> &minus; In the domain of computers, Optical Character Reader, a software to convert scanned documents into editable text, which accompanies a scanner.</p></li>
+    <li><p><b>Face Detection</b> &minus; Many state-of-the-art cameras come with this feature, which enables to read the face and take the picture of that perfect expression. It is used to let a user access the software on correct match.</p></li>
+    <li><p><b>Object Recognition</b> &minus; They are installed in supermarkets, cameras, high-end cars such as BMW, GM, and Volvo.</p></li>
+    <li><p><b>Estimating Position</b> &minus; It is estimating position of an object with respect to camera as in position of tumor in human’s body.</p></li>
+    </ul>
+    <br>
+    <h2>Application Domains of Computer Vision</h2>
+    <br>
+    <ul class="list">
+    <li>Agriculture</li>
+    <li>Autonomous vehicles</li>
+    <li>Biometrics</li>
+    <li>Character recognition</li>
+    <li>Forensics, security, and surveillance</li>
+    <li>Industrial quality inspection</li>
+    <li>Face recognition</li>
+    <li>Gesture analysis</li>
+    <li>Geoscience</li>
+    <li>Medical imagery</li>
+    <li>Pollution monitoring</li>
+    <li>Process control </li>
+    <li>Remote sensing</li>
+    <li>Robotics</li>
+    <li>Transport</li>
+    </ul>
+    <br>
+    <h2>Applications of Robotics</h2>
+    <br>
+    <p>The robotics has been instrumental in the various domains such as &minus;</p>
+    <ul class="list">
+    <li><p><b>Industries</b> &minus; Robots are used for handling material, cutting, welding, color coating, drilling, polishing, etc.</p></li>
+    <li><p><b>Military</b> &minus; Autonomous robots can reach inaccessible and hazardous zones during war. A robot named <i>Daksh</i>, developed by Defense Research and Development Organization (DRDO), is in function to destroy life-threatening objects safely.</p></li>
+    <li><p><b>Medicine</b> &minus; The robots are capable of carrying out hundreds of clinical tests simultaneously, rehabilitating permanently disabled people, and performing complex surgeries such as brain tumors.</p></li>
+    <li><p><b>Exploration</b> &minus; The robot rock climbers used for space exploration, underwater drones used for ocean exploration are to name a few.</p></li>
+    <li><p><b>Entertainment</b> &minus; Disney’s engineers have created hundreds of robots for movie making.</p></li>
+    </ul>
+
+</main>
+
+<footer style="background-color: #2090DB; color: white;text-align: center;" class=" py-6">
+  <div class="row">
+    <div class="col-12 col-md">
+      <small class="d-block mb-3">&copy; 2017–2021 Licensed Product</small>
+    </div>
+  </div>
+</footer>
+
+
+<section>
+
+<!-- ===============================================================================================-->
+    <script src="../../vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+    <script src="../../vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="../../vendor/bootstrap/js/popper.js"></script>
+	<script src="../../vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="../../vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="../../vendor/daterangepicker/moment.min.js"></script>
+	<script src="../../vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="../../vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+    <script src="../../js/main.js"></script>
+  
+    <script src="../../js/custom.js"></script>
+
+    <script src="../../js/adconsent.js"></script>
+    <script src="../../js/my-learning.js"></script>
+    <script src="../../js/snhb-loader.min.js"></script>
+    <script src="../../js/w3codecolor.js"></script>
+
+</section>
+
+</body>
+</html>

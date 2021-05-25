@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+
+<head>
+<title>ELearning Platform</title>
+<link rel="icon" href="../../favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="../../css/styles.css">
+<link rel="stylesheet" href="../../css/custom.css">
+<link rel="stylesheet" href="../../css/font-awesome.min.css">
+<script src="../../js/font.js"></script>
+<!-- end cmp -->
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="../../images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="../../vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="../../vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../css/util.css">
+	<link rel="stylesheet" type="text/css" href="../../css/main.css">
+</head>
+
+
+<body style="position:relative;min-height:100%;">
+
+<header>
+
+    <div class='w3-container top' style="padding-top:20px;">
+        <a class='w3schools-logo notranslate' style="position:absolute;" href='../../index.html'>Elearning<span class='dotcom'>.org</span></a>
+      
+        <!-- <div id="loginactioncontainer" class='w3-right' style='width:80px;height:50px;'>
+          <div id="mypagediv"></div> 
+            <a id="w3loginbtn" style="border: medium none; display: inline; cursor: pointer; background-color: #2090db;" class="login w3-right w3-hover-greener" href="../../login.html" target="_self">LOG IN</a>
+        </div> -->
+      
+        <div id="theworldsgreatest" class='w3-right w3-hide-medium w3-hide-small w3-wide toptext' style="line-height: 50px;margin-right:20px;font-family:'Segoe UI',Arial,sans-serif">
+          THE WORLD'S LARGEST ONLINE LEARNING PLATFORM
+        </div>
+      
+      </div>
+      
+      
+      <div class="w3-bar w3-theme w3-card-2 w3-wide notranslate">
+       <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 hidesm" href="javascript:void(0)" onclick="w3_open()"><i class='fa'>&#xf0c9;</i></a>
+       <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_open_nav('tutorials')" id="navbtn_tutorials">WEB TECHNOLOGIES <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a>
+       <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_open_nav('references')" id="navbtn_references">CORE SUBJECTS <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a>
+       <!-- <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_open_nav('examples')" id="navbtn_examples">QUIZ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a> -->
+       <!-- <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16 w3-hide-medium w3-hide-small" href="javascript:void(0)" onclick="w3_open_nav('exercises')" id="navbtn_exercises">ONLINE COURSES <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a> -->
+       <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-left topnav-some w3-hide"  href="../../quiz.html" title='quiz'>QUIZ</a>
+       <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-left topnav-some w3-hide"  href="#" title='oc'>ONLINE COURSES</a>
+ 
+       <div class="w3-right">
+        
+        <!-- <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-right topnav-some w3-hide"  href="../../signup.html" title='signup'>Sign Up</a> -->
+        <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-right topnav-some w3-hide"  href="../../about.html" title='About'>About</a>
+        
+       </div>
+      </div>
+      
+      
+       <div id='myAccordion' class="w3-card-2 w3-light-grey w3-center w3-hide-large" style="display:none;cursor:default"> 
+       <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-xlarge w3-right">&times;</a><br>
+       <div class="w3-container w3-padding-32">
+        <a class="w3-button w3-block w3-large w3-wide" onclick="open_xs_menu('tutorials');" href="javascript:void(0);">WEB TECHNOLOGIES <i class='fa fa-caret-down'></i></a>
+        <div id="sectionxs_tutorials" class="w3-white w3-show"></div>
+        <a class="w3-button w3-block w3-large w3-wide" onclick="open_xs_menu('references')" href="javascript:void(0);">CORE SUBJECTS <i class='fa fa-caret-down'></i></a>
+        <div id="sectionxs_references" class="w3-white w3-show"></div>
+        <a class="w3-button w3-block w3-large w3-wide" href="../../quiz.html">QUIZ</i></a>
+        <div id="sectionxs_examples" class="w3-white w3-show"></div>
+        <a class="w3-button w3-block w3-large w3-wide" href="#">ONLINE COURSES</i></a>
+        <div id="sectionxs_exercises" class="w3-white w3-show"></div>
+        
+       </div>
+      </div> 
+      
+      <nav id="nav_tutorials" class="w3-light-grey w3-card-2 w3-hide-small navex">
+       <span onclick="w3_close_nav('tutorials')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+       <div class="w3-row-padding w3-bar-block">
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">HTML5 and CSS3</h3>
+          <a class="w3-bar-item w3-button" href="../HTML/a.html">HTML - Attributes</a>
+          <a class="w3-bar-item w3-button" href="../HTML/b.html">HTML - Frames</a>
+          <a class="w3-bar-item w3-button" href="../HTML/c.html">HTML - Forms</a>
+          <a class="w3-bar-item w3-button" href="../HTML/d.html">HTML - Embed Media</a>
+          <a class="w3-bar-item w3-button" href="../HTML/e.html">HTML - Layouts</a>
+          <a class="w3-bar-item w3-button" href="../CSS/a.html">CSS - Visibility</a>
+          <a class="w3-bar-item w3-button" href="../CSS/b.html">CSS - Positioning</a>
+          <a class="w3-bar-item w3-button" href="../CSS/c.html">CSS - Padding</a>
+          <a class="w3-bar-item w3-button" href="../CSS/d.html">CSS - Layers</a>
+          <a class="w3-bar-item w3-button" href="../CSS/e.html">CSS - Animation</a> 
+      
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">JavaScript</h3>
+         <a class="w3-bar-item w3-button" href="../JavaScript/a.html">JavaScript - Objects</a>
+         <a class="w3-bar-item w3-button" href="../JavaScript/b.html">JavaScript - Strings</a>
+         <a class="w3-bar-item w3-button" href='../JavaScript/c.html'>JavaScript - Math</a>
+         <a class="w3-bar-item w3-button" href='../JavaScript/d.html'>JavaScript - Arrays</a>
+         <a class="w3-bar-item w3-button" href='../JavaScript/e.html'>JavaScript - Error Handling</a>
+         
+        </div> 
+       <div class="w3-col l3 m6">
+          <h3 class="w3-margin-top">Python</h3>
+          <a class="w3-bar-item w3-button" href="../Python/a.html">Python - Variables</a>
+          <a class="w3-bar-item w3-button" href="../Python/b.html">Python - Strings</a>
+          <a class="w3-bar-item w3-button" href="../Python/c.html">Python - Lists</a>
+          <a class="w3-bar-item w3-button" href="../Python/d.html">Python - Tuples</a>
+          <a class="w3-bar-item w3-button" href="../Python/e.html">Python - Dictionary</a>
+          <a class="w3-bar-item w3-button" href="../Python/f.html">Python - Exceptions</a>
+          
+         
+        </div>
+        <div class="w3-col l3 m6 w3-hide-medium">
+           
+         <h3 class="w3-margin-top">Artificial Intelligence</h3>
+          <a class="w3-bar-item w3-button" href="../AI/a.html"> AI Overview</a>
+          <a class="w3-bar-item w3-button" href="../AI/b.html"> NLP</a>
+          <a class="w3-bar-item w3-button" href="../AI/c.html"> Robotics</a> 
+          <a class="w3-bar-item w3-button" href="../AI/d.html"> Neural Networks</a> 
+          <a class="w3-bar-item w3-button" href="../AI/e.html"> Expert Systems</a> 
+           
+        </div>
+       </div>
+       <br class="hidesm">
+      </nav>
+      
+      <nav id="nav_references" class="w3-light-grey w3-card-2 w3-hide-small navex">
+       <span onclick="w3_close_nav('references')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+       <div class="w3-row-padding w3-bar-block">
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Data Structure & Algorithms</h3>
+          <a class="w3-bar-item w3-button" href="../DSA/a.html">Greedy Algorithms</a>
+          <a class="w3-bar-item w3-button" href="../DSA/b.html">Divide and Conquer</a>
+          <a class="w3-bar-item w3-button" href="../DSA/c.html">Dynamic Programming</a>
+          <a class="w3-bar-item w3-button" href='../DSA/d.html'>Linked List</a>
+          <a class="w3-bar-item w3-button" href="../DSA/e.html">Stack</a>
+          <a class="w3-bar-item w3-button" href="../DSA/f.html">Queue</a>
+         
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Database</h3>
+          <a class="w3-bar-item w3-button" href="../Database/a.html"> Architecture</a>
+          <a class="w3-bar-item w3-button" href='../Database/b.html'> ER Model</a>
+          <a class="w3-bar-item w3-button" href="../Database/c.html"> Indexing</a>
+          <a class="w3-bar-item w3-button" href='../Database/d.html'> Hashing</a>
+          <a class="w3-bar-item w3-button" href='../Database/e.html'> Deadlock</a>
+        
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Computer Networks</h3>
+          <a class="w3-bar-item w3-button" href='../Network/a.html'> Network Types</a>
+          <a class="w3-bar-item w3-button" href='../Network/b.html'> Topologies</a>
+          <a class="w3-bar-item w3-button" href='../Network/c.html'> Physical Layer</a>
+          <a class="w3-bar-item w3-button" href='../Network/d.html'> Data Link Layer</a>
+          <a class="w3-bar-item w3-button" href='../Network/e.html'> Network Layer</a>
+      
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Operating System</h3>
+          <a class="w3-bar-item w3-button" href='../OS/a.html'> OS Types</a>
+          <a class="w3-bar-item w3-button" href='../OS/b.html'> Processes</a>
+          <a class="w3-bar-item w3-button" href='../OS/c.html'> Memory Management</a>
+          <a class="w3-bar-item w3-button" href='../OS/d.html'> Virtual Memory</a>
+          <a class="w3-bar-item w3-button" href='../OS/e.html'> File System</a>
+        
+        </div>
+       </div>
+       <br class="hidesm">
+      </nav>
+      
+      <nav id="nav_examples" class="w3-light-grey w3-card-2 w3-hide-small navex">
+       <span onclick="w3_close_nav('examples')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+       <div class="w3-row-padding w3-bar-block">
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">HTML and CSS</h3>
+         <a class="w3-bar-item w3-button" href='#'>HTML Quiz</a>
+         <a class="w3-bar-item w3-button" href='#'>CSS Quiz</a>
+         
+        </div>
+        <div class="w3-col l3 m6">
+        
+         <h3 class="w3-margin-top">Programming</h3>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Python Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">JavaScript Quiz</a>
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Core Subjects</h3>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Data Structure Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Algorithms Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Database Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Operating System Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Computer Network Quiz</a>
+       
+        
+        </div>
+        <div class="w3-col l3 m6 w3-hide-medium">
+         <h3 class="w3-margin-top">Advanced Technology</h3>
+         <a class="w3-bar-item w3-button" href="#" target="_top">AI Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">NLP Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Robotics Quiz</a>
+        </div>
+      </div>
+       <br class="hidesm">
+      </nav>
+      
+      <nav id="nav_exercises" class="w3-light-grey w3-card-2 w3-hide-small w3-hide-medium navex">
+       <span onclick="w3_close_nav('exercises')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+       <div class="w3-row-padding w3-bar-block">
+        <div class="w3-col l4 m12">
+         <h3 class="w3-margin-top">Web Development</h3>
+         <a class="w3-bar-item w3-button" href="#">HTML Course</a>
+         <a class="w3-bar-item w3-button" href="#">CSS Course</a>
+         <a class="w3-bar-item w3-button" href="#">JavaScript Course</a>
+         <a class="w3-bar-item w3-button" href="#">SQL Course</a>
+         <a class="w3-bar-item w3-button" href="#">Python Course</a>
+        </div>
+        <div class="w3-col l4 m12">
+         <h3 class="w3-margin-top">Mobile Development</h3>
+         <a class="w3-bar-item w3-button" href="#">React Native Course</a>
+         <a class="w3-bar-item w3-button" href="#">Flutter Course</a>
+        </div>
+        <div class="w3-col l4 m12">
+         <h3 class="w3-margin-top">Game Development</h3>
+         <a class="w3-bar-item w3-button" href="#">C# Course</a>
+         <a class="w3-bar-item w3-button" href="#">C++ Course</a>
+         <a class="w3-bar-item w3-button" href="#">Unity 3D Course</a>
+        
+        </div>
+       </div>
+       <br class="hidesm">
+      </nav>
+
+
+
+</header>
+
+
+<!-- MAIN -->
+
+<main class="container">
+    <h1 class="jumbotron">DSA - Stack</h1>
+    <br>
+    <hr>
+
+    <p>A stack is an Abstract Data Type (ADT), commonly used in most programming languages. It is named stack as it behaves like a real-world stack, for example – a deck of cards or a pile of plates, etc.</p>
+    <!-- <img src="/data_structures_algorithms/images/stack_example.jpg" alt="Stack Example" /> -->
+    <p>A real-world stack allows operations at one end only. For example, we can place or remove a card or plate from the top of the stack only. Likewise, Stack ADT allows all data operations at one end only. At any given time, we can only access the top element of a stack.</p>
+    <p>This feature makes it LIFO data structure. LIFO stands for Last-in-first-out. Here, the element which is placed (inserted or added) last, is accessed first. In stack terminology, insertion operation is called <b>PUSH</b> operation and removal operation is called <b>POP</b> operation.</p>
+    <br>
+    <h2>Stack Representation</h2>
+    <br>
+    <p>The following diagram depicts a stack and its operations &minus;</p>
+    <!-- <img src="/data_structures_algorithms/images/stack_representation.jpg" alt="Stack Representation" /> -->
+    <p>A stack can be implemented by means of Array, Structure, Pointer, and Linked List. Stack can either be a fixed size one or it may have a sense of dynamic resizing. Here, we are going to implement stack using arrays, which makes it a fixed size stack implementation.</p>
+    <br>
+    <h2>Basic Operations</h2>
+    <br>
+    <p>Stack operations may involve initializing the stack, using it and then de-initializing it. Apart from these basic stuffs, a stack is used for the following two primary operations &minus;</p>
+    <ul class="list">
+    <li><p><b>push()</b> &minus; Pushing (storing) an element on the stack.</p></li>
+    <li><p><b>pop()</b> &minus; Removing (accessing) an element from the stack.</p></li>
+    </ul>
+    <p>When data is PUSHed onto stack.</p>
+    <p>To use a stack efficiently, we need to check the status of stack as well. For the same purpose, the following functionality is added to stacks &minus;</p>
+    <ul class="list">
+    <li><p><b>peek()</b> &minus; get the top data element of the stack, without removing it.</p></li>
+    <li><p><b>isFull()</b> &minus; check if stack is full.</p></li>
+    <li><p><b>isEmpty()</b> &minus; check if stack is empty.</p></li>
+    </ul>
+    <p>At all times, we maintain a pointer to the last PUSHed data on the stack. As this pointer always represents the top of the stack, hence named <b>top</b>. The <b>top</b> pointer provides top value of the stack without actually removing it.</p>
+    <p>First we should learn about procedures to support stack functions &minus;</p>
+    <br>
+    <h3>peek()</h3>
+    <br>
+    <p>Algorithm of peek() function &minus;</p>
+    <pre class="result notranslate">
+    begin procedure peek
+       return stack[top]
+    end procedure
+    </pre>
+    <p>Implementation of peek() function in C programming language &minus;</p>
+    <p><b>Example</b></p>
+    <pre class="prettyprint notranslate">
+    int peek() {
+       return stack[top];
+    }
+    </pre>
+    <br>
+    <h3>isfull()</h3>
+    <br>
+    <p>Algorithm of isfull() function &minus;</p>
+    <pre class="prettyprint notranslate">
+    begin procedure isfull
+    
+       if top equals to MAXSIZE
+          return true
+       else
+          return false
+       endif
+       
+    end procedure
+    </pre>
+    <p>Implementation of isfull() function in C programming language &minus;</p>
+    <p><b>Example</b></p>
+    <pre class="prettyprint notranslate">
+    bool isfull() {
+       if(top == MAXSIZE)
+          return true;
+       else
+          return false;
+    }
+    </pre>
+    <br>
+    <h3>isempty()</h3>
+    <br>
+    <p>Algorithm of isempty() function &minus;</p>
+    <pre class="prettyprint notranslate">
+    begin procedure isempty
+    
+       if top less than 1
+          return true
+       else
+          return false
+       endif
+       
+    end procedure
+    </pre>
+    <p>Implementation of isempty() function in C programming language is slightly different. We initialize top at -1, as the index in array starts from 0. So we check if the top is below zero or -1 to determine if the stack is empty. Here's the code &minus;</p>
+    <p><b>Example</b></p>
+    <pre class="prettyprint notranslate">
+    bool isempty() {
+       if(top == -1)
+          return true;
+       else
+          return false;
+    }
+    </pre>
+    <br>
+    <h2>Push Operation</h2>
+    <br>
+    <p>The process of putting a new data element onto stack is known as a Push Operation. Push operation involves a series of steps &minus;</p>
+    <ul class="list">
+    <li><p><b>Step 1</b> &minus; Checks if the stack is full.</p></li>
+    <li><p><b>Step 2</b> &minus; If the stack is full, produces an error and exit.</p></li>
+    <li><p><b>Step 3</b> &minus; If the stack is not full, increments <b>top</b> to point next empty space.</p></li>
+    <li><p><b>Step 4</b> &minus; Adds data element to the stack location, where top is pointing.</p></li>
+    <li><p><b>Step 5</b> &minus; Returns success.</p></li>
+    </ul>
+    <!-- <img src="/data_structures_algorithms/images/stack_push_operation.jpg" alt="Stack Push Operation" /> -->
+    <p>If the linked list is used to implement the stack, then in step 3, we need to allocate space dynamically.</p>
+    <br>
+    <h3>Algorithm for PUSH Operation</h3>
+    <br>
+    <p>A simple algorithm for Push operation can be derived as follows &minus;</p>
+    <pre class="prettyprint notranslate">
+    begin procedure push: stack, data
+    
+       if stack is full
+          return null
+       endif
+       
+       top &larr; top + 1
+       stack[top] &larr; data
+    
+    end procedure
+    </pre>
+    <p>Implementation of this algorithm in C, is very easy. See the following code &minus;</p>
+    <p><b>Example</b></p>
+    <pre class="prettyprint notranslate">
+    void push(int data) {
+       if(!isFull()) {
+          top = top &plus; 1;   
+          stack[top] = data;
+       } else {
+          printf("Could not insert data, Stack is full.\n");
+       }
+    }
+    </pre>
+    <br>
+    <h2>Pop Operation</h2>
+    <br>
+    <p>Accessing the content while removing it from the stack, is known as a Pop Operation. In an array implementation of pop() operation, the data element is not actually removed, instead <b>top</b> is decremented to a lower position in the stack to point to the next value. But in linked-list implementation, pop() actually removes data element and deallocates memory space.</p>
+    <p>A Pop operation may involve the following steps &minus;</p>
+    <ul class="list">
+    <li><p><b>Step 1</b> &minus; Checks if the stack is empty.</p></li>
+    <li><p><b>Step 2</b> &minus; If the stack is empty, produces an error and exit.</p></li>
+    <li><p><b>Step 3</b> &minus; If the stack is not empty, accesses the data element at which <b>top</b> is pointing.</p></li>
+    <li><p><b>Step 4</b> &minus; Decreases the value of top by 1.</p></li>
+    <li><p><b>Step 5</b> &minus; Returns success.</p></li>
+    </ul>
+    <!-- <img src="/data_structures_algorithms/images/stack_pop_operation.jpg" alt="Stack Pop Operation" /> -->
+    <br>
+    <h3>Algorithm for Pop Operation</h3>
+    <br>
+    <p>A simple algorithm for Pop operation can be derived as follows &minus;</p>
+    <pre class="prettyprint notranslate">
+    begin procedure pop: stack
+    
+       if stack is empty
+          return null
+       endif
+       
+       data &larr; stack[top]
+       top &larr; top - 1
+       return data
+    
+    end procedure
+    </pre>
+    <p>Implementation of this algorithm in C, is as follows &minus;</p>
+    <p><b>Example</b></p>
+    <pre class="prettyprint notranslate">
+    int pop(int data) {
+    
+       if(!isempty()) {
+          data = stack[top];
+          top = top - 1;   
+          return data;
+       } else {
+          printf("Could not retrieve data, Stack is empty.\n");
+       }
+    }
+    </pre>
+    <!-- <p>For a complete stack program in C programming language, please <a href="/data_structures_algorithms/stack_program_in_c.htm" alt="Stack Program in C">click here</a>.</p> -->
+
+    
+</main>
+
+
+
+<footer style="background-color: #2090DB; color: white;text-align: center;" class=" py-6">
+   <div class="row">
+     <div class="col-12 col-md">
+       <small class="d-block mb-3">&copy; 2017–2021 Licensed Product</small>
+     </div>
+   </div>
+ </footer>
+ 
+ 
+ <section>
+ 
+ <!-- ===============================================================================================-->
+     <script src="../../vendor/jquery/jquery-3.2.1.min.js"></script>
+ <!--===============================================================================================-->
+     <script src="../../vendor/animsition/js/animsition.min.js"></script>
+ <!--===============================================================================================-->
+    <script src="../../vendor/bootstrap/js/popper.js"></script>
+    <script src="../../vendor/bootstrap/js/bootstrap.min.js"></script>
+ <!--===============================================================================================-->
+    <script src="../../vendor/select2/select2.min.js"></script>
+ <!--===============================================================================================-->
+    <script src="../../vendor/daterangepicker/moment.min.js"></script>
+    <script src="../../vendor/daterangepicker/daterangepicker.js"></script>
+ <!--===============================================================================================-->
+    <script src="../../vendor/countdowntime/countdowntime.js"></script>
+ <!--===============================================================================================-->
+     <script src="../../js/main.js"></script>
+   
+     <script src="../../js/custom.js"></script>
+ 
+     <script src="../../js/adconsent.js"></script>
+     <script src="../../js/my-learning.js"></script>
+     <script src="../../js/snhb-loader.min.js"></script>
+     <script src="../../js/w3codecolor.js"></script>
+ 
+ </section>
+ 
+ </body>
+ </html>

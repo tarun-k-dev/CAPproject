@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+
+<head>
+<title>ELearning Platform</title>
+<link rel="icon" href="../../favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="../../css/styles.css">
+<link rel="stylesheet" href="../../css/custom.css">
+<link rel="stylesheet" href="../../css/font-awesome.min.css">
+<script src="../../js/font.js"></script>
+<!-- end cmp -->
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="../../images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="../../vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="../../vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../css/util.css">
+	<link rel="stylesheet" type="text/css" href="../../css/main.css">
+</head>
+
+
+<body style="position:relative;min-height:100%;">
+
+<header>
+
+    <div class='w3-container top' style="padding-top:20px;">
+        <a class='w3schools-logo notranslate' style="position:absolute;" href='../../index.html'>Elearning<span class='dotcom'>.org</span></a>
+      
+        <!-- <div id="loginactioncontainer" class='w3-right' style='width:80px;height:50px;'>
+          <div id="mypagediv"></div> 
+            <a id="w3loginbtn" style="border: medium none; display: inline; cursor: pointer; background-color: #2090db;" class="login w3-right w3-hover-greener" href="../../login.html" target="_self">LOG IN</a>
+        </div> -->
+      
+        <div id="theworldsgreatest" class='w3-right w3-hide-medium w3-hide-small w3-wide toptext' style="line-height: 50px;margin-right:20px;font-family:'Segoe UI',Arial,sans-serif">
+          THE WORLD'S LARGEST ONLINE LEARNING PLATFORM
+        </div>
+      
+      </div>
+      
+      
+      <div class="w3-bar w3-theme w3-card-2 w3-wide notranslate">
+       <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 hidesm" href="javascript:void(0)" onclick="w3_open()"><i class='fa'>&#xf0c9;</i></a>
+       <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_open_nav('tutorials')" id="navbtn_tutorials">WEB TECHNOLOGIES <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a>
+       <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_open_nav('references')" id="navbtn_references">CORE SUBJECTS <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a>
+       <!-- <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_open_nav('examples')" id="navbtn_examples">QUIZ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a> -->
+       <!-- <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16 w3-hide-medium w3-hide-small" href="javascript:void(0)" onclick="w3_open_nav('exercises')" id="navbtn_exercises">ONLINE COURSES <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a> -->
+       <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-left topnav-some w3-hide"  href="../../quiz.html" title='quiz'>QUIZ</a>
+       <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-left topnav-some w3-hide"  href="#" title='oc'>ONLINE COURSES</a>
+ 
+       <div class="w3-right">
+        
+        <!-- <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-right topnav-some w3-hide"  href="../../signup.html" title='signup'>Sign Up</a> -->
+        <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-right topnav-some w3-hide"  href="../../about.html" title='About'>About</a>
+        
+       </div>
+      </div>
+      
+      
+       <div id='myAccordion' class="w3-card-2 w3-light-grey w3-center w3-hide-large" style="display:none;cursor:default"> 
+       <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-xlarge w3-right">&times;</a><br>
+       <div class="w3-container w3-padding-32">
+        <a class="w3-button w3-block w3-large w3-wide" onclick="open_xs_menu('tutorials');" href="javascript:void(0);">WEB TECHNOLOGIES <i class='fa fa-caret-down'></i></a>
+        <div id="sectionxs_tutorials" class="w3-white w3-show"></div>
+        <a class="w3-button w3-block w3-large w3-wide" onclick="open_xs_menu('references')" href="javascript:void(0);">CORE SUBJECTS <i class='fa fa-caret-down'></i></a>
+        <div id="sectionxs_references" class="w3-white w3-show"></div>
+        <a class="w3-button w3-block w3-large w3-wide" href="../../quiz.html">QUIZ</i></a>
+        <div id="sectionxs_examples" class="w3-white w3-show"></div>
+        <a class="w3-button w3-block w3-large w3-wide" href="#">ONLINE COURSES</i></a>
+        <div id="sectionxs_exercises" class="w3-white w3-show"></div>
+        
+       </div>
+      </div> 
+      
+      <nav id="nav_tutorials" class="w3-light-grey w3-card-2 w3-hide-small navex">
+       <span onclick="w3_close_nav('tutorials')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+       <div class="w3-row-padding w3-bar-block">
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">HTML5 and CSS3</h3>
+          <a class="w3-bar-item w3-button" href="../HTML/a.html">HTML - Attributes</a>
+          <a class="w3-bar-item w3-button" href="../HTML/b.html">HTML - Frames</a>
+          <a class="w3-bar-item w3-button" href="../HTML/c.html">HTML - Forms</a>
+          <a class="w3-bar-item w3-button" href="../HTML/d.html">HTML - Embed Media</a>
+          <a class="w3-bar-item w3-button" href="../HTML/e.html">HTML - Layouts</a>
+          <a class="w3-bar-item w3-button" href="../CSS/a.html">CSS - Visibility</a>
+          <a class="w3-bar-item w3-button" href="../CSS/b.html">CSS - Positioning</a>
+          <a class="w3-bar-item w3-button" href="../CSS/c.html">CSS - Padding</a>
+          <a class="w3-bar-item w3-button" href="../CSS/d.html">CSS - Layers</a>
+          <a class="w3-bar-item w3-button" href="../CSS/e.html">CSS - Animation</a> 
+      
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">JavaScript</h3>
+         <a class="w3-bar-item w3-button" href="../JavaScript/a.html">JavaScript - Objects</a>
+         <a class="w3-bar-item w3-button" href="../JavaScript/b.html">JavaScript - Strings</a>
+         <a class="w3-bar-item w3-button" href='../JavaScript/c.html'>JavaScript - Math</a>
+         <a class="w3-bar-item w3-button" href='../JavaScript/d.html'>JavaScript - Arrays</a>
+         <a class="w3-bar-item w3-button" href='../JavaScript/e.html'>JavaScript - Error Handling</a>
+         
+        </div> 
+       <div class="w3-col l3 m6">
+          <h3 class="w3-margin-top">Python</h3>
+          <a class="w3-bar-item w3-button" href="../Python/a.html">Python - Variables</a>
+          <a class="w3-bar-item w3-button" href="../Python/b.html">Python - Strings</a>
+          <a class="w3-bar-item w3-button" href="../Python/c.html">Python - Lists</a>
+          <a class="w3-bar-item w3-button" href="../Python/d.html">Python - Tuples</a>
+          <a class="w3-bar-item w3-button" href="../Python/e.html">Python - Dictionary</a>
+          <a class="w3-bar-item w3-button" href="../Python/f.html">Python - Exceptions</a>
+          
+         
+        </div>
+        <div class="w3-col l3 m6 w3-hide-medium">
+           
+         <h3 class="w3-margin-top">Artificial Intelligence</h3>
+          <a class="w3-bar-item w3-button" href="../AI/a.html"> AI Overview</a>
+          <a class="w3-bar-item w3-button" href="../AI/b.html"> NLP</a>
+          <a class="w3-bar-item w3-button" href="../AI/c.html"> Robotics</a> 
+          <a class="w3-bar-item w3-button" href="../AI/d.html"> Neural Networks</a> 
+          <a class="w3-bar-item w3-button" href="../AI/e.html"> Expert Systems</a> 
+           
+        </div>
+       </div>
+       <br class="hidesm">
+      </nav>
+      
+      <nav id="nav_references" class="w3-light-grey w3-card-2 w3-hide-small navex">
+       <span onclick="w3_close_nav('references')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+       <div class="w3-row-padding w3-bar-block">
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Data Structure & Algorithms</h3>
+          <a class="w3-bar-item w3-button" href="../DSA/a.html">Greedy Algorithms</a>
+          <a class="w3-bar-item w3-button" href="../DSA/b.html">Divide and Conquer</a>
+          <a class="w3-bar-item w3-button" href="../DSA/c.html">Dynamic Programming</a>
+          <a class="w3-bar-item w3-button" href='../DSA/d.html'>Linked List</a>
+          <a class="w3-bar-item w3-button" href="../DSA/e.html">Stack</a>
+          <a class="w3-bar-item w3-button" href="../DSA/f.html">Queue</a>
+         
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Database</h3>
+          <a class="w3-bar-item w3-button" href="../Database/a.html"> Architecture</a>
+          <a class="w3-bar-item w3-button" href='../Database/b.html'> ER Model</a>
+          <a class="w3-bar-item w3-button" href="../Database/c.html"> Indexing</a>
+          <a class="w3-bar-item w3-button" href='../Database/d.html'> Hashing</a>
+          <a class="w3-bar-item w3-button" href='../Database/e.html'> Deadlock</a>
+        
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Computer Networks</h3>
+          <a class="w3-bar-item w3-button" href='../Network/a.html'> Network Types</a>
+          <a class="w3-bar-item w3-button" href='../Network/b.html'> Topologies</a>
+          <a class="w3-bar-item w3-button" href='../Network/c.html'> Physical Layer</a>
+          <a class="w3-bar-item w3-button" href='../Network/d.html'> Data Link Layer</a>
+          <a class="w3-bar-item w3-button" href='../Network/e.html'> Network Layer</a>
+      
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Operating System</h3>
+          <a class="w3-bar-item w3-button" href='../OS/a.html'> OS Types</a>
+          <a class="w3-bar-item w3-button" href='../OS/b.html'> Processes</a>
+          <a class="w3-bar-item w3-button" href='../OS/c.html'> Memory Management</a>
+          <a class="w3-bar-item w3-button" href='../OS/d.html'> Virtual Memory</a>
+          <a class="w3-bar-item w3-button" href='../OS/e.html'> File System</a>
+        
+        </div>
+       </div>
+       <br class="hidesm">
+      </nav>
+      
+      <nav id="nav_examples" class="w3-light-grey w3-card-2 w3-hide-small navex">
+       <span onclick="w3_close_nav('examples')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+       <div class="w3-row-padding w3-bar-block">
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">HTML and CSS</h3>
+         <a class="w3-bar-item w3-button" href='#'>HTML Quiz</a>
+         <a class="w3-bar-item w3-button" href='#'>CSS Quiz</a>
+         
+        </div>
+        <div class="w3-col l3 m6">
+        
+         <h3 class="w3-margin-top">Programming</h3>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Python Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">JavaScript Quiz</a>
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Core Subjects</h3>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Data Structure Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Algorithms Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Database Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Operating System Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Computer Network Quiz</a>
+       
+        
+        </div>
+        <div class="w3-col l3 m6 w3-hide-medium">
+         <h3 class="w3-margin-top">Advanced Technology</h3>
+         <a class="w3-bar-item w3-button" href="#" target="_top">AI Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">NLP Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Robotics Quiz</a>
+        </div>
+      </div>
+       <br class="hidesm">
+      </nav>
+      
+      <nav id="nav_exercises" class="w3-light-grey w3-card-2 w3-hide-small w3-hide-medium navex">
+       <span onclick="w3_close_nav('exercises')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+       <div class="w3-row-padding w3-bar-block">
+        <div class="w3-col l4 m12">
+         <h3 class="w3-margin-top">Web Development</h3>
+         <a class="w3-bar-item w3-button" href="#">HTML Course</a>
+         <a class="w3-bar-item w3-button" href="#">CSS Course</a>
+         <a class="w3-bar-item w3-button" href="#">JavaScript Course</a>
+         <a class="w3-bar-item w3-button" href="#">SQL Course</a>
+         <a class="w3-bar-item w3-button" href="#">Python Course</a>
+        </div>
+        <div class="w3-col l4 m12">
+         <h3 class="w3-margin-top">Mobile Development</h3>
+         <a class="w3-bar-item w3-button" href="#">React Native Course</a>
+         <a class="w3-bar-item w3-button" href="#">Flutter Course</a>
+        </div>
+        <div class="w3-col l4 m12">
+         <h3 class="w3-margin-top">Game Development</h3>
+         <a class="w3-bar-item w3-button" href="#">C# Course</a>
+         <a class="w3-bar-item w3-button" href="#">C++ Course</a>
+         <a class="w3-bar-item w3-button" href="#">Unity 3D Course</a>
+        
+        </div>
+       </div>
+       <br class="hidesm">
+      </nav>
+
+
+
+</header>
+
+
+<!-- MAIN -->
+
+<main class="container">
+    <h1 class="jumbotron">Python - Strings </h1>
+    <br>
+    <hr>
+
+
+<p>Strings are amongst the most popular types in Python. We can create them simply by enclosing characters in quotes. Python treats single quotes the same as double quotes. Creating strings is as simple as assigning a value to a variable. For example &minus;</p>
+<pre class="prettyprint notranslate">
+var1 = 'Hello World!'
+var2 = "Python Programming"
+</pre>
+<br>
+<h2>Accessing Values in Strings</h2>
+<br>
+<p>Python does not support a character type; these are treated as strings of length one, thus also considered a substring.</p>
+<p>To access substrings, use the square brackets for slicing along with the index or indices to obtain your substring. For example &minus;</p>
+<div class="demo-view">
+<!-- <a href="http://tpcg.io/5Cb59z" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a> -->
+</div>
+<pre class="prettyprint notranslate">
+#!/usr/bin/python
+
+var1 = 'Hello World!'
+var2 = "Python Programming"
+
+print "var1[0]: ", var1[0]
+print "var2[1:5]: ", var2[1:5]
+</pre>
+<p>When the above code is executed, it produces the following result &minus;</p>
+<pre class="result notranslate">
+var1[0]:  H
+var2[1:5]:  ytho
+</pre>
+<br>
+<h2>Updating Strings</h2>
+<br>
+<p>You can "update" an existing string by (re)assigning a variable to another string. The new value can be related to its previous value or to a completely different string altogether. For example &minus;</p>
+<div class="demo-view">
+<!-- <a href="http://tpcg.io/TTnzkV" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a> -->
+</div>
+<pre class="prettyprint notranslate">
+#!/usr/bin/python
+
+var1 = 'Hello World!'
+print "Updated String :- ", var1[:6] + 'Python'
+</pre>
+<p>When the above code is executed, it produces the following result &minus;</p>
+<pre class="result notranslate">
+Updated String :-  Hello Python
+</pre>
+<br>
+<h2>Escape Characters</h2>
+<br>
+<p>Following table is a list of escape or non-printable characters that can be represented with backslash notation.</p>
+<p>An escape character gets interpreted; in a single quoted as well as double quoted strings.</p>
+<table class="table table-bordered" style="text-align:center;">
+<tr>
+<th style="text-align:center;">Backslash notation</th>
+<th style="text-align:center;">Hexadecimal character</th>
+<th class="ts">Description</th>
+</tr>
+<tr>
+<td>\a</td>
+<td>0x07</td>
+<td>Bell or alert</td>
+</tr>
+<tr>
+<td>\b</td>
+<td>0x08</td>
+<td>Backspace</td>
+</tr>
+<tr>
+<td>\cx</td>
+<td>&nbsp;</td>
+<td>Control-x</td>
+</tr>
+<tr>
+<td>\C-x</td>
+<td>&nbsp;</td>
+<td>Control-x</td>
+</tr>
+<tr>
+<td>\e</td>
+<td>0x1b</td>
+<td>Escape</td>
+</tr>
+<tr>
+<td>\f</td>
+<td>0x0c</td>
+<td>Formfeed</td>
+</tr>
+<tr>
+<td>\M-\C-x</td>
+<td>&nbsp;</td>
+<td>Meta-Control-x</td>
+</tr>
+<tr>
+<td>\n</td>
+<td>0x0a</td>
+<td>Newline</td>
+</tr>
+<tr>
+<td>\nnn</td>
+<td>&nbsp;</td>
+<td>Octal notation, where n is in the range 0.7</td>
+</tr>
+<tr>
+<td>\r</td>
+<td>0x0d</td>
+<td>Carriage return</td>
+</tr>
+<tr>
+<td>\s</td>
+<td>0x20</td>
+<td>Space</td>
+</tr>
+<tr>
+<td>\t</td>
+<td>0x09</td>
+<td>Tab</td>
+</tr>
+<tr>
+<td>\v</td>
+<td>0x0b</td>
+<td>Vertical tab</td>
+</tr>
+<tr>
+<td>\x</td>
+<td>&nbsp;</td>
+<td>Character x</td>
+</tr>
+<tr>
+<td class="ts">\xnn</td>
+<td>&nbsp;</td>
+<td>Hexadecimal notation, where n is in the range 0.9, a.f, or A.F</td>
+</tr>
+</table>
+<br>
+<h2>String Special Operators</h2>
+<br>
+<p>Assume string variable <b>a</b> holds 'Hello' and variable <b>b</b> holds 'Python', then &minus;</p>
+<table class="table table-bordered">
+<tr>
+<th style="text-align:center;width:10%">Operator</th>
+<th style="text-align:center;width:45%">Description</th>
+<th style="text-align:center;">Example</th>
+</tr>
+<tr>
+<td class="ts">+</td>
+<td>Concatenation - Adds values on either side of the operator</td>
+<td class="ts">a + b will give HelloPython</td>
+</tr>
+<tr>
+<td class="ts">*</td>
+<td>Repetition - Creates new strings, concatenating multiple copies of the same
+string</td>
+<td class="ts">a*2 will give -HelloHello</td>
+</tr>
+<tr>
+<td class="ts">[]</td>
+<td>Slice - Gives the character from the given index</td>
+<td class="ts">a[1] will give e</td>
+</tr>
+<tr>
+<td class="ts">[ : ]</td>
+<td>Range Slice - Gives the characters from the given range</td>
+<td class="ts">a[1:4] will give ell</td>
+</tr>
+<tr>
+<td class="ts">in</td>
+<td>Membership - Returns true if a character exists in the given string</td>
+<td class="ts">H in a will give 1</td>
+</tr>
+<tr>
+<td class="ts">not in </td>
+<td>Membership - Returns true if a character does not exist in the given string</td>
+<td class="ts">M not in a will give 1</td>
+</tr>
+<tr>
+<td class="ts">r/R</td>
+<td>Raw String - Suppresses actual meaning of Escape characters. The syntax for raw strings is exactly the same as for normal strings with the exception of the raw string operator, the letter "r," which precedes the quotation marks. The "r" can be lowercase (r) or uppercase (R) and must be placed immediately preceding the first quote mark.</td>
+<td class="ts">print r'\n' prints \n and print R'\n'prints \n</td>
+</tr>
+<tr>
+<td class="ts">%</td>
+<td>Format - Performs String formatting</td>
+<td class="ts">See at next section</td>
+</tr>
+</table>
+<br>
+<h2>String Formatting Operator</h2>
+<br>
+<p>One of Python's coolest features is the string format operator %. This operator is unique to strings and makes up for the pack of having functions from C's printf() family. Following is a simple example &minus;</p>
+<div class="demo-view">
+<!-- <a href="http://tpcg.io/wIUTuU" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a> -->
+</div>
+<pre class="prettyprint notranslate">
+#!/usr/bin/python
+
+print "My name is %s and weight is %d kg!" % ('Zara', 21)
+</pre>
+<p>When the above code is executed, it produces the following result &minus;</p>
+<pre class="result notranslate">
+My name is Zara and weight is 21 kg!
+</pre>
+<p>Here is the list of complete set of symbols which can be used along with % &minus;</p>
+<table class="table table-bordered">
+<tr>
+<th style="text-align:center;width:30%">Format Symbol</th>
+<th style="text-align:center;">Conversion</th>
+</tr>
+<tr>
+<td class="ts">%c</td>
+<td>character</td>
+</tr>
+<tr>
+<td class="ts">%s</td>
+<td>string conversion via str() prior to formatting</td>
+</tr>
+<tr>
+<td class="ts">%i</td>
+<td>signed decimal integer</td>
+</tr>
+<tr>
+<td class="ts">%d</td>
+<td>signed decimal integer</td>
+</tr>
+<tr>
+<td class="ts">%u</td>
+<td>unsigned decimal integer</td>
+</tr>
+<tr>
+<td class="ts">%o</td>
+<td>octal integer</td>
+</tr>
+<tr>
+<td class="ts">%x</td>
+<td>hexadecimal integer (lowercase letters)</td>
+</tr>
+<tr>
+<td class="ts">%X</td>
+<td>hexadecimal integer (UPPERcase letters)</td>
+</tr>
+<tr>
+<td class="ts">%e</td>
+<td>exponential notation (with lowercase 'e')</td>
+</tr>
+<tr>
+<td class="ts">%E</td>
+<td>exponential notation (with UPPERcase 'E')</td>
+</tr>
+<tr>
+<td class="ts">%f</td>
+<td>floating point real number</td>
+</tr>
+<tr>
+<td class="ts">%g</td>
+<td>the shorter of %f and %e</td>
+</tr>
+<tr>
+<td class="ts">%G</td>
+<td>the shorter of %f and %E</td>
+</tr>
+</table>
+<p>Other supported symbols and functionality are listed in the following table &minus;</p>
+<table class="table table-bordered">
+<tr>
+<th style="text-align:center;width:30%">Symbol</th>
+<th style="text-align:center;">Functionality</th>
+</tr>
+<tr>
+<td class="ts">*</td>
+<td>argument specifies width or precision</td>
+</tr>
+<tr>
+<td class="ts">-</td>
+<td>left justification</td>
+</tr>
+<tr>
+<td class="ts">+</td>
+<td>display the sign</td>
+</tr>
+<tr>
+<td class="ts">&lt;sp&gt;</td>
+<td>leave a blank space before a positive number</td>
+</tr>
+<tr>
+<td class="ts">#</td>
+<td>add the octal leading zero ( '0' ) or hexadecimal leading '0x' or '0X', depending on whether 'x' or 'X' were used.</td>
+</tr>
+<tr>
+<td class="ts">0</td>
+<td>pad from left with zeros (instead of spaces)</td>
+</tr>
+<tr>
+<td class="ts">%</td>
+<td>'%%' leaves you with a single literal '%'</td>
+</tr>
+<tr>
+<td class="ts">(var)</td>
+<td>mapping variable (dictionary arguments)</td>
+</tr>
+<tr>
+<td class="ts">m.n.</td>
+<td>m is the minimum total width and n is the number of digits to display after the decimal point (if appl.)</td>
+</tr>
+</table>
+<br>
+<h2>Triple Quotes</h2>
+<br>
+<p>Python's triple quotes comes to the rescue by allowing strings to span multiple lines, including verbatim NEWLINEs, TABs, and any other special characters.</p>
+<p>The syntax for triple quotes consists of three consecutive <b>single or double</b> quotes.</p>
+<div class="demo-view">
+<!-- <a href="http://tpcg.io/szN9rw" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a> -->
+</div>
+<pre class="prettyprint notranslate">
+#!/usr/bin/python
+
+para_str = """this is a long string that is made up of
+several lines and non-printable characters such as
+TAB ( \t ) and they will show up that way when displayed.
+NEWLINEs within the string, whether explicitly given like
+this within the brackets [ \n ], or just a NEWLINE within
+the variable assignment will also show up.
+"""
+print para_str
+</pre>
+<p>When the above code is executed, it produces the following result. Note how every single special character has been converted to its printed form, right down to the last NEWLINE at the end of the string between the "up." and closing triple quotes. Also note that NEWLINEs occur either with an explicit carriage return at the end of a line or its escape code (\n) &minus;</p>
+<pre class="result notranslate">
+this is a long string that is made up of
+several lines and non-printable characters such as
+TAB (    ) and they will show up that way when displayed.
+NEWLINEs within the string, whether explicitly given like
+this within the brackets [
+ ], or just a NEWLINE within
+the variable assignment will also show up.
+</pre>
+<p>Raw strings do not treat the backslash as a special character at all. Every character you put into a raw string stays the way you wrote it &minus;</p>
+<div class="demo-view">
+<!-- <a href="http://tpcg.io/Gfq9Hl" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a> -->
+</div>
+<pre class="prettyprint notranslate">
+#!/usr/bin/python
+
+print 'C:\\nowhere'
+</pre>
+<p>When the above code is executed, it produces the following result &minus;</p>
+<pre class="result notranslate">
+C:\nowhere
+</pre>
+<p>Now let's make use of raw string. We would put expression in <b>r'expression'</b> as follows &minus;</p>
+<div class="demo-view">
+<!-- <a href="http://tpcg.io/ExGqoY" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a> -->
+</div>
+<pre class="prettyprint notranslate">
+#!/usr/bin/python
+
+print r'C:\\nowhere'
+</pre>
+<p>When the above code is executed, it produces the following result &minus;</p>
+<pre class="result notranslate">
+C:\\nowhere
+</pre>
+<br>
+<h2>Unicode String</h2>
+<br>
+<p>Normal strings in Python are stored internally as 8-bit ASCII, while Unicode strings are stored as 16-bit Unicode. This allows for a more varied set of characters, including special characters from most languages in the world. I'll restrict my treatment of Unicode strings to the following &minus;</p>
+<div class="demo-view">
+<!-- <a href="http://tpcg.io/HUYVB4" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a> -->
+</div>
+<pre class="prettyprint notranslate tryit">
+#!/usr/bin/python
+
+print u'Hello, world!'
+</pre>
+<p>When the above code is executed, it produces the following result &minus;</p>
+<pre class="result notranslate">
+Hello, world!
+</pre>
+<p>As you can see, Unicode strings use the prefix u, just as raw strings use the prefix r.</p>
+<br>
+<h2>Built-in String Methods</h2>
+<br>
+<p>Python includes the following built-in methods to manipulate strings &minus;</p>
+<table class="table table-bordered">
+<tr>
+<th style="text-align:center;width:10%">Sr.No.</th>
+<th style="text-align:center;">Methods with Description</th>
+</tr>
+<tr>
+<td class="ts">1</td>
+<td><a href="/python/string_capitalize.htm">capitalize()</a>
+<p>Capitalizes first letter of string</p></td>
+</tr>
+<tr>
+<td class="ts">2</td>
+<td><a href="/python/string_center.htm">center(width, fillchar)</a>
+<p>Returns a space-padded string with the original string centered to a total of width columns.</p></td>
+</tr>
+<tr>
+<td class="ts">3</td>
+<td><a href="/python/string_count.htm">count(str, beg= 0,end=len(string))</a>
+<p>Counts how many times str occurs in string or in a substring of string if starting index beg and ending index end are given.</p></td>
+</tr>
+<tr>
+<td class="ts">4</td>
+<td><a href="/python/string_decode.htm">decode(encoding='UTF-8',errors='strict')</a>
+<p>Decodes the string using the codec registered for encoding. encoding defaults to the default string encoding.</p></td>
+</tr>
+<tr>
+<td class="ts">5</td>
+<td><a href="/python/string_encode.htm">encode(encoding='UTF-8',errors='strict')</a>
+<p>Returns encoded string version of string; on error, default is to raise a ValueError unless errors is given with 'ignore' or 'replace'.</p></td>
+</tr>
+<tr>
+<td class="ts">6</td>
+<td><a href="/python/string_endswith.htm">endswith(suffix, beg=0, end=len(string))</a>
+<p>Determines if string or a substring of string (if starting index beg and ending index end are given) ends with suffix; returns true if so and false otherwise.</p></td>
+</tr>
+<tr>
+<td class="ts">7</td>
+<td><a href="/python/string_expandtabs.htm">expandtabs(tabsize=8)</a>
+<p>Expands tabs in string to multiple spaces; defaults to 8 spaces per tab if tabsize not provided.</p></td>
+</tr>
+<tr>
+<td class="ts">8</td>
+<td><a href="/python/string_find.htm">find(str, beg=0 end=len(string))</a>
+<p>Determine if str occurs in string or in a substring of string if starting index beg and ending index end are given returns index if found and -1 otherwise.</p></td>
+</tr>
+<tr>
+<td class="ts">9</td>
+<td><a href="/python/string_index.htm">index(str, beg=0, end=len(string))</a>
+<p>Same as find(), but raises an exception if str not found.</p></td>
+</tr>
+<tr>
+<td class="ts">10</td>
+<td><a href="/python/string_isalnum.htm">isalnum()</a>
+<p>Returns true if string has at least 1 character and all characters are alphanumeric and false otherwise.</p></td>
+</tr>
+<tr>
+<td class="ts">11</td>
+<td><a href="/python/string_isalpha.htm">isalpha()</a>
+<p>Returns true if string has at least 1 character and all characters are alphabetic and false otherwise.</p></td>
+</tr>
+<tr>
+<td class="ts">12</td>
+<td><a href="/python/string_isdigit.htm">isdigit()</a>
+<p>Returns true if string contains only digits and false otherwise.</p></td>
+</tr>
+<tr>
+<td class="ts">13</td>
+<td><a href="/python/string_islower.htm">islower()</a>
+<p>Returns true if string has at least 1 cased character and all cased characters are in lowercase and false otherwise.</p></td>
+</tr>
+<tr>
+<td class="ts">14</td>
+<td><a href="/python/string_isnumeric.htm">isnumeric()</a>
+<p>Returns true if a unicode string contains only numeric characters and false otherwise.</p></td>
+</tr>
+<tr>
+<td class="ts">15</td>
+<td><a href="/python/string_isspace.htm">isspace()</a>
+<p>Returns true if string contains only whitespace characters and false otherwise.</p></td>
+</tr>
+<tr>
+<td class="ts">16</td>
+<td><a href="/python/string_istitle.htm">istitle()</a>
+<p>Returns true if string is properly "titlecased" and false otherwise.</p></td>
+</tr>
+<tr>
+<td class="ts">17</td>
+<td><a href="/python/string_isupper.htm">isupper()</a>
+<p>Returns true if string has at least one cased character and all cased characters are in uppercase and false otherwise.</p></td>
+</tr>
+<tr>
+<td class="ts">18</td>
+<td><a href="/python/string_join.htm">join(seq)</a>
+<p>Merges (concatenates) the string representations of elements in sequence seq into a string, with separator string.</p></td>
+</tr>
+<tr>
+<td class="ts">19</td>
+<td><a href="/python/string_len.htm">len(string)</a>
+<p>Returns the length of the string</p></td>
+</tr>
+<tr>
+<td class="ts">20</td>
+<td><a href="/python/string_ljust.htm">ljust(width[, fillchar])</a>
+<p>Returns a space-padded string with the original string left-justified to a total of width columns.</p></td>
+</tr>
+<tr>
+<td class="ts">21</td>
+<td><a href="/python/string_lower.htm">lower()</a>
+<p>Converts all uppercase letters in string to lowercase.</p></td>
+</tr>
+<tr>
+<td class="ts">22</td>
+<td><a href="/python/string_lstrip.htm">lstrip()</a>
+<p>Removes all leading whitespace in string.</p></td>
+</tr>
+<tr>
+<td class="ts">23</td>
+<td><a href="/python/string_maketrans.htm">maketrans()</a>
+<p>Returns a translation table to be used in translate function.</p></td>
+</tr>
+<tr>
+<td class="ts">24</td>
+<td><a href="/python/string_max.htm">max(str)</a>
+<p>Returns the max alphabetical character from the string str.</p></td>
+</tr>
+<tr>
+<td class="ts">25</td>
+<td><a href="/python/string_min.htm">min(str)</a>
+<p>Returns the min alphabetical character from the string str.</p></td>
+</tr>
+<tr>
+<td class="ts">26</td>
+<td><a href="/python/string_replace.htm">replace(old, new [, max])</a>
+<p>Replaces all occurrences of old in string with new or at most max occurrences if max given.</p></td>
+</tr>
+<tr>
+<td class="ts">27</td>
+<td><a href="/python/string_rfind.htm">rfind(str, beg=0,end=len(string))</a>
+<p>Same as find(), but search backwards in string.</p></td>
+</tr>
+<tr>
+<td class="ts">28</td>
+<td><a href="/python/string_rindex.htm">rindex( str, beg=0, end=len(string))</a>
+<p>Same as index(), but search backwards in string.</p></td>
+</tr>
+<tr>
+<td class="ts">29</td>
+<td><a href="/python/string_rjust.htm">rjust(width,[, fillchar])</a>
+<p>Returns a space-padded string with the original string right-justified to a total of width columns.</p></td>
+</tr>
+<tr>
+<td class="ts">30</td>
+<td><a href="/python/string_rstrip.htm">rstrip()</a>
+<p>Removes all trailing whitespace of string.</p></td>
+</tr>
+<tr>
+<td class="ts">31</td>
+<td><a href="/python/string_split.htm">split(str="", num=string.count(str))</a>
+<p>Splits string according to delimiter str (space if not provided) and returns list of substrings; split into at most num substrings if given.</p></td>
+</tr>
+<tr>
+<td class="ts">32</td>
+<td><a href="/python/string_splitlines.htm">splitlines( num=string.count('\n'))</a>
+<p>Splits string at all (or num) NEWLINEs and returns a list of each line with NEWLINEs removed.</p></td>
+</tr>
+<tr>
+<td class="ts">33</td>
+<td><a href="/python/string_startswith.htm">startswith(str, beg=0,end=len(string))</a>
+<p>Determines if string or a substring of string (if starting index beg and ending index end are given) starts with substring str; returns true if so and false otherwise.</p></td>
+</tr>
+<tr>
+<td class="ts">34</td>
+<td><a href="/python/string_strip.htm">strip([chars])</a>
+<p>Performs both lstrip() and rstrip() on string.</p></td>
+</tr>
+<tr>
+<td class="ts">35</td>
+<td><a href="/python/string_swapcase.htm">swapcase()</a>
+<p>Inverts case for all letters in string.</p></td>
+</tr>
+<tr>
+<td class="ts">36</td>
+<td><a href="/python/string_title.htm">title()</a>
+<p>Returns "titlecased" version of string, that is, all words begin with uppercase and the rest are lowercase.</p></td>
+</tr>
+<tr>
+<td class="ts">37</td>
+<td><a href="/python/string_translate.htm">translate(table, deletechars="")</a>
+<p>Translates string according to translation table str(256 chars), removing those in the del string.</p></td>
+</tr>
+<tr>
+<td class="ts">38</td>
+<td><a href="/python/string_upper.htm">upper()</a>
+<p>Converts lowercase letters in string to uppercase.</p></td>
+</tr>
+<tr>
+<td class="ts">39</td>
+<td><a href="/python/string_zfill.htm">zfill (width)</a>
+<p>Returns original string leftpadded with zeros to a total of width characters; intended for numbers, zfill() retains any sign given (less one zero).</p></td>
+</tr>
+<tr>
+<td class="ts">40</td>
+<td><a href="/python/string_isdecimal.htm">isdecimal()</a>
+<p>Returns true if a unicode string contains only decimal characters and false otherwise.</p></td>
+</tr>
+</table>
+
+</main>
+
+
+<footer style="background-color: #2090DB; color: white;text-align: center;" class=" py-6">
+  <div class="row">
+    <div class="col-12 col-md">
+      <small class="d-block mb-3">&copy; 2017–2021 Licensed Product</small>
+    </div>
+  </div>
+</footer>
+
+
+<section>
+
+<!-- ===============================================================================================-->
+    <script src="../../vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+    <script src="../../vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="../../vendor/bootstrap/js/popper.js"></script>
+	<script src="../../vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="../../vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="../../vendor/daterangepicker/moment.min.js"></script>
+	<script src="../../vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="../../vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+    <script src="../../js/main.js"></script>
+  
+    <script src="../../js/custom.js"></script>
+
+    <script src="../../js/adconsent.js"></script>
+    <script src="../../js/my-learning.js"></script>
+    <script src="../../js/snhb-loader.min.js"></script>
+    <script src="../../js/w3codecolor.js"></script>
+
+</section>
+
+</body>
+</html>

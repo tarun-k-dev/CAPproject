@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+
+<head>
+<title>ELearning Platform</title>
+<link rel="icon" href="../../favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="../../css/styles.css">
+<link rel="stylesheet" href="../../css/custom.css">
+<link rel="stylesheet" href="../../css/font-awesome.min.css">
+<script src="../../js/font.js"></script>
+<!-- end cmp -->
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="../../images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="../../vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="../../vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../css/util.css">
+	<link rel="stylesheet" type="text/css" href="../../css/main.css">
+</head>
+
+
+<body style="position:relative;min-height:100%;">
+
+<header>
+
+    <div class='w3-container top' style="padding-top:20px;">
+        <a class='w3schools-logo notranslate' style="position:absolute;" href='../../index.html'>Elearning<span class='dotcom'>.org</span></a>
+      
+        <!-- <div id="loginactioncontainer" class='w3-right' style='width:80px;height:50px;'>
+          <div id="mypagediv"></div> 
+            <a id="w3loginbtn" style="border: medium none; display: inline; cursor: pointer; background-color: #2090db;" class="login w3-right w3-hover-greener" href="../../login.html" target="_self">LOG IN</a>
+        </div> -->
+      
+        <div id="theworldsgreatest" class='w3-right w3-hide-medium w3-hide-small w3-wide toptext' style="line-height: 50px;margin-right:20px;font-family:'Segoe UI',Arial,sans-serif">
+          THE WORLD'S LARGEST ONLINE LEARNING PLATFORM
+        </div>
+      
+      </div>
+      
+      
+      <div class="w3-bar w3-theme w3-card-2 w3-wide notranslate">
+       <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 hidesm" href="javascript:void(0)" onclick="w3_open()"><i class='fa'>&#xf0c9;</i></a>
+       <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_open_nav('tutorials')" id="navbtn_tutorials">WEB TECHNOLOGIES <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a>
+       <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_open_nav('references')" id="navbtn_references">CORE SUBJECTS <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a>
+       <!-- <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_open_nav('examples')" id="navbtn_examples">QUIZ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a> -->
+       <!-- <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16 w3-hide-medium w3-hide-small" href="javascript:void(0)" onclick="w3_open_nav('exercises')" id="navbtn_exercises">ONLINE COURSES <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a> -->
+       <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-left topnav-some w3-hide"  href="../../quiz.html" title='quiz'>QUIZ</a>
+       <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-left topnav-some w3-hide"  href="#" title='oc'>ONLINE COURSES</a>
+ 
+       <div class="w3-right">
+        
+        <!-- <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-right topnav-some w3-hide"  href="../../signup.html" title='signup'>Sign Up</a> -->
+        <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-right topnav-some w3-hide"  href="../../about.html" title='About'>About</a>
+        
+       </div>
+      </div>
+      
+      
+       <div id='myAccordion' class="w3-card-2 w3-light-grey w3-center w3-hide-large" style="display:none;cursor:default"> 
+       <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-xlarge w3-right">&times;</a><br>
+       <div class="w3-container w3-padding-32">
+        <a class="w3-button w3-block w3-large w3-wide" onclick="open_xs_menu('tutorials');" href="javascript:void(0);">WEB TECHNOLOGIES <i class='fa fa-caret-down'></i></a>
+        <div id="sectionxs_tutorials" class="w3-white w3-show"></div>
+        <a class="w3-button w3-block w3-large w3-wide" onclick="open_xs_menu('references')" href="javascript:void(0);">CORE SUBJECTS <i class='fa fa-caret-down'></i></a>
+        <div id="sectionxs_references" class="w3-white w3-show"></div>
+        <a class="w3-button w3-block w3-large w3-wide" href="../../quiz.html">QUIZ</i></a>
+        <div id="sectionxs_examples" class="w3-white w3-show"></div>
+        <a class="w3-button w3-block w3-large w3-wide" href="#">ONLINE COURSES</i></a>
+        <div id="sectionxs_exercises" class="w3-white w3-show"></div>
+        
+       </div>
+      </div> 
+      
+      <nav id="nav_tutorials" class="w3-light-grey w3-card-2 w3-hide-small navex">
+       <span onclick="w3_close_nav('tutorials')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+       <div class="w3-row-padding w3-bar-block">
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">HTML5 and CSS3</h3>
+          <a class="w3-bar-item w3-button" href="../HTML/a.html">HTML - Attributes</a>
+          <a class="w3-bar-item w3-button" href="../HTML/b.html">HTML - Frames</a>
+          <a class="w3-bar-item w3-button" href="../HTML/c.html">HTML - Forms</a>
+          <a class="w3-bar-item w3-button" href="../HTML/d.html">HTML - Embed Media</a>
+          <a class="w3-bar-item w3-button" href="../HTML/e.html">HTML - Layouts</a>
+          <a class="w3-bar-item w3-button" href="../CSS/a.html">CSS - Visibility</a>
+          <a class="w3-bar-item w3-button" href="../CSS/b.html">CSS - Positioning</a>
+          <a class="w3-bar-item w3-button" href="../CSS/c.html">CSS - Padding</a>
+          <a class="w3-bar-item w3-button" href="../CSS/d.html">CSS - Layers</a>
+          <a class="w3-bar-item w3-button" href="../CSS/e.html">CSS - Animation</a> 
+      
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">JavaScript</h3>
+         <a class="w3-bar-item w3-button" href="../JavaScript/a.html">JavaScript - Objects</a>
+         <a class="w3-bar-item w3-button" href="../JavaScript/b.html">JavaScript - Strings</a>
+         <a class="w3-bar-item w3-button" href='../JavaScript/c.html'>JavaScript - Math</a>
+         <a class="w3-bar-item w3-button" href='../JavaScript/d.html'>JavaScript - Arrays</a>
+         <a class="w3-bar-item w3-button" href='../JavaScript/e.html'>JavaScript - Error Handling</a>
+         
+        </div> 
+       <div class="w3-col l3 m6">
+          <h3 class="w3-margin-top">Python</h3>
+          <a class="w3-bar-item w3-button" href="../Python/a.html">Python - Variables</a>
+          <a class="w3-bar-item w3-button" href="../Python/b.html">Python - Strings</a>
+          <a class="w3-bar-item w3-button" href="../Python/c.html">Python - Lists</a>
+          <a class="w3-bar-item w3-button" href="../Python/d.html">Python - Tuples</a>
+          <a class="w3-bar-item w3-button" href="../Python/e.html">Python - Dictionary</a>
+          <a class="w3-bar-item w3-button" href="../Python/f.html">Python - Exceptions</a>
+          
+         
+        </div>
+        <div class="w3-col l3 m6 w3-hide-medium">
+           
+         <h3 class="w3-margin-top">Artificial Intelligence</h3>
+          <a class="w3-bar-item w3-button" href="../AI/a.html"> AI Overview</a>
+          <a class="w3-bar-item w3-button" href="../AI/b.html"> NLP</a>
+          <a class="w3-bar-item w3-button" href="../AI/c.html"> Robotics</a> 
+          <a class="w3-bar-item w3-button" href="../AI/d.html"> Neural Networks</a> 
+          <a class="w3-bar-item w3-button" href="../AI/e.html"> Expert Systems</a> 
+           
+        </div>
+       </div>
+       <br class="hidesm">
+      </nav>
+      
+      <nav id="nav_references" class="w3-light-grey w3-card-2 w3-hide-small navex">
+       <span onclick="w3_close_nav('references')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+       <div class="w3-row-padding w3-bar-block">
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Data Structure & Algorithms</h3>
+          <a class="w3-bar-item w3-button" href="../DSA/a.html">Greedy Algorithms</a>
+          <a class="w3-bar-item w3-button" href="../DSA/b.html">Divide and Conquer</a>
+          <a class="w3-bar-item w3-button" href="../DSA/c.html">Dynamic Programming</a>
+          <a class="w3-bar-item w3-button" href='../DSA/d.html'>Linked List</a>
+          <a class="w3-bar-item w3-button" href="../DSA/e.html">Stack</a>
+          <a class="w3-bar-item w3-button" href="../DSA/f.html">Queue</a>
+         
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Database</h3>
+          <a class="w3-bar-item w3-button" href="../Database/a.html"> Architecture</a>
+          <a class="w3-bar-item w3-button" href='../Database/b.html'> ER Model</a>
+          <a class="w3-bar-item w3-button" href="../Database/c.html"> Indexing</a>
+          <a class="w3-bar-item w3-button" href='../Database/d.html'> Hashing</a>
+          <a class="w3-bar-item w3-button" href='../Database/e.html'> Deadlock</a>
+        
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Computer Networks</h3>
+          <a class="w3-bar-item w3-button" href='../Network/a.html'> Network Types</a>
+          <a class="w3-bar-item w3-button" href='../Network/b.html'> Topologies</a>
+          <a class="w3-bar-item w3-button" href='../Network/c.html'> Physical Layer</a>
+          <a class="w3-bar-item w3-button" href='../Network/d.html'> Data Link Layer</a>
+          <a class="w3-bar-item w3-button" href='../Network/e.html'> Network Layer</a>
+      
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Operating System</h3>
+          <a class="w3-bar-item w3-button" href='../OS/a.html'> OS Types</a>
+          <a class="w3-bar-item w3-button" href='../OS/b.html'> Processes</a>
+          <a class="w3-bar-item w3-button" href='../OS/c.html'> Memory Management</a>
+          <a class="w3-bar-item w3-button" href='../OS/d.html'> Virtual Memory</a>
+          <a class="w3-bar-item w3-button" href='../OS/e.html'> File System</a>
+        
+        </div>
+       </div>
+       <br class="hidesm">
+      </nav>
+      
+      <nav id="nav_examples" class="w3-light-grey w3-card-2 w3-hide-small navex">
+       <span onclick="w3_close_nav('examples')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+       <div class="w3-row-padding w3-bar-block">
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">HTML and CSS</h3>
+         <a class="w3-bar-item w3-button" href='#'>HTML Quiz</a>
+         <a class="w3-bar-item w3-button" href='#'>CSS Quiz</a>
+         
+        </div>
+        <div class="w3-col l3 m6">
+        
+         <h3 class="w3-margin-top">Programming</h3>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Python Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">JavaScript Quiz</a>
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Core Subjects</h3>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Data Structure Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Algorithms Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Database Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Operating System Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Computer Network Quiz</a>
+       
+        
+        </div>
+        <div class="w3-col l3 m6 w3-hide-medium">
+         <h3 class="w3-margin-top">Advanced Technology</h3>
+         <a class="w3-bar-item w3-button" href="#" target="_top">AI Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">NLP Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Robotics Quiz</a>
+        </div>
+      </div>
+       <br class="hidesm">
+      </nav>
+      
+      <nav id="nav_exercises" class="w3-light-grey w3-card-2 w3-hide-small w3-hide-medium navex">
+       <span onclick="w3_close_nav('exercises')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+       <div class="w3-row-padding w3-bar-block">
+        <div class="w3-col l4 m12">
+         <h3 class="w3-margin-top">Web Development</h3>
+         <a class="w3-bar-item w3-button" href="#">HTML Course</a>
+         <a class="w3-bar-item w3-button" href="#">CSS Course</a>
+         <a class="w3-bar-item w3-button" href="#">JavaScript Course</a>
+         <a class="w3-bar-item w3-button" href="#">SQL Course</a>
+         <a class="w3-bar-item w3-button" href="#">Python Course</a>
+        </div>
+        <div class="w3-col l4 m12">
+         <h3 class="w3-margin-top">Mobile Development</h3>
+         <a class="w3-bar-item w3-button" href="#">React Native Course</a>
+         <a class="w3-bar-item w3-button" href="#">Flutter Course</a>
+        </div>
+        <div class="w3-col l4 m12">
+         <h3 class="w3-margin-top">Game Development</h3>
+         <a class="w3-bar-item w3-button" href="#">C# Course</a>
+         <a class="w3-bar-item w3-button" href="#">C++ Course</a>
+         <a class="w3-bar-item w3-button" href="#">Unity 3D Course</a>
+        
+        </div>
+       </div>
+       <br class="hidesm">
+      </nav>
+
+
+
+</header>
+
+
+<!-- MAIN -->
+
+<main class="container">
+    <h1 class="jumbotron">HTML - Frames</h1>
+    <br>
+    <hr>
+
+
+<p>HTML frames are used to divide your browser window into multiple sections where each section can load a separate HTML document. A collection of frames in the browser window is known as a frameset. The window is divided into frames in a similar way the tables are organized: into rows and columns.</p>
+<br>
+<h2>Disadvantages of Frames</h2>
+<br>
+<p>There are few drawbacks with using frames, so it's never recommended to use frames in your webpages &minus;</p>
+<ul class="list">
+<li><p>Some smaller devices cannot cope with frames often because their screen is not big enough to be divided up.</p></li>
+<li><p>Sometimes your page will be displayed differently on different computers due to different screen resolution.</p></li>
+<li><p>The browser's <i>back</i> button might not work as the user hopes.</p></li>
+<li><p>There are still few browsers that do not support frame technology.</p></li>
+</ul>
+<br>
+<h2>Creating Frames</h2>
+<br>
+<p>To use frames on a page we use &lt;frameset&gt; tag instead of &lt;body&gt; tag. The &lt;frameset&gt; tag defines, how to divide the window into frames. The <b>rows</b> attribute of &lt;frameset&gt; tag defines horizontal frames and <b>cols</b> attribute defines vertical frames. Each frame is indicated by &lt;frame&gt; tag and it defines which HTML document shall open into the frame.</p>
+<blockquote><p><b>Note</b> &minus; The &lt;frame&gt; tag deprecated in HTML5. Do not use this element.</p></blockquote>
+<br>
+<h3>Example</h3>
+<br>
+<p>Following is the example to create three horizontal frames &minus;</p>
+<div class="demo-view">
+<!-- <a href="http://tpcg.io/8Rc1Be" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a> -->
+</div>
+<pre class="prettyprint notranslate">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+   &lt;head&gt;
+      &lt;title&gt;HTML Frames&lt;/title&gt;
+   &lt;/head&gt;
+	
+   &lt;frameset rows = "10%,80%,10%"&gt;
+      &lt;frame name = "top" src = "/html/top_frame.htm" /&gt;
+      &lt;frame name = "main" src = "/html/main_frame.htm" /&gt;
+      &lt;frame name = "bottom" src = "/html/bottom_frame.htm" /&gt;
+   
+      &lt;noframes&gt;
+         &lt;body&gt;Your browser does not support frames.&lt;/body&gt;
+      &lt;/noframes&gt;
+      
+   &lt;/frameset&gt;
+   
+&lt;/html&gt;
+</pre>
+<!-- <p>This will produce the following result &minus;</p> -->
+<!-- <iframe onload="resizeFrame(this)" class="result" src="/html/src/creating_frames.htm" height="550px" width="660px"></iframe> -->
+<br>
+<h3>Example</h3>
+<br>
+<p>Let's put the above example as follows, here we replaced rows attribute by cols and changed their width. This will create all the three frames vertically &minus;</p>
+<div class="demo-view">
+<!-- <a href="http://tpcg.io/VyKEFf" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a> -->
+</div>
+<pre class="prettyprint notranslate">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   
+   &lt;head&gt;
+      &lt;title&gt;HTML Frames&lt;/title&gt;
+   &lt;/head&gt;
+   
+   &lt;frameset cols = "25%,50%,25%"&gt;
+      &lt;frame name = "left" src = "/html/top_frame.htm" /&gt;
+      &lt;frame name = "center" src = "/html/main_frame.htm" /&gt;
+      &lt;frame name = "right" src = "/html/bottom_frame.htm" /&gt;
+      
+      &lt;noframes&gt;
+         &lt;body&gt;Your browser does not support frames.&lt;/body&gt;
+      &lt;/noframes&gt;
+   &lt;/frameset&gt;
+   
+&lt;/html&gt;
+</pre>
+<!-- <p>This will produce the following result &minus;</p> -->
+<!-- <iframe onload="resizeFrame(this)" class="result" src="/html/src/vertical_distribution_of_frames.htm" height="200px" width="660px"></iframe> -->
+<br>
+<h2>The &lt;frameset&gt; Tag Attributes</h2>
+<br>
+<p>Following are important attributes of the &lt;frameset&gt; tag &minus;</p>
+<table class="table table-bordered">
+<tr>
+<th>Sr.No</th>
+<th style="text-align:center">Attribute &amp; Description</th>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle">1</td>
+<td>
+<p><b>cols</b></p>
+<p>Specifies how many columns are contained in the frameset and the size of each column. You can specify the width of each column in one of the four ways &minus;</p>
+<p>Absolute values in pixels. For example, to create three vertical frames, use <i>cols = "100, 500, 100"</i>.</p>
+<p>A percentage of the browser window. For example, to create three vertical frames, use <i>cols = "10%, 80%, 10%"</i>.</p>
+<p>Using a wildcard symbol. For example, to create three vertical frames, use <i>cols = "10%, *, 10%"</i>. In this case wildcard takes remainder of the window.</p>
+<p>As relative widths of the browser window. For example, to create three vertical frames, use <i>cols = "3*, 2*, 1*"</i>. This is an alternative to percentages. You can use relative widths of the browser window. Here the window is divided into sixths: the first column takes up half of the window, the second takes one third, and the third takes one sixth.</p>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle">2</td>
+<td>
+<p><b>rows</b></p>
+<p>This attribute works just like the cols attribute and takes the same values, but it is used to specify the rows in the frameset. For example, to create two horizontal frames, use <i>rows = "10%, 90%"</i>. You can specify the height of each row in the same way as explained above for columns.</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle">3</td>
+<td>
+<p><b>border</b></p>
+<p>This attribute specifies the width of the border of each frame in pixels. For example, border = "5". A value of zero means no border.</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle">4</td>
+<td>
+<p><b>frameborder</b></p>
+<p>This attribute specifies whether a three-dimensional border should be displayed between frames. This attribute takes value either 1 (yes) or 0 (no). For example frameborder = "0" specifies no border.</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle">5</td>
+<td>
+<p><b>framespacing</b></p>
+<p>This attribute specifies the amount of space between frames in a frameset. This can take any integer value. For example framespacing = "10" means there should be 10 pixels spacing between each frames.</p></td>
+</tr>
+</table>
+<br>
+<h2>The &lt;frame&gt; Tag Attributes</h2>
+<br>
+<p>Following are the important attributes of &lt;frame&gt; tag &minus;</p>
+<table class="table table-bordered">
+<tr>
+<th>Sr.No</th>
+<th style="text-align:center;">Attribute &amp; Description</th>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle">1</td>
+<td>
+<p><b>src</b></p>
+<p>This attribute is used to give the file name that should be loaded in the frame. Its value can be any URL. For example, src = "/html/top_frame.htm" will load an HTML file available in html directory.</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle">2</td>
+<td>
+<p><b>name</b></p>
+<p>This attribute allows you to give a name to a frame. It is used to indicate which frame a document should be loaded into. This is especially important when you want to create links in one frame that load pages into an another frame, in which case the second frame needs a name to identify itself as the target of the link.</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle">3</td>
+<td>
+<p><b>frameborder</b></p>
+<p>This attribute specifies whether or not the borders of that frame are shown; it overrides the value given in the frameborder attribute on the &lt;frameset&gt; tag if one is given, and this can take values either 1 (yes) or 0 (no).</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle">4</td>
+<td>
+<p><b>marginwidth</b></p>
+<p>This attribute allows you to specify the width of the space between the left and right of the frame's borders and the frame's content. The value is given in pixels. For example marginwidth = "10".</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle">5</td>
+<td>
+<p><b>marginheight</b></p>
+<p>This attribute allows you to specify the height of the space between the top and bottom of the frame's borders and its contents. The value is given in pixels. For example marginheight = "10".</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle">6</td>
+<td>
+<p><b>noresize</b></p>
+<p>By default, you can resize any frame by clicking and dragging on the borders of a frame. The noresize attribute prevents a user from being able to resize the frame. For example noresize = "noresize".</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle">7</td>
+<td>
+<p><b>scrolling</b></p>
+<p>This attribute controls the appearance of the scrollbars that appear on the frame. This takes values either "yes", "no" or "auto". For example scrolling = "no" means it should not have scroll bars.</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle">8</td>
+<td>
+<p><b>longdesc</b></p>
+<p>This attribute allows you to provide a link to another page containing a long description of the contents of the frame. For example longdesc = "framedescription.htm"</p></td>
+</tr>
+</table>
+<br>
+<h2>Browser Support for Frames</h2>
+<br>
+<p>If a user is using any old browser or any browser, which does not support frames then &lt;noframes&gt; element should be displayed to the user.</p>
+<p>So you must place a &lt;body&gt; element inside the &lt;noframes&gt; element because the &lt;frameset&gt; element is supposed to replace the &lt;body&gt; element, but if a browser does not understand &lt;frameset&gt; element then it should understand what is inside the &lt;body&gt; element which is contained in a &lt;noframes&gt; element.</p>
+<p>You can put some nice message for your user having old browsers. For example, <i>Sorry!! your browser does not support frames.</i> as shown in the above example.</p>
+<br>
+<h2>Frame's name and target attributes</h2>
+<br>
+<p>One of the most popular uses of frames is to place navigation bars in one frame and then load main pages into a separate frame.</p>
+<p>Let's see following example where a test.htm file has following code &minus;</p>
+<div class="demo-view">
+<!-- <a href="http://tpcg.io/DBmVdH" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a> -->
+</div>
+<pre class="prettyprint notranslate">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+   &lt;head&gt;
+      &lt;title&gt;HTML Target Frames&lt;/title&gt;
+   &lt;/head&gt;
+	
+   &lt;frameset cols = "200, *"&gt;
+      &lt;frame src = "/html/menu.htm" name = "menu_page" /&gt;
+      &lt;frame src = "/html/main.htm" name = "main_page" /&gt;
+      
+      &lt;noframes&gt;
+         &lt;body&gt;Your browser does not support frames.&lt;/body&gt;
+      &lt;/noframes&gt;
+   &lt;/frameset&gt;
+	
+&lt;/html&gt;
+</pre>
+<p>Here, we have created two columns to fill with two frames. The first frame is 200 pixels wide and will contain the navigation menu bar implemented by <b>menu.htm</b> file. The second column fills in remaining space and will contain the main part of the page and it is implemented by <b>main.htm</b> file. For all the three links available in menu bar, we have mentioned target frame as <b>main_page</b>, so whenever you click any of the links in menu bar, available link will open in main page.</p>
+<p>Following is the content of menu.htm file</p>
+<div class="demo-view">
+<!-- <a href="http://tpcg.io/MK6c5W" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a> -->
+</div>
+<pre class="prettyprint notranslate">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+   &lt;body bgcolor = "#4a7d49"&gt;
+      &lt;a href = "http://www.google.com" target = "main_page"&gt;Google&lt;/a&gt;
+      &lt;br /&gt;
+      &lt;br /&gt;
+      
+      &lt;a href = "http://www.microsoft.com" target = "main_page"&gt;Microsoft&lt;/a&gt;
+      &lt;br /&gt;
+      &lt;br /&gt;
+      
+      &lt;a href = "http://news.bbc.co.uk" target = "main_page"&gt;BBC News&lt;/a&gt;
+   &lt;/body&gt;
+	
+&lt;/html&gt;
+</pre>
+<p>Following is the content of main.htm file &minus;</p>
+<div class="demo-view">
+<!-- <a href="http://tpcg.io/uUvcwY" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a> -->
+</div>
+<pre class="prettyprint notranslate">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+   &lt;body bgcolor = "#b5dcb3"&gt;
+      &lt;h3&gt;This is main page and content from any link will be displayed here.&lt;/h3&gt;
+      &lt;p&gt;So now click any link and see the result.&lt;/p&gt;
+   &lt;/body&gt;
+	
+&lt;/html&gt;
+</pre>
+<!-- <p>When we load <b>test.htm</b> file, it produces following result &minus;</p> -->
+<!-- <iframe onLoad="resizeFrame(this)" class="result" src="/html/src/test.htm" height="200px"  width="660px"></iframe> -->
+<p>Now you can try to click links available in the left panel and see the result. The <i>targetattribute</i> can also take one of the following values &minus;</p>
+<table class="table table-bordered">
+<tr>
+<th>Sr.No</th>
+<th style="text-align:center;">Option &amp; Description</th>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle">1</td>
+<td>
+<p><b>_self</b></p>
+<p>Loads the page into the current frame.</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle">2</td>
+<td>
+<p><b>_blank</b></p>
+<p>Loads a page into a new browser window. Opening a new window.</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle">3</td>
+<td>
+<p><b>_parent</b></p>
+<p>Loads the page into the parent window, which in the case of a single frameset is the main browser window.</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle">4</td>
+<td>
+<p><b>_top</b></p>
+<p>Loads the page into the browser window, replacing any current frames.</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle">5</td>
+<td>
+<p><b>targetframe</b></p>
+<p>Loads the page into a named targetframe.</p></td>
+</tr>
+</table>
+
+</main>
+
+
+
+<footer style="background-color: #2090DB; color: white;text-align: center;" class=" py-6">
+   <div class="row">
+     <div class="col-12 col-md">
+       <small class="d-block mb-3">&copy; 2017–2021 Licensed Product</small>
+     </div>
+   </div>
+ </footer>
+ 
+ 
+ <section>
+ 
+ <!-- ===============================================================================================-->
+     <script src="../../vendor/jquery/jquery-3.2.1.min.js"></script>
+ <!--===============================================================================================-->
+     <script src="../../vendor/animsition/js/animsition.min.js"></script>
+ <!--===============================================================================================-->
+    <script src="../../vendor/bootstrap/js/popper.js"></script>
+    <script src="../../vendor/bootstrap/js/bootstrap.min.js"></script>
+ <!--===============================================================================================-->
+    <script src="../../vendor/select2/select2.min.js"></script>
+ <!--===============================================================================================-->
+    <script src="../../vendor/daterangepicker/moment.min.js"></script>
+    <script src="../../vendor/daterangepicker/daterangepicker.js"></script>
+ <!--===============================================================================================-->
+    <script src="../../vendor/countdowntime/countdowntime.js"></script>
+ <!--===============================================================================================-->
+     <script src="../../js/main.js"></script>
+   
+     <script src="../../js/custom.js"></script>
+ 
+     <script src="../../js/adconsent.js"></script>
+     <script src="../../js/my-learning.js"></script>
+     <script src="../../js/snhb-loader.min.js"></script>
+     <script src="../../js/w3codecolor.js"></script>
+ 
+ </section>
+ 
+ </body>
+ </html>

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+
+<head>
+<title>ELearning Platform</title>
+<link rel="icon" href="../../favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="../../css/styles.css">
+<link rel="stylesheet" href="../../css/custom.css">
+<link rel="stylesheet" href="../../css/font-awesome.min.css">
+<script src="../../js/font.js"></script>
+<!-- end cmp -->
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="../../images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="../../vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="../../vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../css/util.css">
+	<link rel="stylesheet" type="text/css" href="../../css/main.css">
+</head>
+
+
+<body style="position:relative;min-height:100%;">
+
+<header>
+
+    <div class='w3-container top' style="padding-top:20px;">
+        <a class='w3schools-logo notranslate' style="position:absolute;" href='../../index.html'>Elearning<span class='dotcom'>.org</span></a>
+      
+        <!-- <div id="loginactioncontainer" class='w3-right' style='width:80px;height:50px;'>
+          <div id="mypagediv"></div> 
+            <a id="w3loginbtn" style="border: medium none; display: inline; cursor: pointer; background-color: #2090db;" class="login w3-right w3-hover-greener" href="../../login.html" target="_self">LOG IN</a>
+        </div> -->
+      
+        <div id="theworldsgreatest" class='w3-right w3-hide-medium w3-hide-small w3-wide toptext' style="line-height: 50px;margin-right:20px;font-family:'Segoe UI',Arial,sans-serif">
+          THE WORLD'S LARGEST ONLINE LEARNING PLATFORM
+        </div>
+      
+      </div>
+      
+      
+      <div class="w3-bar w3-theme w3-card-2 w3-wide notranslate">
+       <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 hidesm" href="javascript:void(0)" onclick="w3_open()"><i class='fa'>&#xf0c9;</i></a>
+       <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_open_nav('tutorials')" id="navbtn_tutorials">WEB TECHNOLOGIES <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a>
+       <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_open_nav('references')" id="navbtn_references">CORE SUBJECTS <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a>
+       <!-- <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_open_nav('examples')" id="navbtn_examples">QUIZ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a> -->
+       <!-- <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16 w3-hide-medium w3-hide-small" href="javascript:void(0)" onclick="w3_open_nav('exercises')" id="navbtn_exercises">ONLINE COURSES <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a> -->
+       <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-left topnav-some w3-hide"  href="../../quiz.html" title='quiz'>QUIZ</a>
+       <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-left topnav-some w3-hide"  href="#" title='oc'>ONLINE COURSES</a>
+ 
+       <div class="w3-right">
+        
+        <!-- <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-right topnav-some w3-hide"  href="../../signup.html" title='signup'>Sign Up</a> -->
+        <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-right topnav-some w3-hide"  href="../../about.html" title='About'>About</a>
+        
+       </div>
+      </div>
+      
+      
+       <div id='myAccordion' class="w3-card-2 w3-light-grey w3-center w3-hide-large" style="display:none;cursor:default"> 
+       <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-xlarge w3-right">&times;</a><br>
+       <div class="w3-container w3-padding-32">
+        <a class="w3-button w3-block w3-large w3-wide" onclick="open_xs_menu('tutorials');" href="javascript:void(0);">WEB TECHNOLOGIES <i class='fa fa-caret-down'></i></a>
+        <div id="sectionxs_tutorials" class="w3-white w3-show"></div>
+        <a class="w3-button w3-block w3-large w3-wide" onclick="open_xs_menu('references')" href="javascript:void(0);">CORE SUBJECTS <i class='fa fa-caret-down'></i></a>
+        <div id="sectionxs_references" class="w3-white w3-show"></div>
+        <a class="w3-button w3-block w3-large w3-wide" href="../../quiz.html">QUIZ</i></a>
+        <div id="sectionxs_examples" class="w3-white w3-show"></div>
+        <a class="w3-button w3-block w3-large w3-wide" href="#">ONLINE COURSES</i></a>
+        <div id="sectionxs_exercises" class="w3-white w3-show"></div>
+        
+       </div>
+      </div> 
+      
+      <nav id="nav_tutorials" class="w3-light-grey w3-card-2 w3-hide-small navex">
+       <span onclick="w3_close_nav('tutorials')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+       <div class="w3-row-padding w3-bar-block">
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">HTML5 and CSS3</h3>
+          <a class="w3-bar-item w3-button" href="../HTML/a.html">HTML - Attributes</a>
+          <a class="w3-bar-item w3-button" href="../HTML/b.html">HTML - Frames</a>
+          <a class="w3-bar-item w3-button" href="../HTML/c.html">HTML - Forms</a>
+          <a class="w3-bar-item w3-button" href="../HTML/d.html">HTML - Embed Media</a>
+          <a class="w3-bar-item w3-button" href="../HTML/e.html">HTML - Layouts</a>
+          <a class="w3-bar-item w3-button" href="../CSS/a.html">CSS - Visibility</a>
+          <a class="w3-bar-item w3-button" href="../CSS/b.html">CSS - Positioning</a>
+          <a class="w3-bar-item w3-button" href="../CSS/c.html">CSS - Padding</a>
+          <a class="w3-bar-item w3-button" href="../CSS/d.html">CSS - Layers</a>
+          <a class="w3-bar-item w3-button" href="../CSS/e.html">CSS - Animation</a> 
+      
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">JavaScript</h3>
+         <a class="w3-bar-item w3-button" href="../JavaScript/a.html">JavaScript - Objects</a>
+         <a class="w3-bar-item w3-button" href="../JavaScript/b.html">JavaScript - Strings</a>
+         <a class="w3-bar-item w3-button" href='../JavaScript/c.html'>JavaScript - Math</a>
+         <a class="w3-bar-item w3-button" href='../JavaScript/d.html'>JavaScript - Arrays</a>
+         <a class="w3-bar-item w3-button" href='../JavaScript/e.html'>JavaScript - Error Handling</a>
+         
+        </div> 
+       <div class="w3-col l3 m6">
+          <h3 class="w3-margin-top">Python</h3>
+          <a class="w3-bar-item w3-button" href="../Python/a.html">Python - Variables</a>
+          <a class="w3-bar-item w3-button" href="../Python/b.html">Python - Strings</a>
+          <a class="w3-bar-item w3-button" href="../Python/c.html">Python - Lists</a>
+          <a class="w3-bar-item w3-button" href="../Python/d.html">Python - Tuples</a>
+          <a class="w3-bar-item w3-button" href="../Python/e.html">Python - Dictionary</a>
+          <a class="w3-bar-item w3-button" href="../Python/f.html">Python - Exceptions</a>
+          
+         
+        </div>
+        <div class="w3-col l3 m6 w3-hide-medium">
+           
+         <h3 class="w3-margin-top">Artificial Intelligence</h3>
+          <a class="w3-bar-item w3-button" href="../AI/a.html"> AI Overview</a>
+          <a class="w3-bar-item w3-button" href="../AI/b.html"> NLP</a>
+          <a class="w3-bar-item w3-button" href="../AI/c.html"> Robotics</a> 
+          <a class="w3-bar-item w3-button" href="../AI/d.html"> Neural Networks</a> 
+          <a class="w3-bar-item w3-button" href="../AI/e.html"> Expert Systems</a> 
+           
+        </div>
+       </div>
+       <br class="hidesm">
+      </nav>
+      
+      <nav id="nav_references" class="w3-light-grey w3-card-2 w3-hide-small navex">
+       <span onclick="w3_close_nav('references')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+       <div class="w3-row-padding w3-bar-block">
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Data Structure & Algorithms</h3>
+          <a class="w3-bar-item w3-button" href="../DSA/a.html">Greedy Algorithms</a>
+          <a class="w3-bar-item w3-button" href="../DSA/b.html">Divide and Conquer</a>
+          <a class="w3-bar-item w3-button" href="../DSA/c.html">Dynamic Programming</a>
+          <a class="w3-bar-item w3-button" href='../DSA/d.html'>Linked List</a>
+          <a class="w3-bar-item w3-button" href="../DSA/e.html">Stack</a>
+          <a class="w3-bar-item w3-button" href="../DSA/f.html">Queue</a>
+         
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Database</h3>
+          <a class="w3-bar-item w3-button" href="../Database/a.html"> Architecture</a>
+          <a class="w3-bar-item w3-button" href='../Database/b.html'> ER Model</a>
+          <a class="w3-bar-item w3-button" href="../Database/c.html"> Indexing</a>
+          <a class="w3-bar-item w3-button" href='../Database/d.html'> Hashing</a>
+          <a class="w3-bar-item w3-button" href='../Database/e.html'> Deadlock</a>
+        
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Computer Networks</h3>
+          <a class="w3-bar-item w3-button" href='../Network/a.html'> Network Types</a>
+          <a class="w3-bar-item w3-button" href='../Network/b.html'> Topologies</a>
+          <a class="w3-bar-item w3-button" href='../Network/c.html'> Physical Layer</a>
+          <a class="w3-bar-item w3-button" href='../Network/d.html'> Data Link Layer</a>
+          <a class="w3-bar-item w3-button" href='../Network/e.html'> Network Layer</a>
+      
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Operating System</h3>
+          <a class="w3-bar-item w3-button" href='../OS/a.html'> OS Types</a>
+          <a class="w3-bar-item w3-button" href='../OS/b.html'> Processes</a>
+          <a class="w3-bar-item w3-button" href='../OS/c.html'> Memory Management</a>
+          <a class="w3-bar-item w3-button" href='../OS/d.html'> Virtual Memory</a>
+          <a class="w3-bar-item w3-button" href='../OS/e.html'> File System</a>
+        
+        </div>
+       </div>
+       <br class="hidesm">
+      </nav>
+      
+      <nav id="nav_examples" class="w3-light-grey w3-card-2 w3-hide-small navex">
+       <span onclick="w3_close_nav('examples')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+       <div class="w3-row-padding w3-bar-block">
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">HTML and CSS</h3>
+         <a class="w3-bar-item w3-button" href='#'>HTML Quiz</a>
+         <a class="w3-bar-item w3-button" href='#'>CSS Quiz</a>
+         
+        </div>
+        <div class="w3-col l3 m6">
+        
+         <h3 class="w3-margin-top">Programming</h3>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Python Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">JavaScript Quiz</a>
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Core Subjects</h3>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Data Structure Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Algorithms Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Database Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Operating System Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Computer Network Quiz</a>
+       
+        
+        </div>
+        <div class="w3-col l3 m6 w3-hide-medium">
+         <h3 class="w3-margin-top">Advanced Technology</h3>
+         <a class="w3-bar-item w3-button" href="#" target="_top">AI Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">NLP Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Robotics Quiz</a>
+        </div>
+      </div>
+       <br class="hidesm">
+      </nav>
+      
+      <nav id="nav_exercises" class="w3-light-grey w3-card-2 w3-hide-small w3-hide-medium navex">
+       <span onclick="w3_close_nav('exercises')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+       <div class="w3-row-padding w3-bar-block">
+        <div class="w3-col l4 m12">
+         <h3 class="w3-margin-top">Web Development</h3>
+         <a class="w3-bar-item w3-button" href="#">HTML Course</a>
+         <a class="w3-bar-item w3-button" href="#">CSS Course</a>
+         <a class="w3-bar-item w3-button" href="#">JavaScript Course</a>
+         <a class="w3-bar-item w3-button" href="#">SQL Course</a>
+         <a class="w3-bar-item w3-button" href="#">Python Course</a>
+        </div>
+        <div class="w3-col l4 m12">
+         <h3 class="w3-margin-top">Mobile Development</h3>
+         <a class="w3-bar-item w3-button" href="#">React Native Course</a>
+         <a class="w3-bar-item w3-button" href="#">Flutter Course</a>
+        </div>
+        <div class="w3-col l4 m12">
+         <h3 class="w3-margin-top">Game Development</h3>
+         <a class="w3-bar-item w3-button" href="#">C# Course</a>
+         <a class="w3-bar-item w3-button" href="#">C++ Course</a>
+         <a class="w3-bar-item w3-button" href="#">Unity 3D Course</a>
+        
+        </div>
+       </div>
+       <br class="hidesm">
+      </nav>
+
+
+
+</header>
+
+
+<!-- MAIN -->
+
+<main class="container">
+    <h1 class="jumbotron">CSS - Paddings</h1>
+    <br>
+    <hr>
+
+    <p>The <i>padding</i> property allows you to specify how much space should appear between the content of an element and its border &minus;</p>
+    <p>The value of this attribute should be either a length, a percentage, or the word <i>inherit</i>. If the value is <i>inherit</i>, it will have the same padding as its parent element. If a percentage is used, the percentage is of the containing box.</p>
+    <p>The following CSS properties can be used to control lists. You can also set different values for the padding on each side of the box using the following properties &minus;</p>
+    <ul class="list">
+    <li><p>The <b>padding-bottom</b> specifies the bottom padding of an element.</p></li>
+    <li><p>The <b>padding-top</b> specifies the top padding of an element.</p></li>
+    <li><p>The <b>padding-left</b> specifies the left padding of an element.</p></li>
+    <li><p>The <b>padding-right</b> specifies the right padding of an element.</p></li>
+    <li><p>The <b>padding</b> serves as shorthand for the preceding properties.</p></li>
+    </ul>
+    <p>Now, we will see how to use these properties with examples.</p>
+    <br>
+    <h2>The padding-bottom Property</h2>
+    <br>
+    <p>The <i>padding-bottom</i> property sets the bottom padding (space) of an element. This can take a value in terms of length of &#37;.</p>
+    <p>Here is an example &minus;</p>
+    <div class="demo-view">
+    <!-- <a href="http://tpcg.io/eLlWo2" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a> -->
+    </div>
+    <pre class="prettyprint notranslate">
+    &lt;html&gt;
+       &lt;head&gt;
+       &lt;/head&gt;
+       
+       &lt;body&gt;
+          &lt;p style = "padding-bottom: 15px; border:1px solid black;"&gt;
+             This is a paragraph with a specified bottom padding
+          &lt;/p&gt;
+          
+          &lt;p style = "padding-bottom: 5%; border:1px solid black;"&gt;
+             This is another paragraph with a specified bottom padding in percent
+          &lt;/p&gt;
+       &lt;/body&gt;
+    &lt;/html&gt; 
+    </pre> 
+    <!-- <p>It will produce the following result &minus;</p> -->
+    <!-- <iframe onload="resizeFrame(this)" class="result" src="/css/src/padding.htm" height="140px" width="660px"></iframe> -->
+    <br>
+    <h2>The padding-top Property</h2>
+    <br>
+    <p>The <i>padding-top</i> property sets the top padding (space) of an element. This can take a value in terms of length of &#37;.</p>
+    <p>Here is an example &minus;</p>
+    <div class="demo-view">
+    <!-- <a href="http://tpcg.io/JND6ee" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a> -->
+    </div>
+    <pre class="prettyprint notranslate">
+    &lt;html&gt;
+       &lt;head&gt;
+       &lt;/head&gt;
+       
+       &lt;body&gt;
+          &lt;p style = "padding-top: 15px; border:1px solid black;"&gt;
+             This is a paragraph with a specified top padding
+          &lt;/p&gt;
+          
+          &lt;p style = "padding-top: 5%; border:1px solid black;"&gt;
+             This is another paragraph with a specified top padding in percent
+          &lt;/p&gt;
+       &lt;/body&gt;
+    &lt;/html&gt; 
+    </pre> 
+    <!-- <p>It will produce the following result &minus;</p> -->
+    <!-- <iframe onload="resizeFrame(this)" class="result" src="/css/src/padding1.htm" height="130px" width="660px"></iframe> -->
+    <br>
+    <h2>The padding-left Property</h2>
+    <br>
+    <p>The <i>padding-left</i> property sets the left padding (space) of an element. This can take a value in terms of length of &#37;.</p>
+    <p>Here is an example &minus;</p>
+    <div class="demo-view">
+    <!-- <a href="http://tpcg.io/dvExfh" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a> -->
+    </div>
+    <pre class="prettyprint notranslate">
+    &lt;html&gt;
+       &lt;head&gt;
+       &lt;/head&gt;
+       
+       &lt;body&gt;
+          &lt;p style = "padding-left: 15px; border:1px solid black;"&gt;
+             This is a paragraph with a specified left padding
+          &lt;/p&gt;
+          
+          &lt;p style = "padding-left: 15%; border:1px solid black;"&gt;
+             This is another paragraph with a specified left padding in percent
+          &lt;/p&gt;
+       &lt;/body&gt;
+    &lt;/html&gt;
+    </pre> 
+    <!-- <p>It will produce the following result &minus;</p> -->
+    <!-- <iframe onload="resizeFrame(this)" class="result" src="/css/src/padding2.htm" height="90px" width="660px"></iframe> -->
+    <br>
+    <h2>The padding-right Property</h2>
+    <br>
+    <p>The <i>padding-right</i> property sets the right padding (space) of an element. This can take a value in terms of length of &#37;.</p>
+    <p>Here is an example &minus;</p>
+    <div class="demo-view">
+    <!-- <a href="http://tpcg.io/iEqv9R" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a> -->
+    </div>
+    <pre class="prettyprint notranslate">
+    &lt;html&gt;
+       &lt;head&gt;
+       &lt;/head&gt;
+       
+       &lt;body&gt;
+          &lt;p style = "padding-right: 15px; border:1px solid black;"&gt;
+             This is a paragraph with a specified right padding
+          &lt;/p&gt;
+          
+          &lt;p style = "padding-right: 5%; border:1px solid black;"&gt;
+             This is another paragraph with a specified right padding in percent
+          &lt;/p&gt;
+       &lt;/body&gt;
+    &lt;/html&gt; 
+    </pre> 
+    <!-- <p>It will produce the following result &minus;</p> -->
+    <!-- <iframe onload="resizeFrame(this)" class="result" src="/css/src/padding3.htm" height="100px" width="660px"></iframe> -->
+    <br>
+    <h2>The Padding Property</h2>
+    <br>
+    <p>The <i>padding</i> property sets the left, right, top and bottom padding (space) of an element. This can take a value in terms of length of &#37;.</p>
+    <p>Here is an example &minus;</p>
+    <div class="demo-view">
+    <!-- <a href="http://tpcg.io/xXx57M" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a> -->
+    </div>
+    <pre class="prettyprint notranslate">
+    &lt;html&gt;
+       &lt;head&gt;
+       &lt;/head&gt;
+       
+       &lt;body&gt;
+          &lt;p style = "padding: 15px; border:1px solid black;"&gt;
+             all four padding will be 15px 
+          &lt;/p&gt; 
+          
+          &lt;p style = "padding:10px 2%; border:1px solid black;"&gt; 
+             top and bottom padding will be 10px, left and right
+             padding will be 2% of the total width of the document. 
+          &lt;/p&gt; 
+          
+          &lt;p style = "padding: 10px 2% 10px; border:1px solid black;"&gt;
+             top padding will be 10px, left and right padding will 
+             be 2% of the total width of the document, bottom padding will be 10px
+          &lt;/p&gt; 
+          
+          &lt;p style = "padding: 10px 2% 10px 10px; border:1px solid black;"&gt;
+             top padding will be 10px, right padding will be 2% of
+             the total width of the document, bottom padding and top padding will be 10px 
+          &lt;/p&gt;
+       &lt;/body&gt;
+    &lt;/html&gt; 
+    </pre>
+    <!-- <p>It will produce the following result &minus;</p> -->
+    <!-- <iframe onload="resizeFrame(this)" class="result" src="/css/src/padding4.htm" height="300px" width="660px"></iframe> -->
+    
+
+
+</main>
+
+
+
+<footer style="background-color: #2090DB; color: white;text-align: center;" class=" py-6">
+   <div class="row">
+     <div class="col-12 col-md">
+       <small class="d-block mb-3">&copy; 2017–2021 Licensed Product</small>
+     </div>
+   </div>
+ </footer>
+ 
+ 
+ <section>
+ 
+ <!-- ===============================================================================================-->
+     <script src="../../vendor/jquery/jquery-3.2.1.min.js"></script>
+ <!--===============================================================================================-->
+     <script src="../../vendor/animsition/js/animsition.min.js"></script>
+ <!--===============================================================================================-->
+    <script src="../../vendor/bootstrap/js/popper.js"></script>
+    <script src="../../vendor/bootstrap/js/bootstrap.min.js"></script>
+ <!--===============================================================================================-->
+    <script src="../../vendor/select2/select2.min.js"></script>
+ <!--===============================================================================================-->
+    <script src="../../vendor/daterangepicker/moment.min.js"></script>
+    <script src="../../vendor/daterangepicker/daterangepicker.js"></script>
+ <!--===============================================================================================-->
+    <script src="../../vendor/countdowntime/countdowntime.js"></script>
+ <!--===============================================================================================-->
+     <script src="../../js/main.js"></script>
+   
+     <script src="../../js/custom.js"></script>
+ 
+     <script src="../../js/adconsent.js"></script>
+     <script src="../../js/my-learning.js"></script>
+     <script src="../../js/snhb-loader.min.js"></script>
+     <script src="../../js/w3codecolor.js"></script>
+ 
+ </section>
+ 
+ </body>
+ </html>

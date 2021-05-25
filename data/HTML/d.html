@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+
+<head>
+<title>ELearning Platform</title>
+<link rel="icon" href="../../favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="../../css/styles.css">
+<link rel="stylesheet" href="../../css/custom.css">
+<link rel="stylesheet" href="../../css/font-awesome.min.css">
+<script src="../../js/font.js"></script>
+<!-- end cmp -->
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="../../images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="../../vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="../../vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../css/util.css">
+	<link rel="stylesheet" type="text/css" href="../../css/main.css">
+</head>
+
+
+<body style="position:relative;min-height:100%;">
+
+<header>
+
+    <div class='w3-container top' style="padding-top:20px;">
+        <a class='w3schools-logo notranslate' style="position:absolute;" href='../../index.html'>Elearning<span class='dotcom'>.org</span></a>
+      
+        <!-- <div id="loginactioncontainer" class='w3-right' style='width:80px;height:50px;'>
+          <div id="mypagediv"></div> 
+            <a id="w3loginbtn" style="border: medium none; display: inline; cursor: pointer; background-color: #2090db;" class="login w3-right w3-hover-greener" href="../../login.html" target="_self">LOG IN</a>
+        </div> -->
+      
+        <div id="theworldsgreatest" class='w3-right w3-hide-medium w3-hide-small w3-wide toptext' style="line-height: 50px;margin-right:20px;font-family:'Segoe UI',Arial,sans-serif">
+          THE WORLD'S LARGEST ONLINE LEARNING PLATFORM
+        </div>
+      
+      </div>
+      
+      
+      <div class="w3-bar w3-theme w3-card-2 w3-wide notranslate">
+       <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 hidesm" href="javascript:void(0)" onclick="w3_open()"><i class='fa'>&#xf0c9;</i></a>
+       <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_open_nav('tutorials')" id="navbtn_tutorials">WEB TECHNOLOGIES <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a>
+       <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_open_nav('references')" id="navbtn_references">CORE SUBJECTS <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a>
+       <!-- <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_open_nav('examples')" id="navbtn_examples">QUIZ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a> -->
+       <!-- <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16 w3-hide-medium w3-hide-small" href="javascript:void(0)" onclick="w3_open_nav('exercises')" id="navbtn_exercises">ONLINE COURSES <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a> -->
+       <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-left topnav-some w3-hide"  href="../../quiz.html" title='quiz'>QUIZ</a>
+       <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-left topnav-some w3-hide"  href="#" title='oc'>ONLINE COURSES</a>
+ 
+       <div class="w3-right">
+        
+        <!-- <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-right topnav-some w3-hide"  href="../../signup.html" title='signup'>Sign Up</a> -->
+        <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-right topnav-some w3-hide"  href="../../about.html" title='About'>About</a>
+        
+       </div>
+      </div>
+      
+      
+       <div id='myAccordion' class="w3-card-2 w3-light-grey w3-center w3-hide-large" style="display:none;cursor:default"> 
+       <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-xlarge w3-right">&times;</a><br>
+       <div class="w3-container w3-padding-32">
+        <a class="w3-button w3-block w3-large w3-wide" onclick="open_xs_menu('tutorials');" href="javascript:void(0);">WEB TECHNOLOGIES <i class='fa fa-caret-down'></i></a>
+        <div id="sectionxs_tutorials" class="w3-white w3-show"></div>
+        <a class="w3-button w3-block w3-large w3-wide" onclick="open_xs_menu('references')" href="javascript:void(0);">CORE SUBJECTS <i class='fa fa-caret-down'></i></a>
+        <div id="sectionxs_references" class="w3-white w3-show"></div>
+        <a class="w3-button w3-block w3-large w3-wide" href="../../quiz.html">QUIZ</i></a>
+        <div id="sectionxs_examples" class="w3-white w3-show"></div>
+        <a class="w3-button w3-block w3-large w3-wide" href="#">ONLINE COURSES</i></a>
+        <div id="sectionxs_exercises" class="w3-white w3-show"></div>
+        
+       </div>
+      </div> 
+      
+      <nav id="nav_tutorials" class="w3-light-grey w3-card-2 w3-hide-small navex">
+       <span onclick="w3_close_nav('tutorials')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+       <div class="w3-row-padding w3-bar-block">
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">HTML5 and CSS3</h3>
+          <a class="w3-bar-item w3-button" href="../HTML/a.html">HTML - Attributes</a>
+          <a class="w3-bar-item w3-button" href="../HTML/b.html">HTML - Frames</a>
+          <a class="w3-bar-item w3-button" href="../HTML/c.html">HTML - Forms</a>
+          <a class="w3-bar-item w3-button" href="../HTML/d.html">HTML - Embed Media</a>
+          <a class="w3-bar-item w3-button" href="../HTML/e.html">HTML - Layouts</a>
+          <a class="w3-bar-item w3-button" href="../CSS/a.html">CSS - Visibility</a>
+          <a class="w3-bar-item w3-button" href="../CSS/b.html">CSS - Positioning</a>
+          <a class="w3-bar-item w3-button" href="../CSS/c.html">CSS - Padding</a>
+          <a class="w3-bar-item w3-button" href="../CSS/d.html">CSS - Layers</a>
+          <a class="w3-bar-item w3-button" href="../CSS/e.html">CSS - Animation</a> 
+      
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">JavaScript</h3>
+         <a class="w3-bar-item w3-button" href="../JavaScript/a.html">JavaScript - Objects</a>
+         <a class="w3-bar-item w3-button" href="../JavaScript/b.html">JavaScript - Strings</a>
+         <a class="w3-bar-item w3-button" href='../JavaScript/c.html'>JavaScript - Math</a>
+         <a class="w3-bar-item w3-button" href='../JavaScript/d.html'>JavaScript - Arrays</a>
+         <a class="w3-bar-item w3-button" href='../JavaScript/e.html'>JavaScript - Error Handling</a>
+         
+        </div> 
+       <div class="w3-col l3 m6">
+          <h3 class="w3-margin-top">Python</h3>
+          <a class="w3-bar-item w3-button" href="../Python/a.html">Python - Variables</a>
+          <a class="w3-bar-item w3-button" href="../Python/b.html">Python - Strings</a>
+          <a class="w3-bar-item w3-button" href="../Python/c.html">Python - Lists</a>
+          <a class="w3-bar-item w3-button" href="../Python/d.html">Python - Tuples</a>
+          <a class="w3-bar-item w3-button" href="../Python/e.html">Python - Dictionary</a>
+          <a class="w3-bar-item w3-button" href="../Python/f.html">Python - Exceptions</a>
+          
+         
+        </div>
+        <div class="w3-col l3 m6 w3-hide-medium">
+           
+         <h3 class="w3-margin-top">Artificial Intelligence</h3>
+          <a class="w3-bar-item w3-button" href="../AI/a.html"> AI Overview</a>
+          <a class="w3-bar-item w3-button" href="../AI/b.html"> NLP</a>
+          <a class="w3-bar-item w3-button" href="../AI/c.html"> Robotics</a> 
+          <a class="w3-bar-item w3-button" href="../AI/d.html"> Neural Networks</a> 
+          <a class="w3-bar-item w3-button" href="../AI/e.html"> Expert Systems</a> 
+           
+        </div>
+       </div>
+       <br class="hidesm">
+      </nav>
+      
+      <nav id="nav_references" class="w3-light-grey w3-card-2 w3-hide-small navex">
+       <span onclick="w3_close_nav('references')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+       <div class="w3-row-padding w3-bar-block">
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Data Structure & Algorithms</h3>
+          <a class="w3-bar-item w3-button" href="../DSA/a.html">Greedy Algorithms</a>
+          <a class="w3-bar-item w3-button" href="../DSA/b.html">Divide and Conquer</a>
+          <a class="w3-bar-item w3-button" href="../DSA/c.html">Dynamic Programming</a>
+          <a class="w3-bar-item w3-button" href='../DSA/d.html'>Linked List</a>
+          <a class="w3-bar-item w3-button" href="../DSA/e.html">Stack</a>
+          <a class="w3-bar-item w3-button" href="../DSA/f.html">Queue</a>
+         
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Database</h3>
+          <a class="w3-bar-item w3-button" href="../Database/a.html"> Architecture</a>
+          <a class="w3-bar-item w3-button" href='../Database/b.html'> ER Model</a>
+          <a class="w3-bar-item w3-button" href="../Database/c.html"> Indexing</a>
+          <a class="w3-bar-item w3-button" href='../Database/d.html'> Hashing</a>
+          <a class="w3-bar-item w3-button" href='../Database/e.html'> Deadlock</a>
+        
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Computer Networks</h3>
+          <a class="w3-bar-item w3-button" href='../Network/a.html'> Network Types</a>
+          <a class="w3-bar-item w3-button" href='../Network/b.html'> Topologies</a>
+          <a class="w3-bar-item w3-button" href='../Network/c.html'> Physical Layer</a>
+          <a class="w3-bar-item w3-button" href='../Network/d.html'> Data Link Layer</a>
+          <a class="w3-bar-item w3-button" href='../Network/e.html'> Network Layer</a>
+      
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Operating System</h3>
+          <a class="w3-bar-item w3-button" href='../OS/a.html'> OS Types</a>
+          <a class="w3-bar-item w3-button" href='../OS/b.html'> Processes</a>
+          <a class="w3-bar-item w3-button" href='../OS/c.html'> Memory Management</a>
+          <a class="w3-bar-item w3-button" href='../OS/d.html'> Virtual Memory</a>
+          <a class="w3-bar-item w3-button" href='../OS/e.html'> File System</a>
+        
+        </div>
+       </div>
+       <br class="hidesm">
+      </nav>
+      
+      <nav id="nav_examples" class="w3-light-grey w3-card-2 w3-hide-small navex">
+       <span onclick="w3_close_nav('examples')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+       <div class="w3-row-padding w3-bar-block">
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">HTML and CSS</h3>
+         <a class="w3-bar-item w3-button" href='#'>HTML Quiz</a>
+         <a class="w3-bar-item w3-button" href='#'>CSS Quiz</a>
+         
+        </div>
+        <div class="w3-col l3 m6">
+        
+         <h3 class="w3-margin-top">Programming</h3>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Python Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">JavaScript Quiz</a>
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Core Subjects</h3>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Data Structure Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Algorithms Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Database Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Operating System Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Computer Network Quiz</a>
+       
+        
+        </div>
+        <div class="w3-col l3 m6 w3-hide-medium">
+         <h3 class="w3-margin-top">Advanced Technology</h3>
+         <a class="w3-bar-item w3-button" href="#" target="_top">AI Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">NLP Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Robotics Quiz</a>
+        </div>
+      </div>
+       <br class="hidesm">
+      </nav>
+      
+      <nav id="nav_exercises" class="w3-light-grey w3-card-2 w3-hide-small w3-hide-medium navex">
+       <span onclick="w3_close_nav('exercises')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+       <div class="w3-row-padding w3-bar-block">
+        <div class="w3-col l4 m12">
+         <h3 class="w3-margin-top">Web Development</h3>
+         <a class="w3-bar-item w3-button" href="#">HTML Course</a>
+         <a class="w3-bar-item w3-button" href="#">CSS Course</a>
+         <a class="w3-bar-item w3-button" href="#">JavaScript Course</a>
+         <a class="w3-bar-item w3-button" href="#">SQL Course</a>
+         <a class="w3-bar-item w3-button" href="#">Python Course</a>
+        </div>
+        <div class="w3-col l4 m12">
+         <h3 class="w3-margin-top">Mobile Development</h3>
+         <a class="w3-bar-item w3-button" href="#">React Native Course</a>
+         <a class="w3-bar-item w3-button" href="#">Flutter Course</a>
+        </div>
+        <div class="w3-col l4 m12">
+         <h3 class="w3-margin-top">Game Development</h3>
+         <a class="w3-bar-item w3-button" href="#">C# Course</a>
+         <a class="w3-bar-item w3-button" href="#">C++ Course</a>
+         <a class="w3-bar-item w3-button" href="#">Unity 3D Course</a>
+        
+        </div>
+       </div>
+       <br class="hidesm">
+      </nav>
+
+
+
+</header>
+
+
+<!-- MAIN -->
+
+<main class="container">
+    <h1 class="jumbotron">HTML - Embed Multimedia</h1>
+    <br>
+    <hr>
+
+
+<p>Sometimes you need to add music or video into your web page. The easiest way to add video or sound to your web site is to include the special HTML tag called <b>&lt;embed&gt;</b>. This tag causes the browser itself to include controls for the multimedia automatically provided browser supports &lt;embed&gt; tag and given media type.</p>
+<p>You can also include a <b>&lt;noembed&gt;</b> tag for the browsers which don't recognize the &lt;embed&gt; tag. You could, for example, use &lt;embed&gt; to display a movie of your choice, and <b>&lt;noembed&gt;</b> to display a single JPG image if browser does not support &lt;embed&gt; tag.</p>
+<br>
+<h3>Example</h3>
+<br>
+<p>Here is a simple example to play an embedded midi file &minus;</p>
+<pre class="prettyprint notranslate">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+   &lt;head&gt;
+      &lt;title&gt;HTML embed Tag&lt;/title&gt;
+   &lt;/head&gt;
+	
+   &lt;body&gt;
+      &lt;embed src = "/html/yourfile.mid" width = "100%" height = "60" &gt;
+         &lt;noembed&gt;&lt;img src = "yourimage.gif" alt = "Alternative Media" &gt;&lt;/noembed&gt;
+      &lt;/embed&gt;
+   &lt;/body&gt;
+
+&lt;/html&gt;
+</pre>
+<br>
+<h2>The &lt;embed&gt; Tag Attributes</h2>
+<br>
+<p>Following is the list of important attributes which can be used with &lt;embed&gt; tag.</p>
+<blockquote><p><b>Note</b> &minus;The <i>align</i> and <i>autostart</i> attributes deprecated in HTML5. Do not use these attributes.</p></blockquote>
+<table class="table table-bordered">
+<tr>
+<th>Sr.No</th>
+<th style="text-align:center;">Attribute &amp; Description</th>
+</tr>
+<tr>
+<td class="ts">1</td>
+<td>
+<p><b>align</b></p>
+<p>Determines how to align the object. It can be set to either center, <i>left or right</i>.</p>
+</td>
+</tr>
+<tr>
+<td class="ts">2</td>
+<td>
+<p><b>autostart</b></p>
+<p>This boolean attribute indicates if the media should start automatically. You can set it either true or false.</p>
+</td>
+</tr>
+<tr>
+<td class="ts">3</td>
+<td>
+<p><b>loop</b></p>
+<p>Specifies if the sound should be played continuously (set loop to true), a certain number of times (a positive value) or not at all (false)</p>
+</td>
+</tr>
+<tr>
+<td class="ts">4</td>
+<td>
+<p><b>playcount</b></p>
+<p>Specifies the number of times to play the sound. This is alternate option for <i>loop</i> if you are usiong IE.</p>
+</td>
+</tr>
+<tr>
+<td class="ts">5</td>
+<td>
+<p><b>hidden</b></p>
+<p>Specifies if the multimedia object should be shown on the page. A false value means no and true values means yes.</p>
+</td>
+</tr>
+<tr>
+<td class="ts">6</td>
+<td>
+<p><b>width</b></p>
+<p>Width of the object in pixels</p>
+</td>
+</tr>
+<tr>
+<td class="ts">7</td>
+<td>
+<p><b>height</b></p>
+<p>Height of the object in pixels</p>
+</td>
+</tr>
+<tr>
+<td class="ts">8</td>
+<td>
+<p><b>name</b></p>
+<p>A name used to reference the object.</p>
+</td>
+</tr>
+<tr>
+<td class="ts">9</td>
+<td>
+<p><b>src</b></p>
+<p>URL of the object to be embedded.</p>
+</td>
+</tr>
+<tr>
+<td class="ts">10</td>
+<td>
+<p><b>volume</b></p>
+<p>Controls volume of the sound. Can be from 0 (off) to 100 (full volume).</p>
+</td>
+</tr>
+</table>
+<br>
+<h2>Supported Video Types</h2>
+<br>
+<p>You can use various media types like Flash movies (.swf), AVI's (.avi), and MOV's (.mov) file types inside embed tag.</p>
+<ul class="list">
+<li><p><b>.swf files</b> &minus; are the file types created by Macromedia's Flash program.</p></li>
+<li><p><b>.wmv files</b> &minus; are Microsoft's Window's Media Video file types.</p></li>
+<li><p><b>.mov files</b> &minus; are Apple's Quick Time Movie format.</p></li>
+<li><p><b>.mpeg files</b> &minus; are movie files created by the Moving Pictures Expert Group.</p></li>
+</ul>
+<div class="demo-view">
+<!-- <a href="http://tpcg.io/sClb9Z" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a> -->
+</div>
+<pre class="prettyprint notranslate">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+   &lt;head&gt;
+      &lt;title&gt;HTML embed Tag&lt;/title&gt;
+   &lt;/head&gt;
+
+   &lt;body&gt;
+      &lt;embed src = "/html/yourfile.swf" width = "200" height = "200" &gt;
+         &lt;noembed&gt;&lt;img src = "yourimage.gif" alt = "Alternative Media" &gt;&lt;/noembed&gt;
+      &lt;/embed&gt;
+   &lt;/body&gt;
+
+&lt;/html&gt;
+</pre>
+<!-- <p>This will produce the following result &minus;</p> -->
+<!-- <iframe onLoad="resizeFrame(this)" class="result" src="/html/src/supported_video_types.htm" height="250px"  width="660px"></iframe> -->
+<br>
+<h2>Background Audio</h2>
+<br>
+<p>You can use HTML <b>&lt;bgsound&gt;</b> tag to play a soundtrack in the background of your webpage. This tag is supported by Internet Explorer only and most of the other browsers ignore this tag. It downloads and plays an audio file when the host document is first downloaded by the user and displayed. The background sound file also will replay whenever the user refreshes the browser.</p>
+<p><b>Note</b> &minus; The bgsound tag is deprecated and it is supposed to be removed in a future version of HTML. So they should not be used rather, it's suggested to use HTML5 tag audio for adding sound. But still for learning purpose, this chapter will explain bgsound tag in detail.</p>
+<p>This tag is having only two attributes <i>loop</i> and <i>src</i>. Both these attributes have same meaning as explained above.</p>
+<p>Here is a simple example to play a small midi file &minus;</p>
+<pre class="prettyprint notranslate">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+   &lt;head&gt;
+      &lt;title&gt;HTML embed Tag&lt;/title&gt;
+   &lt;/head&gt;
+	
+   &lt;body&gt;
+      &lt;bgsound src = "/html/yourfile.mid"&gt;
+         &lt;noembed&gt;&lt;img src = "yourimage.gif" &gt;&lt;/noembed&gt;
+      &lt;/bgsound&gt;
+   &lt;/body&gt;
+	
+&lt;/html&gt;
+</pre>
+<p>This will produce the blank screen. This tag does not display any component and remains hidden.</p>
+<p>Internet Explorer can also handle only three different sound format files &minus; wav, the native format for PCs; au, the native format for most Unix workstations; and MIDI, a universal music-encoding scheme.</p>
+<br>
+<h2>HTML Object tag</h2>
+<br>
+<p>HTML 4 introduces the <b>&lt;object&gt;</b> element, which offers an all-purpose solution to generic object inclusion. The <b>&lt;object&gt;</b> element allows HTML authors to specify everything required by an object for its presentation by a user agent.</p>
+<p>Here are a few examples &minus;</p>
+<br>
+<h3>Example - 1</h3>
+<br>
+<p>You can embed an HTML document in an HTML document itself as follows &minus;</p>
+<pre class="result notranslate">
+&lt;object data = "data/test.htm" type = "text/html" width = "300" height = "200"&gt;
+   alt : &lt;a href = "data/test.htm"&gt;test.htm&lt;/a&gt;
+&lt;/object&gt;
+</pre>
+<p>Here <i>alt</i> attribute will come into picture if browser does not support <i>object</i> tag.</p>
+<br>
+<h3>Example - 2</h3>
+<br>
+<p>You can embed a PDF document in an HTML document as follows &minus;</p>
+<pre class="result notranslate">
+&lt;object data = "data/test.pdf" type = "application/pdf" width = "300" height = "200"&gt;
+   alt : &lt;a href = "data/test.pdf"&gt;test.htm&lt;/a&gt;
+&lt;/object&gt;
+</pre>
+<br>
+<h3>Example - 3</h3>
+<br>
+<p>You can specify some parameters related to the document with the <b>&lt;param&gt;</b> tag. Here is an example to embed a wav file &minus;</p>
+<pre class="result notranslate">
+&lt;object data = "data/test.wav" type = "audio/x-wav" width = "200" height = "20"&gt;
+   &lt;param name = "src" value = "data/test.wav"&gt;
+   &lt;param name = "autoplay" value = "false"&gt;
+   &lt;param name = "autoStart" value = "0"&gt;
+   alt : &lt;a href = "data/test.wav"&gt;test.wav&lt;/a&gt;
+&lt;/object&gt;
+</pre>
+<br>
+<h3>Example - 4</h3>
+<br>
+<p>You can add a flash document as follows &minus;</p>
+<pre class="result notranslate">
+&lt;object classid = "clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id = "penguin" 
+   codebase = "someplace/swflash.cab" width = "200" height = "300"&gt;
+   
+   &lt;param name = "movie" value = "flash/penguin.swf" /&gt;
+   &lt;param name = "quality" value = "high" /&gt;
+   &lt;img src = "penguin.jpg" width = "200" height = "300" alt = "Penguin" /&gt;
+&lt;/object&gt;
+</pre>
+<br>
+<h3>Example - 5</h3>
+<br>
+<p>You can add a java applet into HTML document as follows &minus;</p>
+<pre class="result notranslate">
+&lt;object classid = "clsid:8ad9c840-044e-11d1-b3e9-00805f499d93" 
+   width = "200" height = "200"&gt;
+   &lt;param name = "code" value = "applet.class"&gt;
+&lt;/object&gt;
+</pre>
+<p>The <b>classid</b> attribute identifies which version of Java Plug-in to use. You can use the optional <i>codebase</i> attribute to specify if and how to download the JRE.</p>
+
+
+
+    
+</main>
+
+
+
+<footer style="background-color: #2090DB; color: white;text-align: center;" class=" py-6">
+   <div class="row">
+     <div class="col-12 col-md">
+       <small class="d-block mb-3">&copy; 2017–2021 Licensed Product</small>
+     </div>
+   </div>
+ </footer>
+ 
+ 
+ <section>
+ 
+ <!-- ===============================================================================================-->
+     <script src="../../vendor/jquery/jquery-3.2.1.min.js"></script>
+ <!--===============================================================================================-->
+     <script src="../../vendor/animsition/js/animsition.min.js"></script>
+ <!--===============================================================================================-->
+    <script src="../../vendor/bootstrap/js/popper.js"></script>
+    <script src="../../vendor/bootstrap/js/bootstrap.min.js"></script>
+ <!--===============================================================================================-->
+    <script src="../../vendor/select2/select2.min.js"></script>
+ <!--===============================================================================================-->
+    <script src="../../vendor/daterangepicker/moment.min.js"></script>
+    <script src="../../vendor/daterangepicker/daterangepicker.js"></script>
+ <!--===============================================================================================-->
+    <script src="../../vendor/countdowntime/countdowntime.js"></script>
+ <!--===============================================================================================-->
+     <script src="../../js/main.js"></script>
+   
+     <script src="../../js/custom.js"></script>
+ 
+     <script src="../../js/adconsent.js"></script>
+     <script src="../../js/my-learning.js"></script>
+     <script src="../../js/snhb-loader.min.js"></script>
+     <script src="../../js/w3codecolor.js"></script>
+ 
+ </section>
+ 
+ </body>
+ </html>

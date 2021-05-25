@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+
+<head>
+<title>ELearning Platform</title>
+<link rel="icon" href="../../favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="../../css/styles.css">
+<link rel="stylesheet" href="../../css/custom.css">
+<link rel="stylesheet" href="../../css/font-awesome.min.css">
+<script src="../../js/font.js"></script>
+<!-- end cmp -->
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="../../images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="../../vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="../../vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../css/util.css">
+	<link rel="stylesheet" type="text/css" href="../../css/main.css">
+</head>
+
+
+<body style="position:relative;min-height:100%;">
+
+<header>
+
+    <div class='w3-container top' style="padding-top:20px;">
+        <a class='w3schools-logo notranslate' style="position:absolute;" href='../../index.html'>Elearning<span class='dotcom'>.org</span></a>
+      
+        <!-- <div id="loginactioncontainer" class='w3-right' style='width:80px;height:50px;'>
+          <div id="mypagediv"></div> 
+            <a id="w3loginbtn" style="border: medium none; display: inline; cursor: pointer; background-color: #2090db;" class="login w3-right w3-hover-greener" href="../../login.html" target="_self">LOG IN</a>
+        </div> -->
+      
+        <div id="theworldsgreatest" class='w3-right w3-hide-medium w3-hide-small w3-wide toptext' style="line-height: 50px;margin-right:20px;font-family:'Segoe UI',Arial,sans-serif">
+          THE WORLD'S LARGEST ONLINE LEARNING PLATFORM
+        </div>
+      
+      </div>
+      
+      
+      <div class="w3-bar w3-theme w3-card-2 w3-wide notranslate">
+       <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 hidesm" href="javascript:void(0)" onclick="w3_open()"><i class='fa'>&#xf0c9;</i></a>
+       <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_open_nav('tutorials')" id="navbtn_tutorials">WEB TECHNOLOGIES <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a>
+       <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_open_nav('references')" id="navbtn_references">CORE SUBJECTS <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a>
+       <!-- <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_open_nav('examples')" id="navbtn_examples">QUIZ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a> -->
+       <!-- <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16 w3-hide-medium w3-hide-small" href="javascript:void(0)" onclick="w3_open_nav('exercises')" id="navbtn_exercises">ONLINE COURSES <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a> -->
+       <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-left topnav-some w3-hide"  href="../../quiz.html" title='quiz'>QUIZ</a>
+       <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-left topnav-some w3-hide"  href="#" title='oc'>ONLINE COURSES</a>
+ 
+       <div class="w3-right">
+        
+        <!-- <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-right topnav-some w3-hide"  href="../../signup.html" title='signup'>Sign Up</a> -->
+        <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-right topnav-some w3-hide"  href="../../about.html" title='About'>About</a>
+        
+       </div>
+      </div>
+      
+      
+       <div id='myAccordion' class="w3-card-2 w3-light-grey w3-center w3-hide-large" style="display:none;cursor:default"> 
+       <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-xlarge w3-right">&times;</a><br>
+       <div class="w3-container w3-padding-32">
+        <a class="w3-button w3-block w3-large w3-wide" onclick="open_xs_menu('tutorials');" href="javascript:void(0);">WEB TECHNOLOGIES <i class='fa fa-caret-down'></i></a>
+        <div id="sectionxs_tutorials" class="w3-white w3-show"></div>
+        <a class="w3-button w3-block w3-large w3-wide" onclick="open_xs_menu('references')" href="javascript:void(0);">CORE SUBJECTS <i class='fa fa-caret-down'></i></a>
+        <div id="sectionxs_references" class="w3-white w3-show"></div>
+        <a class="w3-button w3-block w3-large w3-wide" href="../../quiz.html">QUIZ</i></a>
+        <div id="sectionxs_examples" class="w3-white w3-show"></div>
+        <a class="w3-button w3-block w3-large w3-wide" href="#">ONLINE COURSES</i></a>
+        <div id="sectionxs_exercises" class="w3-white w3-show"></div>
+        
+       </div>
+      </div> 
+      
+      <nav id="nav_tutorials" class="w3-light-grey w3-card-2 w3-hide-small navex">
+       <span onclick="w3_close_nav('tutorials')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+       <div class="w3-row-padding w3-bar-block">
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">HTML5 and CSS3</h3>
+          <a class="w3-bar-item w3-button" href="../HTML/a.html">HTML - Attributes</a>
+          <a class="w3-bar-item w3-button" href="../HTML/b.html">HTML - Frames</a>
+          <a class="w3-bar-item w3-button" href="../HTML/c.html">HTML - Forms</a>
+          <a class="w3-bar-item w3-button" href="../HTML/d.html">HTML - Embed Media</a>
+          <a class="w3-bar-item w3-button" href="../HTML/e.html">HTML - Layouts</a>
+          <a class="w3-bar-item w3-button" href="../CSS/a.html">CSS - Visibility</a>
+          <a class="w3-bar-item w3-button" href="../CSS/b.html">CSS - Positioning</a>
+          <a class="w3-bar-item w3-button" href="../CSS/c.html">CSS - Padding</a>
+          <a class="w3-bar-item w3-button" href="../CSS/d.html">CSS - Layers</a>
+          <a class="w3-bar-item w3-button" href="../CSS/e.html">CSS - Animation</a> 
+      
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">JavaScript</h3>
+         <a class="w3-bar-item w3-button" href="../JavaScript/a.html">JavaScript - Objects</a>
+         <a class="w3-bar-item w3-button" href="../JavaScript/b.html">JavaScript - Strings</a>
+         <a class="w3-bar-item w3-button" href='../JavaScript/c.html'>JavaScript - Math</a>
+         <a class="w3-bar-item w3-button" href='../JavaScript/d.html'>JavaScript - Arrays</a>
+         <a class="w3-bar-item w3-button" href='../JavaScript/e.html'>JavaScript - Error Handling</a>
+         
+        </div> 
+       <div class="w3-col l3 m6">
+          <h3 class="w3-margin-top">Python</h3>
+          <a class="w3-bar-item w3-button" href="../Python/a.html">Python - Variables</a>
+          <a class="w3-bar-item w3-button" href="../Python/b.html">Python - Strings</a>
+          <a class="w3-bar-item w3-button" href="../Python/c.html">Python - Lists</a>
+          <a class="w3-bar-item w3-button" href="../Python/d.html">Python - Tuples</a>
+          <a class="w3-bar-item w3-button" href="../Python/e.html">Python - Dictionary</a>
+          <a class="w3-bar-item w3-button" href="../Python/f.html">Python - Exceptions</a>
+          
+         
+        </div>
+        <div class="w3-col l3 m6 w3-hide-medium">
+           
+         <h3 class="w3-margin-top">Artificial Intelligence</h3>
+          <a class="w3-bar-item w3-button" href="../AI/a.html"> AI Overview</a>
+          <a class="w3-bar-item w3-button" href="../AI/b.html"> NLP</a>
+          <a class="w3-bar-item w3-button" href="../AI/c.html"> Robotics</a> 
+          <a class="w3-bar-item w3-button" href="../AI/d.html"> Neural Networks</a> 
+          <a class="w3-bar-item w3-button" href="../AI/e.html"> Expert Systems</a> 
+           
+        </div>
+       </div>
+       <br class="hidesm">
+      </nav>
+      
+      <nav id="nav_references" class="w3-light-grey w3-card-2 w3-hide-small navex">
+       <span onclick="w3_close_nav('references')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+       <div class="w3-row-padding w3-bar-block">
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Data Structure & Algorithms</h3>
+          <a class="w3-bar-item w3-button" href="../DSA/a.html">Greedy Algorithms</a>
+          <a class="w3-bar-item w3-button" href="../DSA/b.html">Divide and Conquer</a>
+          <a class="w3-bar-item w3-button" href="../DSA/c.html">Dynamic Programming</a>
+          <a class="w3-bar-item w3-button" href='../DSA/d.html'>Linked List</a>
+          <a class="w3-bar-item w3-button" href="../DSA/e.html">Stack</a>
+          <a class="w3-bar-item w3-button" href="../DSA/f.html">Queue</a>
+         
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Database</h3>
+          <a class="w3-bar-item w3-button" href="../Database/a.html"> Architecture</a>
+          <a class="w3-bar-item w3-button" href='../Database/b.html'> ER Model</a>
+          <a class="w3-bar-item w3-button" href="../Database/c.html"> Indexing</a>
+          <a class="w3-bar-item w3-button" href='../Database/d.html'> Hashing</a>
+          <a class="w3-bar-item w3-button" href='../Database/e.html'> Deadlock</a>
+        
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Computer Networks</h3>
+          <a class="w3-bar-item w3-button" href='../Network/a.html'> Network Types</a>
+          <a class="w3-bar-item w3-button" href='../Network/b.html'> Topologies</a>
+          <a class="w3-bar-item w3-button" href='../Network/c.html'> Physical Layer</a>
+          <a class="w3-bar-item w3-button" href='../Network/d.html'> Data Link Layer</a>
+          <a class="w3-bar-item w3-button" href='../Network/e.html'> Network Layer</a>
+      
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Operating System</h3>
+          <a class="w3-bar-item w3-button" href='../OS/a.html'> OS Types</a>
+          <a class="w3-bar-item w3-button" href='../OS/b.html'> Processes</a>
+          <a class="w3-bar-item w3-button" href='../OS/c.html'> Memory Management</a>
+          <a class="w3-bar-item w3-button" href='../OS/d.html'> Virtual Memory</a>
+          <a class="w3-bar-item w3-button" href='../OS/e.html'> File System</a>
+        
+        </div>
+       </div>
+       <br class="hidesm">
+      </nav>
+      
+      <nav id="nav_examples" class="w3-light-grey w3-card-2 w3-hide-small navex">
+       <span onclick="w3_close_nav('examples')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+       <div class="w3-row-padding w3-bar-block">
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">HTML and CSS</h3>
+         <a class="w3-bar-item w3-button" href='#'>HTML Quiz</a>
+         <a class="w3-bar-item w3-button" href='#'>CSS Quiz</a>
+         
+        </div>
+        <div class="w3-col l3 m6">
+        
+         <h3 class="w3-margin-top">Programming</h3>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Python Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">JavaScript Quiz</a>
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Core Subjects</h3>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Data Structure Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Algorithms Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Database Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Operating System Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Computer Network Quiz</a>
+       
+        
+        </div>
+        <div class="w3-col l3 m6 w3-hide-medium">
+         <h3 class="w3-margin-top">Advanced Technology</h3>
+         <a class="w3-bar-item w3-button" href="#" target="_top">AI Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">NLP Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Robotics Quiz</a>
+        </div>
+      </div>
+       <br class="hidesm">
+      </nav>
+      
+      <nav id="nav_exercises" class="w3-light-grey w3-card-2 w3-hide-small w3-hide-medium navex">
+       <span onclick="w3_close_nav('exercises')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+       <div class="w3-row-padding w3-bar-block">
+        <div class="w3-col l4 m12">
+         <h3 class="w3-margin-top">Web Development</h3>
+         <a class="w3-bar-item w3-button" href="#">HTML Course</a>
+         <a class="w3-bar-item w3-button" href="#">CSS Course</a>
+         <a class="w3-bar-item w3-button" href="#">JavaScript Course</a>
+         <a class="w3-bar-item w3-button" href="#">SQL Course</a>
+         <a class="w3-bar-item w3-button" href="#">Python Course</a>
+        </div>
+        <div class="w3-col l4 m12">
+         <h3 class="w3-margin-top">Mobile Development</h3>
+         <a class="w3-bar-item w3-button" href="#">React Native Course</a>
+         <a class="w3-bar-item w3-button" href="#">Flutter Course</a>
+        </div>
+        <div class="w3-col l4 m12">
+         <h3 class="w3-margin-top">Game Development</h3>
+         <a class="w3-bar-item w3-button" href="#">C# Course</a>
+         <a class="w3-bar-item w3-button" href="#">C++ Course</a>
+         <a class="w3-bar-item w3-button" href="#">Unity 3D Course</a>
+        
+        </div>
+       </div>
+       <br class="hidesm">
+      </nav>
+
+
+
+</header>
+
+
+
+
+<!-- MAIN -->
+
+<main class="container">
+    <h1 class="jumbotron">JavaScript - Errors & Exceptions Handling</h1>
+    <br>
+    <hr>
+
+
+<p>There are three types of errors in programming: (a) Syntax Errors, (b) Runtime Errors, and (c) Logical Errors.</p>
+<br>
+<h2>Syntax Errors</h2>
+<br>
+<p>Syntax errors, also called <b>parsing errors,</b> occur at compile time in traditional programming languages and at interpret time in JavaScript.</p>
+<p>For example, the following line causes a syntax error because it is missing a closing parenthesis.</p>
+<pre class="result notranslate">
+&lt;script type = "text/javascript"&gt;
+   &lt;!--
+      window.print(;
+   //--&gt;
+&lt;/script&gt;
+</pre>
+<p>When a syntax error occurs in JavaScript, only the code contained within the same thread as the syntax error is affected and the rest of the code in other threads gets executed assuming nothing in them depends on the code containing the error.</p>
+<br>
+<h2>Runtime Errors</h2>
+<br>
+<p>Runtime errors, also called <b>exceptions,</b> occur during execution (after compilation/interpretation).</p>
+<p>For example, the following line causes a runtime error because here the syntax is correct, but at runtime, it is trying to call a method that does not exist.</p>
+<pre class="result notranslate">
+&lt;script type = "text/javascript"&gt;
+   &lt;!--
+      window.printme();
+   //--&gt;
+&lt;/script&gt;
+</pre>
+<p>Exceptions also affect the thread in which they occur, allowing other JavaScript threads to continue normal execution.</p>
+<br>
+<h2>Logical Errors</h2>
+<br>
+<p>Logic errors can be the most difficult type of errors to track down. These errors are not the result of a syntax or runtime error. Instead, they occur when you make a mistake in the logic that drives your script and you do not get the result you expected.</p>
+<p>You cannot catch those errors, because it depends on your business requirement what type of logic you want to put in your program.</p>
+<br>
+<h2>The try...catch...finally Statement</h2>
+<br>
+<p>The latest versions of JavaScript added exception handling capabilities. JavaScript implements the <b>try...catch...finally</b> construct as well as the <b>throw</b> operator to handle exceptions.</p>
+<p>You can <b>catch</b> programmer-generated and <b>runtime</b> exceptions, but you cannot <b>catch</b> JavaScript syntax errors.</p>
+<p>Here is the <b>try...catch...finally</b> block syntax &minus;</p>
+<pre class="prettyprint notranslate">
+&lt;script type = "text/javascript"&gt;
+   &lt;!--
+      try {
+         // Code to run
+         [break;]
+      } 
+      
+      catch ( e ) {
+         // Code to run if an exception occurs
+         [break;]
+      }
+      
+      [ finally {
+         // Code that is always executed regardless of 
+         // an exception occurring
+      }]
+   //--&gt;
+&lt;/script&gt;
+</pre>
+<p>The <b>try</b> block must be followed by either exactly one <b>catch</b> block or one <b>finally</b> block (or one of both). When an exception occurs in the <b>try</b> block, the exception is placed in <b>e</b> and the <b>catch</b> block is executed. The optional <b>finally</b> block executes unconditionally after try/catch.</p>
+<br>
+<h3>Examples</h3>
+<br>
+<p>Here is an example where we are trying to call a non-existing function which in turn is raising an exception. Let us see how it behaves without <b>try...catch</b>&minus;</p>
+<div class="demo-view">
+<!-- <a href="http://tpcg.io/zvPSag" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a> -->
+</div>
+<pre class="prettyprint notranslate">
+&lt;html&gt;
+   &lt;head&gt;      
+      &lt;script type = "text/javascript"&gt;
+         &lt;!--
+            function myFunc() {
+               var a = 100;
+               alert("Value of variable a is : " + a );
+            }
+         //--&gt;
+      &lt;/script&gt;      
+   &lt;/head&gt;
+   
+   &lt;body&gt;
+      &lt;p&gt;Click the following to see the result:&lt;/p&gt;
+      
+      &lt;form&gt;
+         &lt;input type = "button" value = "Click Me" onclick = "myFunc();" /&gt;
+      &lt;/form&gt;      
+   &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+<!-- <iframe onload="resizeFrame(this)" class="result" src="/javascript/src/error_handling.htm" height="90px" width="660px"></iframe> -->
+<p>Now let us try to catch this exception using <b>try...catch</b> and display a user-friendly message. You can also suppress this message, if you want to hide this error from a user.</p>
+<div class="demo-view">
+<!-- <a href="http://tpcg.io/UnaRU3" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a> -->
+</div>
+<pre class="prettyprint notranslate">
+&lt;html&gt;
+   &lt;head&gt;
+      
+      &lt;script type = "text/javascript"&gt;
+         &lt;!--
+            function myFunc() {
+               var a = 100;
+               try {
+                  alert("Value of variable a is : " + a );
+               } 
+               catch ( e ) {
+                  alert("Error: " + e.description );
+               }
+            }
+         //--&gt;
+      &lt;/script&gt;
+      
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;p&gt;Click the following to see the result:&lt;/p&gt;
+      
+      &lt;form&gt;
+         &lt;input type = "button" value = "Click Me" onclick = "myFunc();" /&gt;
+      &lt;/form&gt;
+      
+   &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+<!-- <iframe onload="resizeFrame(this)" class="result" src="/javascript/src/error_handling2.htm" height="90px" width="660px"></iframe> -->
+<p>You can use <b>finally</b> block which will always execute unconditionally after the try/catch. Here is an example.</p>
+<div class="demo-view">
+<!-- <a href="http://tpcg.io/nwZsBT" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a> -->
+</div>
+<pre class="prettyprint notranslate">
+&lt;html&gt;
+   &lt;head&gt;
+      
+      &lt;script type = "text/javascript"&gt;
+         &lt;!--
+            function myFunc() {
+               var a = 100;
+               
+               try {
+                  alert("Value of variable a is : " + a );
+               }
+               catch ( e ) {
+                  alert("Error: " + e.description );
+               }
+               finally {
+                  alert("Finally block will always execute!" );
+               }
+            }
+         //--&gt;
+      &lt;/script&gt;
+      
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;p&gt;Click the following to see the result:&lt;/p&gt;
+      
+      &lt;form&gt;
+         &lt;input type = "button" value = "Click Me" onclick = "myFunc();" /&gt;
+      &lt;/form&gt;
+      
+   &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+<!-- <iframe onload="resizeFrame(this)" class="result" src="/javascript/src/error_handling3.htm" height="90px" width="660px"></iframe> -->
+<br>
+<h2>The throw Statement</h2>
+<br>
+<p>You can use <b>throw</b> statement to raise your built-in exceptions or your customized exceptions. Later these exceptions can be captured and you can take an appropriate action.</p>
+<br>
+<h3>Example</h3>
+<br>
+<p>The following example demonstrates how to use a <b>throw</b> statement.</p>
+<div class="demo-view">
+<!-- <a href="http://tpcg.io/sPAG21" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a> -->
+</div>
+<pre class="prettyprint notranslate">
+&lt;html&gt;
+   &lt;head&gt;
+      
+      &lt;script type = "text/javascript"&gt;
+         &lt;!--
+            function myFunc() {
+               var a = 100;
+               var b = 0;
+               
+               try {
+                  if ( b == 0 ) {
+                     throw( "Divide by zero error." ); 
+                  } else {
+                     var c = a / b;
+                  }
+               }
+               catch ( e ) {
+                  alert("Error: " + e );
+               }
+            }
+         //--&gt;
+      &lt;/script&gt;
+      
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;p&gt;Click the following to see the result:&lt;/p&gt;
+      
+      &lt;form&gt;
+         &lt;input type = "button" value = "Click Me" onclick = "myFunc();" /&gt;
+      &lt;/form&gt;
+      
+   &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+<!-- <iframe onload="resizeFrame(this)" class="result" src="/javascript/src/throw_statement.htm" height="90px" width="660px"></iframe> -->
+<p>You can raise an exception in one function using a string, integer, Boolean, or an object and then you can capture that exception either in the same function as we did above, or in another function using a <b>try...catch</b> block.</p>
+<br>
+<h2>The onerror() Method</h2>
+<br>
+<p>The <b>onerror</b> event handler was the first feature to facilitate error handling in JavaScript. The <b>error</b> event is fired on the window object whenever an exception occurs on the page.</p>
+<div class="demo-view">
+<!-- <a href="http://tpcg.io/SWbdYM" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a> -->
+</div>
+<pre class="prettyprint notranslate">
+&lt;html&gt;
+   &lt;head&gt;
+      
+      &lt;script type = "text/javascript"&gt;
+         &lt;!--
+            window.onerror = function () {
+               alert("An error occurred.");
+            }
+         //--&gt;
+      &lt;/script&gt;
+      
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;p&gt;Click the following to see the result:&lt;/p&gt;
+      
+      &lt;form&gt;
+         &lt;input type = "button" value = "Click Me" onclick = "myFunc();" /&gt;
+      &lt;/form&gt;
+      
+   &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+<!-- <iframe onload="resizeFrame(this)" class="result" src="/javascript/src/onerror.htm" height="90px" width="660px"></iframe> -->
+<p>The <b>onerror</b> event handler provides three pieces of information to identify the exact nature of the error &minus;</p>
+<ul class="list">
+<li><p><b>Error message</b> &minus; The same message that the browser would display for the given error</p></li>
+<li><p><b>URL</b> &minus; The file in which the error occurred</p></li>
+<li><p><b>Line number</b>&minus; The line number in the given URL that caused the error</p></li>
+</ul>
+<p>Here is the example to show how to extract this information.</p>
+
+<div class="demo-view">
+<!-- <a href="http://tpcg.io/axqshk" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a> -->
+</div>
+<pre class="prettyprint notranslate">
+&lt;html&gt;
+   &lt;head&gt;
+   
+      &lt;script type = "text/javascript"&gt;
+         &lt;!--
+            window.onerror = function (msg, url, line) {
+               alert("Message : " + msg );
+               alert("url : " + url );
+               alert("Line number : " + line );
+            }
+         //--&gt;
+      &lt;/script&gt;
+      
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;p&gt;Click the following to see the result:&lt;/p&gt;
+      
+      &lt;form&gt;
+         &lt;input type = "button" value = "Click Me" onclick = "myFunc();" /&gt;
+      &lt;/form&gt;
+      
+   &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+<!-- <iframe onload="resizeFrame(this)" class="result" src="/javascript/src/error_handling4.htm" height="90px" width="660px"></iframe> -->
+<p>You can display extracted information in whatever way you think it is better.</p>
+<p>You can use an <b>onerror</b> method, as shown below, to display an error message in case there is any problem in loading an image.</p>
+<pre class="prettyprint notranslate">
+&lt;img src="myimage.gif" onerror="alert('An error occurred loading the image.')" /&gt;
+</pre>
+<p>You can use <b>onerror</b> with many HTML tags to display appropriate messages in case of errors.</p>
+
+
+
+    
+</main>
+
+
+<footer style="background-color: #2090DB; color: white;text-align: center;" class=" py-6">
+   <div class="row">
+     <div class="col-12 col-md">
+       <small class="d-block mb-3">&copy; 2017–2021 Licensed Product</small>
+     </div>
+   </div>
+ </footer>
+ 
+ 
+ <section>
+ 
+ <!-- ===============================================================================================-->
+     <script src="../../vendor/jquery/jquery-3.2.1.min.js"></script>
+ <!--===============================================================================================-->
+     <script src="../../vendor/animsition/js/animsition.min.js"></script>
+ <!--===============================================================================================-->
+    <script src="../../vendor/bootstrap/js/popper.js"></script>
+    <script src="../../vendor/bootstrap/js/bootstrap.min.js"></script>
+ <!--===============================================================================================-->
+    <script src="../../vendor/select2/select2.min.js"></script>
+ <!--===============================================================================================-->
+    <script src="../../vendor/daterangepicker/moment.min.js"></script>
+    <script src="../../vendor/daterangepicker/daterangepicker.js"></script>
+ <!--===============================================================================================-->
+    <script src="../../vendor/countdowntime/countdowntime.js"></script>
+ <!--===============================================================================================-->
+     <script src="../../js/main.js"></script>
+   
+     <script src="../../js/custom.js"></script>
+ 
+     <script src="../../js/adconsent.js"></script>
+     <script src="../../js/my-learning.js"></script>
+     <script src="../../js/snhb-loader.min.js"></script>
+     <script src="../../js/w3codecolor.js"></script>
+ 
+ </section>
+ 
+ </body>
+ </html>

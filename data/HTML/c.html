@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+
+<head>
+<title>ELearning Platform</title>
+<link rel="icon" href="../../favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="../../css/styles.css">
+<link rel="stylesheet" href="../../css/custom.css">
+<link rel="stylesheet" href="../../css/font-awesome.min.css">
+<script src="../../js/font.js"></script>
+<!-- end cmp -->
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="../../images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="../../vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="../../vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../css/util.css">
+	<link rel="stylesheet" type="text/css" href="../../css/main.css">
+</head>
+
+
+<body style="position:relative;min-height:100%;">
+
+<header>
+
+    <div class='w3-container top' style="padding-top:20px;">
+        <a class='w3schools-logo notranslate' style="position:absolute;" href='../../index.html'>Elearning<span class='dotcom'>.org</span></a>
+      
+        <!-- <div id="loginactioncontainer" class='w3-right' style='width:80px;height:50px;'>
+          <div id="mypagediv"></div> 
+            <a id="w3loginbtn" style="border: medium none; display: inline; cursor: pointer; background-color: #2090db;" class="login w3-right w3-hover-greener" href="../../login.html" target="_self">LOG IN</a>
+        </div> -->
+      
+        <div id="theworldsgreatest" class='w3-right w3-hide-medium w3-hide-small w3-wide toptext' style="line-height: 50px;margin-right:20px;font-family:'Segoe UI',Arial,sans-serif">
+          THE WORLD'S LARGEST ONLINE LEARNING PLATFORM
+        </div>
+      
+      </div>
+      
+      
+      <div class="w3-bar w3-theme w3-card-2 w3-wide notranslate">
+       <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 hidesm" href="javascript:void(0)" onclick="w3_open()"><i class='fa'>&#xf0c9;</i></a>
+       <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_open_nav('tutorials')" id="navbtn_tutorials">WEB TECHNOLOGIES <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a>
+       <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_open_nav('references')" id="navbtn_references">CORE SUBJECTS <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a>
+       <!-- <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_open_nav('examples')" id="navbtn_examples">QUIZ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a> -->
+       <!-- <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16 w3-hide-medium w3-hide-small" href="javascript:void(0)" onclick="w3_open_nav('exercises')" id="navbtn_exercises">ONLINE COURSES <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a> -->
+       <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-left topnav-some w3-hide"  href="../../quiz.html" title='quiz'>QUIZ</a>
+       <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-left topnav-some w3-hide"  href="#" title='oc'>ONLINE COURSES</a>
+ 
+       <div class="w3-right">
+        
+        <!-- <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-right topnav-some w3-hide"  href="../../signup.html" title='signup'>Sign Up</a> -->
+        <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-right topnav-some w3-hide"  href="../../about.html" title='About'>About</a>
+        
+       </div>
+      </div>
+      
+      
+       <div id='myAccordion' class="w3-card-2 w3-light-grey w3-center w3-hide-large" style="display:none;cursor:default"> 
+       <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-xlarge w3-right">&times;</a><br>
+       <div class="w3-container w3-padding-32">
+        <a class="w3-button w3-block w3-large w3-wide" onclick="open_xs_menu('tutorials');" href="javascript:void(0);">WEB TECHNOLOGIES <i class='fa fa-caret-down'></i></a>
+        <div id="sectionxs_tutorials" class="w3-white w3-show"></div>
+        <a class="w3-button w3-block w3-large w3-wide" onclick="open_xs_menu('references')" href="javascript:void(0);">CORE SUBJECTS <i class='fa fa-caret-down'></i></a>
+        <div id="sectionxs_references" class="w3-white w3-show"></div>
+        <a class="w3-button w3-block w3-large w3-wide" href="../../quiz.html">QUIZ</i></a>
+        <div id="sectionxs_examples" class="w3-white w3-show"></div>
+        <a class="w3-button w3-block w3-large w3-wide" href="#">ONLINE COURSES</i></a>
+        <div id="sectionxs_exercises" class="w3-white w3-show"></div>
+        
+       </div>
+      </div> 
+      
+      <nav id="nav_tutorials" class="w3-light-grey w3-card-2 w3-hide-small navex">
+       <span onclick="w3_close_nav('tutorials')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+       <div class="w3-row-padding w3-bar-block">
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">HTML5 and CSS3</h3>
+          <a class="w3-bar-item w3-button" href="../HTML/a.html">HTML - Attributes</a>
+          <a class="w3-bar-item w3-button" href="../HTML/b.html">HTML - Frames</a>
+          <a class="w3-bar-item w3-button" href="../HTML/c.html">HTML - Forms</a>
+          <a class="w3-bar-item w3-button" href="../HTML/d.html">HTML - Embed Media</a>
+          <a class="w3-bar-item w3-button" href="../HTML/e.html">HTML - Layouts</a>
+          <a class="w3-bar-item w3-button" href="../CSS/a.html">CSS - Visibility</a>
+          <a class="w3-bar-item w3-button" href="../CSS/b.html">CSS - Positioning</a>
+          <a class="w3-bar-item w3-button" href="../CSS/c.html">CSS - Padding</a>
+          <a class="w3-bar-item w3-button" href="../CSS/d.html">CSS - Layers</a>
+          <a class="w3-bar-item w3-button" href="../CSS/e.html">CSS - Animation</a> 
+      
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">JavaScript</h3>
+         <a class="w3-bar-item w3-button" href="../JavaScript/a.html">JavaScript - Objects</a>
+         <a class="w3-bar-item w3-button" href="../JavaScript/b.html">JavaScript - Strings</a>
+         <a class="w3-bar-item w3-button" href='../JavaScript/c.html'>JavaScript - Math</a>
+         <a class="w3-bar-item w3-button" href='../JavaScript/d.html'>JavaScript - Arrays</a>
+         <a class="w3-bar-item w3-button" href='../JavaScript/e.html'>JavaScript - Error Handling</a>
+         
+        </div> 
+       <div class="w3-col l3 m6">
+          <h3 class="w3-margin-top">Python</h3>
+          <a class="w3-bar-item w3-button" href="../Python/a.html">Python - Variables</a>
+          <a class="w3-bar-item w3-button" href="../Python/b.html">Python - Strings</a>
+          <a class="w3-bar-item w3-button" href="../Python/c.html">Python - Lists</a>
+          <a class="w3-bar-item w3-button" href="../Python/d.html">Python - Tuples</a>
+          <a class="w3-bar-item w3-button" href="../Python/e.html">Python - Dictionary</a>
+          <a class="w3-bar-item w3-button" href="../Python/f.html">Python - Exceptions</a>
+          
+         
+        </div>
+        <div class="w3-col l3 m6 w3-hide-medium">
+           
+         <h3 class="w3-margin-top">Artificial Intelligence</h3>
+          <a class="w3-bar-item w3-button" href="../AI/a.html"> AI Overview</a>
+          <a class="w3-bar-item w3-button" href="../AI/b.html"> NLP</a>
+          <a class="w3-bar-item w3-button" href="../AI/c.html"> Robotics</a> 
+          <a class="w3-bar-item w3-button" href="../AI/d.html"> Neural Networks</a> 
+          <a class="w3-bar-item w3-button" href="../AI/e.html"> Expert Systems</a> 
+           
+        </div>
+       </div>
+       <br class="hidesm">
+      </nav>
+      
+      <nav id="nav_references" class="w3-light-grey w3-card-2 w3-hide-small navex">
+       <span onclick="w3_close_nav('references')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+       <div class="w3-row-padding w3-bar-block">
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Data Structure & Algorithms</h3>
+          <a class="w3-bar-item w3-button" href="../DSA/a.html">Greedy Algorithms</a>
+          <a class="w3-bar-item w3-button" href="../DSA/b.html">Divide and Conquer</a>
+          <a class="w3-bar-item w3-button" href="../DSA/c.html">Dynamic Programming</a>
+          <a class="w3-bar-item w3-button" href='../DSA/d.html'>Linked List</a>
+          <a class="w3-bar-item w3-button" href="../DSA/e.html">Stack</a>
+          <a class="w3-bar-item w3-button" href="../DSA/f.html">Queue</a>
+         
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Database</h3>
+          <a class="w3-bar-item w3-button" href="../Database/a.html"> Architecture</a>
+          <a class="w3-bar-item w3-button" href='../Database/b.html'> ER Model</a>
+          <a class="w3-bar-item w3-button" href="../Database/c.html"> Indexing</a>
+          <a class="w3-bar-item w3-button" href='../Database/d.html'> Hashing</a>
+          <a class="w3-bar-item w3-button" href='../Database/e.html'> Deadlock</a>
+        
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Computer Networks</h3>
+          <a class="w3-bar-item w3-button" href='../Network/a.html'> Network Types</a>
+          <a class="w3-bar-item w3-button" href='../Network/b.html'> Topologies</a>
+          <a class="w3-bar-item w3-button" href='../Network/c.html'> Physical Layer</a>
+          <a class="w3-bar-item w3-button" href='../Network/d.html'> Data Link Layer</a>
+          <a class="w3-bar-item w3-button" href='../Network/e.html'> Network Layer</a>
+      
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Operating System</h3>
+          <a class="w3-bar-item w3-button" href='../OS/a.html'> OS Types</a>
+          <a class="w3-bar-item w3-button" href='../OS/b.html'> Processes</a>
+          <a class="w3-bar-item w3-button" href='../OS/c.html'> Memory Management</a>
+          <a class="w3-bar-item w3-button" href='../OS/d.html'> Virtual Memory</a>
+          <a class="w3-bar-item w3-button" href='../OS/e.html'> File System</a>
+        
+        </div>
+       </div>
+       <br class="hidesm">
+      </nav>
+      
+      <nav id="nav_examples" class="w3-light-grey w3-card-2 w3-hide-small navex">
+       <span onclick="w3_close_nav('examples')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+       <div class="w3-row-padding w3-bar-block">
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">HTML and CSS</h3>
+         <a class="w3-bar-item w3-button" href='#'>HTML Quiz</a>
+         <a class="w3-bar-item w3-button" href='#'>CSS Quiz</a>
+         
+        </div>
+        <div class="w3-col l3 m6">
+        
+         <h3 class="w3-margin-top">Programming</h3>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Python Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">JavaScript Quiz</a>
+        </div>
+        <div class="w3-col l3 m6">
+         <h3 class="w3-margin-top">Core Subjects</h3>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Data Structure Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Algorithms Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Database Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Operating System Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Computer Network Quiz</a>
+       
+        
+        </div>
+        <div class="w3-col l3 m6 w3-hide-medium">
+         <h3 class="w3-margin-top">Advanced Technology</h3>
+         <a class="w3-bar-item w3-button" href="#" target="_top">AI Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">NLP Quiz</a>
+         <a class="w3-bar-item w3-button" href="#" target="_top">Robotics Quiz</a>
+        </div>
+      </div>
+       <br class="hidesm">
+      </nav>
+      
+      <nav id="nav_exercises" class="w3-light-grey w3-card-2 w3-hide-small w3-hide-medium navex">
+       <span onclick="w3_close_nav('exercises')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+       <div class="w3-row-padding w3-bar-block">
+        <div class="w3-col l4 m12">
+         <h3 class="w3-margin-top">Web Development</h3>
+         <a class="w3-bar-item w3-button" href="#">HTML Course</a>
+         <a class="w3-bar-item w3-button" href="#">CSS Course</a>
+         <a class="w3-bar-item w3-button" href="#">JavaScript Course</a>
+         <a class="w3-bar-item w3-button" href="#">SQL Course</a>
+         <a class="w3-bar-item w3-button" href="#">Python Course</a>
+        </div>
+        <div class="w3-col l4 m12">
+         <h3 class="w3-margin-top">Mobile Development</h3>
+         <a class="w3-bar-item w3-button" href="#">React Native Course</a>
+         <a class="w3-bar-item w3-button" href="#">Flutter Course</a>
+        </div>
+        <div class="w3-col l4 m12">
+         <h3 class="w3-margin-top">Game Development</h3>
+         <a class="w3-bar-item w3-button" href="#">C# Course</a>
+         <a class="w3-bar-item w3-button" href="#">C++ Course</a>
+         <a class="w3-bar-item w3-button" href="#">Unity 3D Course</a>
+        
+        </div>
+       </div>
+       <br class="hidesm">
+      </nav>
+
+
+
+</header>
+
+
+
+<!-- MAIN -->
+
+<main class="container">
+    <h1 class="jumbotron">HTML - Forms</h1>
+    <br>
+    <hr>
+
+    <p>HTML Forms are required, when you want to collect some data from the site visitor. For example, during user registration you would like to collect information such as name, email address, credit card, etc.</p>
+    <p>A form will take input from the site visitor and then will post it to a back-end application such as CGI, ASP Script or PHP script etc. The back-end application will perform required processing on the passed data based on defined business logic inside the application.</p>
+    <p>There are various form elements available like text fields, textarea fields, drop-down menus, radio buttons, checkboxes, etc.</p>
+    <p>The HTML <b>&lt;form&gt;</b> tag is used to create an HTML form and it has following syntax &minus;</p>
+    <pre class="result notranslate">
+    &lt;form action = "Script URL" method = "GET|POST"&gt;
+       form elements like input, textarea etc.
+    &lt;/form&gt;
+    </pre>
+    <br>
+    <h2>Form Attributes</h2>
+    <br>
+    <p>Apart from common attributes, following is a list of the most frequently used form attributes &minus;</p>
+    <table class="table table-bordered">
+    <tr>
+    <th>Sr.No</th>
+    <th style="text-align:center;">Attribute &amp; Description</th>
+    </tr>
+    <tr>
+    <td class="ts">1</td>
+    <td>
+    <p><b>action</b></p>
+    <p>Backend script ready to process your passed data.</p></td>
+    </tr>
+    <tr>
+    <td class="ts">2</td>
+    <td>
+    <p><b>method</b></p>
+    <p>Method to be used to upload data. The most frequently used are GET and POST methods.</p></td>
+    </tr>
+    <tr>
+    <td class="ts">3</td>
+    <td>
+    <p><b>target</b></p>
+    <p>Specify the target window or frame where the result of the script will be displayed. It takes values like _blank, _self, _parent etc.</p></td>
+    </tr>
+    <tr>
+    <td class="ts">4</td>
+    <td>
+    <p><b>enctype</b></p>
+    <p>You can use the enctype attribute to specify how the browser encodes the data before it sends it to the server. Possible values are &minus;</p>
+    <p><b>application/x-www-form-urlencoded</b> &minus; This is the standard method most forms use in simple scenarios.</p>
+    <p><b>mutlipart/form-data</b> &minus; This is used when you want to upload binary data in the form of files like image, word file etc.</p>
+    </td>
+    </tr>
+    </table>
+    <!-- <p><b>Note</b> &minus; You can refer to <a href="/perl/perl_cgi_programming.htm">Perl &amp; CGI</a> for a detail on how form data upload works.</p> -->
+    <br>
+    <h2>HTML Form Controls</h2>
+    <br>
+    <p>There are different types of form controls that you can use to collect data using HTML form &minus;</p>
+    <ul class="list">
+    <li>Text Input Controls</li>
+    <li>Checkboxes Controls</li>
+    <li>Radio Box Controls</li>
+    <li>Select Box Controls</li>
+    <li>File Select boxes</li>
+    <li>Hidden Controls</li>
+    <li>Clickable Buttons</li>
+    <li>Submit and Reset Button</li>
+    </ul>
+    <br>
+    <h2>Text Input Controls</h2>
+    <br>
+    <p>There are three types of text input used on forms &minus;</p>
+    <ul class="list">
+    <li><p><b>Single-line text input controls</b> &minus; This control is used for items that require only one line of user input, such as search boxes or names. They are created using HTML <b>&lt;input&gt;</b> tag.</p></li>
+    <li><p><b>Password input controls</b> &minus; This is also a single-line text input but it masks the character as soon as a user enters it. They are also created using HTMl &lt;input&gt; tag.</p></li>
+    <li><p><b>Multi-line text input controls</b> &minus; This is used when the user is required to give details that may be longer than a single sentence. Multi-line input controls are created using HTML <b>&lt;textarea&gt;</b> tag.</p></li>
+    </ul>
+    <br>
+    <h2>Single-line text input controls</h2>
+    <br>
+    <p>This control is used for items that require only one line of user input, such as search boxes or names. They are created using HTML &lt;input&gt; tag.</p>
+    <br>
+    <h3>Example</h3>
+    <br>
+    <p>Here is a basic example of a single-line text input used to take first name and last name &minus;</p>
+    <div class="demo-view">
+    <!-- <a href="http://tpcg.io/rsDvtp" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a> -->
+    </div>
+    <pre class="prettyprint notranslate">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    
+       &lt;head&gt;
+          &lt;title&gt;Text Input Control&lt;/title&gt;
+       &lt;/head&gt;
+        
+       &lt;body&gt;
+          &lt;form &gt;
+             First name: &lt;input type = "text" name = "first_name" /&gt;
+             &lt;br&gt;
+             Last name: &lt;input type = "text" name = "last_name" /&gt;
+          &lt;/form&gt;
+       &lt;/body&gt;
+        
+    &lt;/html&gt;
+    </pre>
+    <!-- <p>This will produce the following result &minus;</p> -->
+    <!-- <iframe onLoad="resizeFrame(this)" class="result" src="/html/src/single_line_text_input.htm" height="100px"  width="660px"></iframe> -->
+    <br>
+    <h2>Attributes</h2>
+    <br>
+    <p>Following is the list of attributes for &lt;input&gt; tag for creating text field.</p>
+    <table class="table table-bordered">
+    <tr>
+    <th>Sr.No</th>
+    <th style="text-align:center;">Attribute &amp; Description</th>
+    </tr>
+    <tr>
+    <td class="ts">1</td>
+    <td>
+    <p><b>type</b></p>
+    <p>Indicates the type of input control and for text input control it will be set to <b>text</b>.</p></td>
+    </tr>
+    <tr>
+    <td class="ts">2</td>
+    <td>
+    <p><b>name</b></p>
+    <p>Used to give a name to the control which is sent to the server to be recognized and get the value.</p></td>
+    </tr>
+    <tr>
+    <td class="ts">3</td>
+    <td>
+    <p><b>value</b></p>
+    <p>This can be used to provide an initial value inside the control.</p></td>
+    </tr>
+    <tr>
+    <td class="ts">4</td>
+    <td>
+    <p><b>size</b></p>
+    <p>Allows to specify the width of the text-input control in terms of characters.</p></td>
+    </tr>
+    <tr>
+    <td class="ts">5</td>
+    <td>
+    <p><b>maxlength</b></p>
+    <p>Allows to specify the maximum number of characters a user can enter into the text box.</p></td>
+    </tr>
+    </table>
+    <br>
+    <h2>Password input controls</h2>
+    <br>
+    <p>This is also a single-line text input but it masks the character as soon as a user enters it. They are also created using HTML &lt;input&gt;tag but type attribute is set to <b>password</b>.</p>
+    <br>
+    <h3>Example</h3>
+    <br>
+    <p>Here is a basic example of a single-line password input used to take user password &minus;</p>
+    <div class="demo-view">
+    <!-- <a href="http://tpcg.io/3lbdUK" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a> -->
+    </div>
+    <pre class="prettyprint notranslate">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    
+       &lt;head&gt;
+          &lt;title&gt;Password Input Control&lt;/title&gt;
+       &lt;/head&gt;
+        
+       &lt;body&gt;
+          &lt;form &gt;
+             User ID : &lt;input type = "text" name = "user_id" /&gt;
+             &lt;br&gt;
+             Password: &lt;input type = "password" name = "password" /&gt;
+          &lt;/form&gt;
+       &lt;/body&gt;
+        
+    &lt;/html&gt;
+    </pre>
+    <!-- <p>This will produce the following result &minus;</p> -->
+    <!-- <iframe onLoad="resizeFrame(this)" class="result" src="/html/src/password_input_controls.htm" height="100px"  width="660px"></iframe> -->
+    <br>
+    <h2>Attributes</h2>
+    <br>
+    <p>Following is the list of attributes for &lt;input&gt; tag for creating password field.</p>
+    <table class="table table-bordered">
+    <tr>
+    <th>Sr.No</th>
+    <th style="text-align:center;">Attribute &amp; Description</th>
+    </tr>
+    <tr>
+    <td class="ts">1</td>
+    <td>
+    <p><b>type</b></p>
+    <p>Indicates the type of input control and for password input control it will be set to <b>password</b>.</p>
+    </td>
+    </tr>
+    <tr>
+    <td class="ts">2</td>
+    <td>
+    <p><b>name</b></p>
+    <p>Used to give a name to the control which is sent to the server to be recognized and get the value.</p>
+    </td>
+    </tr>
+    <tr>
+    <td class="ts">3</td>
+    <td>
+    <p><b>value</b></p>
+    <p>This can be used to provide an initial value inside the control.</p>
+    </td>
+    </tr>
+    <tr>
+    <td class="ts">4</td>
+    <td>
+    <p><b>size</b></p>
+    <p>Allows to specify the width of the text-input control in terms of characters.</p>
+    </td>
+    </tr>
+    <tr>
+    <td class="ts">5</td>
+    <td>
+    <p><b>maxlength</b></p>
+    <p>Allows to specify the maximum number of characters a user can enter into the text box.</p>
+    </td>
+    </tr>
+    </table>
+    <br>
+    <h2>Multiple-Line Text Input Controls</h2>
+    <br>
+    <p>This is used when the user is required to give details that may be longer than a single sentence. Multi-line input controls are created using HTML &lt;textarea&gt; tag.</p>
+    <br>
+    <h3>Example</h3>
+    <br>
+    <p>Here is a basic example of a multi-line text input used to take item description &minus;</p>
+    <div class="demo-view">
+    <!-- <a href="http://tpcg.io/oHNbzQ" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a> -->
+    </div>
+    <pre class="prettyprint notranslate">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    
+       &lt;head&gt;
+          &lt;title&gt;Multiple-Line Input Control&lt;/title&gt;
+       &lt;/head&gt;
+        
+       &lt;body&gt;
+          &lt;form&gt;
+             Description : &lt;br /&gt;
+             &lt;textarea rows = "5" cols = "50" name = "description"&gt;
+                Enter description here...
+             &lt;/textarea&gt;
+          &lt;/form&gt;
+       &lt;/body&gt;
+        
+    &lt;/html&gt;
+    </pre>
+    <!-- <p>This will produce the following result &minus;</p> -->
+    <!-- <iframe onLoad="resizeFrame(this)" class="result" src="/html/src/multiple_line_text.htm" height="150px"  width="660px"></iframe> -->
+    <br>
+    <h2>Attributes</h2>
+    <br>
+    <p>Following is the list of attributes for &lt;textarea&gt; tag.</p>
+    <table class="table table-bordered">
+    <tr>
+    <th>Sr.No</th>
+    <th style="text-align:center;">Attribute &amp; Description</th>
+    </tr>
+    <tr>
+    <td class="ts">1</td>
+    <td>
+    <p><b>name</b></p>
+    <p>Used to give a name to the control which is sent to the server to be recognized and get the value.</p>
+    </td>
+    </tr>
+    <tr>
+    <td class="ts">2</td>
+    <td>
+    <p><b>rows</b></p>
+    <p>Indicates the number of rows of text area box.</p>
+    </td>
+    </tr>
+    <tr>
+    <td class="ts">3</td>
+    <td>
+    <p><b>cols</b></p>
+    <p>Indicates the number of columns of text area box</p>
+    </td>
+    </tr>
+    </table>
+    <br>
+    <h2>Checkbox Control</h2>
+    <br>
+    <p>Checkboxes are used when more than one option is required to be selected. They are also created using HTML &lt;input&gt; tag but type attribute is set to <b>checkbox.</b>.</p>
+    <br>
+    <h3>Example</h3>
+    <br>
+    <p>Here is an example HTML code for a form with two checkboxes &minus;</p>
+    <div class="demo-view">
+    <!-- <a href="http://tpcg.io/VLMQaA" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a> -->
+    </div>
+    <pre class="prettyprint notranslate">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    
+       &lt;head&gt;
+          &lt;title&gt;Checkbox Control&lt;/title&gt;
+       &lt;/head&gt;
+        
+       &lt;body&gt;
+          &lt;form&gt;
+             &lt;input type = "checkbox" name = "maths" value = "on"&gt; Maths
+             &lt;input type = "checkbox" name = "physics" value = "on"&gt; Physics
+          &lt;/form&gt;
+       &lt;/body&gt;
+        
+    &lt;/html&gt;
+    </pre>
+    <!-- <p>This will produce the following result &minus;</p> -->
+    <!-- <iframe onLoad="resizeFrame(this)" class="result" src="/html/src/checkbox_control.htm" height="100px"  width="660px"></iframe> -->
+    <br>
+    <h2>Attributes</h2>
+    <br>
+    <p>Following is the list of attributes for &lt;checkbox&gt; tag.</p>
+    <table class="table table-bordered">
+    <tr>
+    <th>Sr.No</th>
+    <th style="text-align:center;">Attribute &amp; Description</th>
+    </tr>
+    <tr>
+    <td class="ts">1</td>
+    <td>
+    <p><b>type</b></p>
+    <p>Indicates the type of input control and for checkbox input control it will be set to <b>checkbox.</b>.</p>
+    </td>
+    </tr>
+    <tr>
+    <td class="ts">2</td>
+    <td>
+    <p><b>name</b></p>
+    <p>Used to give a name to the control which is sent to the server to be recognized and get the value.</p>
+    </td>
+    </tr>
+    <tr>
+    <td class="ts">3</td>
+    <td>
+    <p><b>value</b></p>
+    <p>The value that will be used if the checkbox is selected.</p>
+    </td>
+    </tr>
+    <tr>
+    <td class="ts">4</td>
+    <td>
+    <p><b>checked</b></p>
+    <p>Set to <i>checked</i> if you want to select it by default.</p>
+    </td>
+    </tr>
+    </table>
+    <br>
+    <h2>Radio Button Control</h2>
+    <br>
+    <p>Radio buttons are used when out of many options, just one option is required to be selected. They are also created using HTML &lt;input&gt; tag but type attribute is set to <b>radio</b>.</p>
+    <br>
+    <h3>Example</h3>
+    <br>
+    <p>Here is example HTML code for a form with two radio buttons &minus;</p>
+    <div class="demo-view">
+    <!-- <a href="http://tpcg.io/KtRu65" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a> -->
+    </div>
+    <pre class="prettyprint notranslate">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    
+       &lt;head&gt;
+          &lt;title&gt;Radio Box Control&lt;/title&gt;
+       &lt;/head&gt;
+    
+       &lt;body&gt;
+          &lt;form&gt;
+             &lt;input type = "radio" name = "subject" value = "maths"&gt; Maths
+             &lt;input type = "radio" name = "subject" value = "physics"&gt; Physics
+          &lt;/form&gt;
+       &lt;/body&gt;
+    
+    &lt;/html&gt;
+    </pre>
+    <!-- <p>This will produce the following result &minus;</p> -->
+    <!-- <iframe onLoad="resizeFrame(this)" class="result" src="/html/src/radio_button_control.htm" height="100px"  width="660px"></iframe> -->
+    <br>
+    <h2>Attributes</h2>
+    <br>
+    <p>Following is the list of attributes for radio button.</p>
+    <table class="table table-bordered">
+    <tr>
+    <th>Sr.No</th>
+    <th style="text-align:center;">Attribute &amp; Description</th>
+    </tr>
+    <tr>
+    <td class="ts">1</td>
+    <td>
+    <p><b>type</b></p>
+    <p>Indicates the type of input control and for checkbox input control it will be set to radio.</p>
+    </td>
+    </tr>
+    <tr>
+    <td class="ts">2</td>
+    <td>
+    <p><b>name</b></p>
+    <p>Used to give a name to the control which is sent to the server to be recognized and get the value.</p>
+    </td>
+    </tr>
+    <tr>
+    <td class="ts">3</td>
+    <td>
+    <p><b>value</b></p>
+    <p>The value that will be used if the radio box is selected.</p></td>
+    </tr>
+    <tr>
+    <td class="ts">4</td>
+    <td>
+    <p><b>checked</b></p>
+    <p>Set to <i>checked</i> if you want to select it by default.</p>
+    </td>
+    </tr>
+    </table>
+    <br>
+    <h2>Select Box Control</h2>
+    <br>
+    <p>A select box, also called drop down box which provides option to list down various options in the form of drop down list, from where a user can select one or more options.</p>
+    <br>
+    <h3>Example</h3>
+    <br>
+    <p>Here is example HTML code for a form with one drop down box</p>
+    <div class="demo-view">
+    <!-- <a href="http://tpcg.io/Ofo4UQ" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a> -->
+    </div>
+    <pre class="prettyprint notranslate">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    
+       &lt;head&gt;
+          &lt;title&gt;Select Box Control&lt;/title&gt;
+       &lt;/head&gt;
+        
+       &lt;body&gt;
+          &lt;form&gt;
+             &lt;select name = "dropdown"&gt;
+                &lt;option value = "Maths" selected&gt;Maths&lt;/option&gt;
+                &lt;option value = "Physics"&gt;Physics&lt;/option&gt;
+             &lt;/select&gt;
+          &lt;/form&gt;
+       &lt;/body&gt;
+        
+    &lt;/html&gt;
+    </pre>
+    <!-- <p>This will produce the following result &minus;</p> -->
+    <!-- <iframe onLoad="resizeFrame(this)" class="result" src="/html/src/select_box_control.htm" height="100px"  width="660px"></iframe> -->
+    <br>
+    <h2>Attributes</h2>
+    <br>
+    <p>Following is the list of important attributes of &lt;select&gt; tag &minus;</p>
+    <table class="table table-bordered">
+    <tr>
+    <th>Sr.No</th>
+    <th style="text-align:center;">Attribute &amp; Description</th>
+    </tr>
+    <tr>
+    <td class="ts">1</td>
+    <td>
+    <p><b>name</b></p>
+    <p>Used to give a name to the control which is sent to the server to be recognized and get the value.</p>
+    </td>
+    </tr>
+    <tr>
+    <td class="ts">2</td>
+    <td>
+    <p><b>size</b></p>
+    <p>This can be used to present a scrolling list box.</p>
+    </td>
+    </tr>
+    <tr>
+    <td class="ts">3</td>
+    <td>
+    <p><b>multiple</b></p>
+    <p>If set to "multiple" then allows a user to select multiple items from the menu.</p>
+    </td>
+    </tr>
+    </table>
+    <p>Following is the list of important attributes of &lt;option&gt; tag &minus;</p>
+    <table class="table table-bordered">
+    <tr>
+    <th>Sr.No</th>
+    <th style="text-align:center;">Attribute &amp; Description</th>
+    </tr>
+    <tr>
+    <td class="ts">1</td>
+    <td>
+    <p><b>value</b></p>
+    <p>The value that will be used if an option in the select box box is selected.</p>
+    </td>
+    </tr>
+    <tr>
+    <td class="ts">2</td>
+    <td>
+    <p><b>selected</b></p>
+    <p>Specifies that this option should be the initially selected value when the page loads.</p>
+    </td>
+    </tr>
+    <tr>
+    <td class="ts">3</td>
+    <td>
+    <p><b>label</b></p>
+    <p>An alternative way of labeling options</p>
+    </td>
+    </tr>
+    </table>
+    <br>
+    <h2>File Upload Box</h2>
+    <br>
+    <p>If you want to allow a user to upload a file to your web site, you will need to use a file upload box, also known as a file select box. This is also created using the &lt;input&gt; element but type attribute is set to <b>file</b>.</p>
+    <br>
+    <h3>Example</h3>
+    <br>
+    <p>Here is example HTML code for a form with one file upload box &minus;</p>
+    <div class="demo-view">
+    <!-- <a href="http://tpcg.io/OqYwor" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a> -->
+    </div>
+    <pre class="prettyprint notranslate">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    
+       &lt;head&gt;
+          &lt;title&gt;File Upload Box&lt;/title&gt;
+       &lt;/head&gt;
+    
+       &lt;body&gt;
+          &lt;form&gt;
+             &lt;input type = "file" name = "fileupload" accept = "image/*" /&gt;
+          &lt;/form&gt;
+       &lt;/body&gt;
+        
+    &lt;/html&gt;
+    </pre>
+    <!-- <p>This will produce the following result &minus;</p> -->
+    <!-- <iframe onLoad="resizeFrame(this)" class="result" src="/html/src/file_upload_box.htm" height="100px"  width="660px"></iframe> -->
+    <br>
+    <h2>Attributes</h2>
+    <br>
+    <p>Following is the list of important attributes of file upload box &minus;</p>
+    <table class="table table-bordered">
+    <tr>
+    <th>Sr.No</th>
+    <th style="text-align:center;">Attribute &amp; Description</th>
+    </tr>
+    <tr>
+    <td class="ts">1</td>
+    <td>
+    <p><b>name</b></p>
+    <p>Used to give a name to the control which is sent to the server to be recognized and get the value.</p>
+    </td>
+    </tr>
+    <tr>
+    <td class="ts">2</td>
+    <td>
+    <p><b>accept</b></p>
+    <p>Specifies the types of files that the server accepts.</p>
+    </td>
+    </tr>
+    </table>
+    <br>
+    <h2>Button Controls</h2>
+    <br>
+    <p>There are various ways in HTML to create clickable buttons. You can also create a clickable button using &lt;input&gt;tag by setting its type attribute to <b>button</b>. The type attribute can take the following values &minus;</p>
+    <table class="table table-bordered">
+    <tr>
+    <th>Sr.No</th>
+    <th style="text-align:center;">Type &amp; Description</th>
+    </tr>
+    <tr>
+    <td class="ts">1</td>
+    <td>
+    <p><b>submit</b></p>
+    <p>This creates a button that automatically submits a form.</p>
+    </td>
+    </tr>
+    <tr>
+    <td class="ts">2</td>
+    <td>
+    <p><b>reset</b></p>
+    <p>This creates a button that automatically resets form controls to their initial values.</p>
+    </td>
+    </tr>
+    <tr>
+    <td class="ts">3</td>
+    <td>
+    <p><b>button</b></p>
+    <p>This creates a button that is used to trigger a client-side script when the user clicks that button.</p>
+    </td>
+    </tr>
+    <tr>
+    <td class="ts">4</td>
+    <td>
+    <p><b>image</b></p>
+    <p>This creates a clickable button but we can use an image as background of the button.</p>
+    </td>
+    </tr>
+    </table>
+    <br>
+    <h3>Example</h3>
+    <br>
+    <p>Here is example HTML code for a form with three types of buttons &minus;</p>
+    <div class="demo-view">
+    <!-- <a href="http://tpcg.io/PeT9hv" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a> -->
+    </div>
+    <pre class="prettyprint notranslate">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    
+       &lt;head&gt;
+          &lt;title&gt;File Upload Box&lt;/title&gt;
+       &lt;/head&gt;
+        
+       &lt;body&gt;
+          &lt;form&gt;
+             &lt;input type = "submit" name = "submit" value = "Submit" /&gt;
+             &lt;input type = "reset" name = "reset"  value = "Reset" /&gt;
+             &lt;input type = "button" name = "ok" value = "OK" /&gt;
+             &lt;input type = "image" name = "imagebutton" src = "/html/images/logo.png" /&gt;
+          &lt;/form&gt;
+       &lt;/body&gt;
+        
+    &lt;/html&gt;
+    </pre>
+    <!-- <p>This will produce the following result &minus;</p> -->
+    <!-- <iframe onLoad="resizeFrame(this)" class="result" src="/html/src/button_controls.htm" height="150px"  width="660px"></iframe> -->
+    <br>
+    <h2>Hidden Form Controls</h2>
+    <br>
+    <p>Hidden form controls are used to hide data inside the page which later on can be pushed to the server. This control hides inside the code and does not appear on the actual page. For example, following hidden form is being used to keep current page number. When a user will click next page then the value of hidden control will be sent to the web server and there it will decide which page will be displayed next based on the passed current page.</p>
+    <br>
+    <h3>Example</h3>
+    <br>
+    <p>Here is example HTML code to show the usage of hidden control &minus;</p>
+    <div class="demo-view">
+    <!-- <a href="http://tpcg.io/1SKStx" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a> -->
+    </div>
+    <pre class="prettyprint notranslate">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    
+       &lt;head&gt;
+          &lt;title&gt;File Upload Box&lt;/title&gt;
+       &lt;/head&gt;
+    
+       &lt;body&gt;
+          &lt;form&gt;
+             &lt;p&gt;This is page 10&lt;/p&gt;
+             &lt;input type = "hidden" name = "pagename" value = "10" /&gt;
+             &lt;input type = "submit" name = "submit" value = "Submit" /&gt;
+             &lt;input type = "reset" name = "reset"  value = "Reset" /&gt;
+          &lt;/form&gt;
+       &lt;/body&gt;
+        
+    &lt;/html&gt;
+    </pre>
+    <!-- <p>This will produce the following result &minus;</p> -->
+    <!-- <iframe onLoad="resizeFrame(this)" class="result" src="/html/src/hidden_form_controls.htm" height="100px"  width="660px"></iframe> -->
+    
+
+
+</main>
+
+
+
+<footer style="background-color: #2090DB; color: white;text-align: center;" class=" py-6">
+   <div class="row">
+     <div class="col-12 col-md">
+       <small class="d-block mb-3">&copy; 2017–2021 Licensed Product</small>
+     </div>
+   </div>
+ </footer>
+ 
+ 
+ <section>
+ 
+ <!-- ===============================================================================================-->
+     <script src="../../vendor/jquery/jquery-3.2.1.min.js"></script>
+ <!--===============================================================================================-->
+     <script src="../../vendor/animsition/js/animsition.min.js"></script>
+ <!--===============================================================================================-->
+    <script src="../../vendor/bootstrap/js/popper.js"></script>
+    <script src="../../vendor/bootstrap/js/bootstrap.min.js"></script>
+ <!--===============================================================================================-->
+    <script src="../../vendor/select2/select2.min.js"></script>
+ <!--===============================================================================================-->
+    <script src="../../vendor/daterangepicker/moment.min.js"></script>
+    <script src="../../vendor/daterangepicker/daterangepicker.js"></script>
+ <!--===============================================================================================-->
+    <script src="../../vendor/countdowntime/countdowntime.js"></script>
+ <!--===============================================================================================-->
+     <script src="../../js/main.js"></script>
+   
+     <script src="../../js/custom.js"></script>
+ 
+     <script src="../../js/adconsent.js"></script>
+     <script src="../../js/my-learning.js"></script>
+     <script src="../../js/snhb-loader.min.js"></script>
+     <script src="../../js/w3codecolor.js"></script>
+ 
+ </section>
+ 
+ </body>
+ </html>
